@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply w-10/12 sm:w-10/12 max-w-7xl mx-auto
+  }
+}
+
+
+
+.customText {
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: transparent;
+  animation: animateText 1s linear infinite;
+}
+
+:root {}
+
+@media (prefers-color-scheme: dark) {}
+
+body {}
+
+
+.text-gradient {
+  background: linear-gradient(93.06deg, #76C5F2 -5.22%, #10214F 169.32%);
+  -webkit-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes animate-text-one {
+  0%,100%{
+    -webkit-text-fill-color: transparent;
+  }
+  50%{
+    -webkit-text-fill-color: white;
+  }
+}
+
+@keyframes animate-text-two {
+  0%,100%{
+    -webkit-text-fill-color: white;
+  }
+  50%{
+    -webkit-text-fill-color: transparent;
+  }
+}
+.animate-text-one{
+  animation: animate-text-one 2s linear infinite;
+}
+.animate-text-two{
+  animation: animate-text-two 2s linear infinite;
+}
+
+.border-gradient {
+  border-image: linear-gradient(93.06deg, #76C5F2 -5.22%, #10214F 169.32%) 1;
+}
+.border-gradient:before{
+  border-image: linear-gradient(93.06deg, #76C5F2 -5.22%, #10214F 169.32%) 1;
+}
+
+/* swiper overrides */
+
+.swiper-scrollbar-horizontal {
+  background: #C3EBFF !important;
+}
+
+.swiper-scrollbar-drag {
+  background: #1F96D3 !important;
+}
+.swiper-button-disabled{
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}

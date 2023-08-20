@@ -1,0 +1,75 @@
+{
+  "global" : {
+    "currency" : "EGP",
+    "agentsFor" : "Agents For"
+  },
+  "navbar" : {
+    "title" : "ECMF",
+    "home" : "Home",
+    "about" : "About",
+    "gallery" : "Gallery",
+    "contactUs" : "Contact Us",
+    "products" : "Products",
+    "services" : "Services",
+    "termsOfSale" : "Terms of Sale"
+  },
+  "home":{
+    "introOne" : "We Have",
+    "introTwo" : "What You",
+    "introThree" : "Need.",
+    "cta" : "Explore All Products",
+    "slogan1" : "Best Prices",
+    "slogan2" : "best materials",
+    "slogan3" : "the best in the industry"
+  },
+  "about":{
+    "aboutUs" : "About Us",
+    "aboutUsDescription" : "The Engineering Company for Metal Forming is a leading institution in Egypt that specializes in shaping a wide range of metal sheets. We pride ourselves on using cutting-edge production lines to ensure the highest quality results. Our products not only meet, but also exceed international standard specifications (including European and American), making us a trusted and reliable choice for customers who are seeking top-quality solutions.",
+    "ourVision" : "Our Vision & Mission",
+    "ourVisionDescription" : "Our Vision \n We aspire to be the global benchmark for the metalworking industry in the MENA region and then worldwide.\n \n Our Mission \n To achieve maximum value for our customer base by providing high-quality metal products and related services and solutions using innovative technologies."
+  },
+  "topSales":{
+    "title" : "Products",
+    "productTitle" : "Pipes Metal ECMF",
+    "productDescription" : "Premium Steal from ECMF",
+    "productPrice" : "2000"
+  },
+  "contactUs" :{
+    "title" : "Contact Us",
+    "description" : "Get in touch with us",
+    "name" : "Name",
+    "namePlaceholder" : "Hamed Osama",
+    "email" : "Email",
+    "emailPlaceholder" : "hamed@trendlix.com",
+    "message" : "Message",
+    "messagePlaceholder" : "Type your query here.....",
+    "submit" : "Send"
+  },
+  "aboutUs" : {
+    "subtitle" : "Why ECMF ?",
+    "aboutUs" : "About Us",
+    "aboutUsDescription" : "The Engineering Company for Metal Forming is a leading institution in Egypt that specializes in shaping a wide range of metal sheets. We pride ourselves on using cutting-edge production lines to ensure the highest quality results. Our products not only meet, but also exceed international standard specifications (including European and American), making us a trusted and reliable choice for customers who are seeking top-quality solutions.",
+    "ourVision" : "Our Vision & Mission",
+    "ourVisionDescription" : "Our Vision \n We aspire to be the global benchmark for the metalworking industry in the MENA region and then worldwide.\n \n Our Mission \n To achieve maximum value for our customer base by providing high-quality metal products and related services and solutions using innovative technologies.",
+    "companyIdentification" : "Your first Choice:",
+    "companyIdentificationDescription" : "As customer satisfaction is our goal, we are distinguished by having a product development team \n The company's board of directors oversees the total quality management projects and always motivates them on innovative ideas and their development for the benefit of the company and customer service",
+    "qualityAssurance" : "Quality Assurance",
+    "qualityAssuranceDescription" : "The company has proven its strong focus on quality and continuous improvement. So, we are proud to have received the certificate of standardization, which was awarded to us in 2011. \n We have also obtained the certificate of Civil Defense and occupational health 2011 for our commitment to public safety, health and Environmental Protection",
+    "qualityControl" : "Quality Control",
+    "qualityControlDescription" : "A very effective quality inspection of the system is carried out and the incoming raw materials are inspected for conformity with the certificates of analysis from the origin and the inspection of the finished product is carried out by a team of qualified personnel to comply with international standards: \n EN10051 ، EN10131 ، EN10130 ، EN10111 EN10143 ، EN10142 ، EN10025, EN10169. \n Chemical and mechanical tests are carried out in laboratories to ensure the availability of evaluation in terms of tests as required and calibration of quality measuring devices in the facilities, so we carefully select the best supplier’s logo board members.",
+    "objectives" : "Objectives",
+    "objectivesDescription" : "The partner always hopes to obtain complete customer satisfaction, the company has recruited a team of product development and engineering quality outside the boundaries of international standards and developed a quide for customers to examine the quality."
+  },
+  "gallery" : {
+    "title" : "Gallery"
+  },
+  "addNewCategory" :{
+    "title": "New Line"
+  },
+  "addNewProduct" :{
+    "title": "New Product"
+  },
+  "admin" :{
+    "title": "Admin Login"
+  }
+}
