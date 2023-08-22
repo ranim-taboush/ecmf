@@ -74,7 +74,7 @@ const Services = ({ }) => {
                   currentLine?.title?.en === el?.title?.en ? 'text-primary' : 'text-white'
               )} onClick={() => setCurrentLine(allLines[i])} >
               {locale === 'ar' ? el?.title?.ar : el?.title?.en}
-              <div className={currentLine?.title?.en === el?.titlte?.en? "absolute w-full h-1 bg-primary transition-underline" : ""}></div>
+              <div className={currentLine?.title?.en === el?.title?.en? "absolute w-full h-1 bg-primary transition-underline" : ""}></div>
             </div>
             )
             :''
