@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useLocale } from 'next-intl';
+import { useRouter } from 'next/navigation';
 import adminBg from '@/images/admin-page-bg.jpg'
 import Input from '@/components/UI/Input.jsx'
 import Button from '@/components/UI/Button'
@@ -11,9 +12,12 @@ import { Error, Success } from '@/components/toast';
 const Form = ({ }) => {
   axios.defaults.withCredentials = true;
   const locale = useLocale();
+  const router = useRouter();
   const [data, setData] = useState({title: {en: '', ar: ''}, machine: {en: '', ar: ''}, 
-    description: {en: '', ar: ''}, subtitle: {en: '', ar: ''}, 
+    description: {en: '', ar: ''}, subtitle: {en: '', ar: ''},
     subDescription: {en: '', ar: ''}, productsTitle: [{en: '', ar: ''}], usedIn: [{en: '', ar: ''}]})
+  const [image, setImage] = useState( null )
+  const [id, setId] = useState(null)
 
   const langEn = {
     "title": "New Line",
@@ -36,6 +40,7 @@ const Form = ({ }) => {
     "productsTitlePlaceholderEn": "English products name list seperated by ',' Ex: Icon, Cans",
     "usedInPlaceholderAr": "Arabic used in list seperated by ',' Ex: Armored doors, home appliances",
     "usedInPlaceholderEn": "English used in list seperated by ',' Ex: Armored doors, home appliances",
+    "categoryImg": "Line Image",
     "submit": "Add"
   }
   const langAr = {
@@ -59,6 +64,7 @@ const Form = ({ }) => {
     "productsTitlePlaceholderEn": "اسماء المنتجات بالانكليزي بينها ',' مثال: الايكون, العلب",
     "usedInPlaceholderAr": "الصناعات المغذية بالعربي بينها ',' مثال: ابواب مصفحة, الأجهزة المنزلية",
     "usedInPlaceholderEn": "الصناعات المغذية بالانكليزي بينها ',' مثال: ابواب مصفحة, الأجهزة المنزلية",
+    "categoryImg": "صورة الخط",
     "submit": "اضف"
   }
 
@@ -71,16 +77,18 @@ const Form = ({ }) => {
           `http://localhost:5000/category`,
           {...data,
           productsTitle: {ar: data.productsTitle?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.productsTitle?.en?.map(v=>v.trim()).filter(n=>n) || ''}, 
-          usedIn: {ar: data.usedIn?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.usedIn?.en?.map(v=>v.trim()).filter(n=>n) || ''} }
+          usedIn: {ar: data.usedIn?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.usedIn?.en?.map(v=>v.trim()).filter(n=>n) || ''}},
+          {headers: { accesstoken: localStorage.getItem('token') }}
         );
         Success('success')
         Success('Category Added')
+        setId(res.data?._id)
         setData({title: {en: '', ar: ''}, machine: {en: '', ar: ''}, 
         description: {en: '', ar: ''}, subtitle: {en: '', ar: ''}, 
         subDescription: {en: '', ar: ''}, productsTitle: [{en: '', ar: ''}], usedIn: [{en: '', ar: ''}]})
 
       } catch (err) {
-        Error('Registered failed', err.message)
+        Error('Category Adding failed', err.message)
       }
     };
     postCategory();
@@ -93,9 +101,36 @@ const Form = ({ }) => {
     }else{
       value = e.target.value.split(",")
     }
-    setData(prev=>{
-      return { ...prev, [name]: { ...prev[name], [lang]: value } }
-    })
+    setData(prev=>{ return { ...prev, [name]: { ...prev[name], [lang]: value } } })
+  }
+
+  const handleImageUpload = (e) =>{
+    const uploadImg = async () => {
+      setImage(e.target.files[0])
+      const formData = new FormData();
+      formData.append(
+        "image",
+        e.target.files[0],
+        e.target.files[0].name
+      );
+      try {
+        const res = await axios.patch(
+          `http://localhost:5000/upload/category/${id}`,
+          formData,
+          {headers: { accesstoken: localStorage.getItem('token') }}
+        );
+        Success('success')
+        Success('Image Uploaded Successfully')
+        setImage(null)
+        router.replace('/admin/add-category');
+
+      } catch (err) {
+        Error('Registered failed', err.message)
+      }
+    };
+
+    if(id) uploadImg();
+    else Error('You need to add the category first')
   }
 
   return <div className="relative mt-4 sm:mt-8 rounded-md overflow-hidden">
@@ -104,12 +139,12 @@ const Form = ({ }) => {
       <Image src={adminBg} alt={locale === 'ar' ? langAr.title : langEn.title} width={adminBg.width} height={adminBg.height} className='w-full h-full rounded-xl blur-md' />
     </div>
     <form onSubmit={(e) => handleSubmit(e)}>
-      <div className="relative h-full grid sm:grid-cols-2 items-center">
+      <div className="relative h-full grid sm:grid-cols-2 items-start">
         <div className="py-12 sm:py-24 px-8 sm:px-16">
           <p className='text-xl sm:text-3xl text-white'>
             {locale === 'ar' ? langAr.title : langEn.title}
           </p>
-          <div className="flex flex-col gap-6 mt-4">
+          <div className={id ? "hidden" : "flex flex-col gap-6 mt-4"}>
             <Input required label={locale === 'ar' ? langAr.titleEn : langEn.titleEn} name='titleEn' 
             placeholder={(locale === 'ar' ? langAr.placeholder : langEn.placeholder) + (locale === 'ar' ? langAr.title : langEn.title)} value={data.title.en} 
             onChange={(e)=>{ handleChange(e, 'title', 'en')} } />
@@ -133,10 +168,15 @@ const Form = ({ }) => {
             onChange={(e)=>{ handleChange(e, 'usedIn', 'en') }} />
             <Button type='submit' className='w-fit px-6'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
           </div>
+          <div className={!id? "hidden": "flex flex-col gap-6"}>
+            <Input label={locale === 'ar'? langAr.categoryImg: langEn.categoryImg} name='image' type="file"
+            placeholder={(locale === 'ar' ? langAr.placeholder : langEn.placeholder) + (locale === 'ar' ? langAr.categoryImg : langEn.categoryImg)} 
+            onChange={ handleImageUpload } />
+          </div>
 
         </div>
-        <div className="py-12 sm:py-24 px-8 sm:px-16">
-          <div className="flex flex-col gap-6">
+        <div className="py-12 sm:py-24 px-8 sm:px-16 mt-14">
+          <div className={id? "hidden": "flex flex-col gap-6"}>
 
             <Input required label={locale === 'ar' ? langAr.titleAr : langEn.titleAr} name='titleAr'
             placeholder={(locale === 'ar' ? langAr.placeholder : langEn.placeholder) + (locale === 'ar' ? langAr.titleAr : langEn.titleAr)} value = {data.title.ar}
@@ -154,13 +194,14 @@ const Form = ({ }) => {
             placeholder={(locale === 'ar' ? langAr.placeholder : langEn.placeholder) + (locale === 'ar' ? langAr.subDescriptioneAr : langEn.subDescriptioneAr)} value = {data.subDescription.ar}
             onChange={(e)=>{handleChange(e, 'subDescription', 'ar')}}/>
             <Input required label={locale === 'ar' ? langAr.productsTitleAr : langEn.productsTitleAr} name='productsTitleAr' 
-            placeholder={(locale === 'ar' ? langAr.productsTitlePlaceholderAr : langEn.productsTitlePlaceholderAr)} value = {data.productsTitle.ar}
+            placeholder={(locale === 'ar' ? langAr.productsTitlePlaceholderAr : langEn.productsTitlePlaceholderAr)} value = {data.productsTitle?.ar || ''}
             onChange={(e)=>{handleChange(e, 'productsTitle', 'ar')}}/>
             <Input required label={locale === 'ar' ? langAr.usedInAr : langEn.usedInAr} name='usedInAr' 
             placeholder={(locale === 'ar' ? langAr.usedInPlaceholderAr : langEn.usedInPlaceholderAr)} value={data.usedIn?.ar || ''}
             onChange={(e)=>{ handleChange(e, 'usedIn', 'ar') }} />
           </div>
         </div>
+     
       </div>
     </form>
   </div>

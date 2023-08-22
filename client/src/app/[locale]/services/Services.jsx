@@ -2,15 +2,13 @@
 
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
-import { FC, useRef, useState } from 'react'
-
+import { FC, useRef, useState, useEffect } from 'react'
 
 import contactUsBg from '@/images/contact-us-bg.png'
 import Button from '@/components/UI/Button'
 import { lines } from '@/data/lines';
 import { useLocale, useTranslations } from 'next-intl';
 import Title from '@/components/UI/typography/Title';
-
 
 import img1 from '@/images/gallery/1.png'
 import img2 from '@/images/gallery/2.png'
@@ -23,22 +21,35 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards, Navigation } from 'swiper';
 import { cn } from '@/utils/utils';
 import Arrow from '@/components/UI/Arrow';
+import axios, { all } from "axios"
+import { Error } from '@/components/toast';
 
 import "swiper/css/effect-cards";
 
-interface ServicesProps {
-
-}
-
-const Services: FC<ServicesProps> = ({ }) => {
-  const allLines = lines.map(el => el.title)
-  const [currentLine, setCurrentLine] = useState(lines[0] || []);
+const Services = ({ }) => {
+  const [allLines, setAllLines] = useState(lines)
+  const [currentLine, setCurrentLine] = useState(lines[0]);
 
   const navigationPrevRef = useRef(null)
   const navigationNextRef = useRef(null)
 
   const locale = useLocale()
   const t = useTranslations('contactUs')
+
+  
+  useEffect(()=>{
+    const getCategory = async () => {
+      await axios.get( `http://localhost:5000/category` )
+      .then(res=>{
+        console.log(res?.data)
+        setAllLines(res?.data)
+        setCurrentLine(res?.data[0])
+      }).catch (err=>{
+        Error('Error While Loading Data')});
+    }
+    getCategory();
+  }, [])
+
   return <div>
     <div className="h-screen relative">
       <div className="absolute inset-0 ">
@@ -54,33 +65,36 @@ const Services: FC<ServicesProps> = ({ }) => {
         <Navbar />
         <div className="container mt-6 grid grid-cols-2 content-start justify-between">
           <div className="">
-            {allLines.map((el, i) => <p
-              key={i}
+            {
+            allLines
+            ?allLines.map((el, i) => 
+            <div key={i}
               className={cn(
-                'text-2xl sm:text-3xl mb-5 sm:mb:10 font-bold cursor-pointer',
-                currentLine.title.en === el.en ? 'text-primary' : 'text-white'
-              )}
-              onClick={() => setCurrentLine(lines[i])}
-            >
-              {locale === 'ar' ? el.ar : el.en}
-            </p>
-            )}
+                'text-2xl sm:text-3xl mb-5 sm:mb:10 font-bold cursor-pointer relative w-fit transition-holder',
+                  currentLine?.title?.en === el?.title?.en ? 'text-primary' : 'text-white'
+              )} onClick={() => setCurrentLine(allLines[i])} >
+              {locale === 'ar' ? el?.title?.ar : el?.title?.en}
+              <div className={currentLine?.title?.en === el?.titlte?.en? "absolute w-full h-1 bg-primary transition-underline" : ""}></div>
+            </div>
+            )
+            :''
+          }
           </div>
           <div className="flex flex-col items-center justify-center">
-            <p className='text-primary uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold'>
+            <p className='text-primary uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold animate-text-blue'>
               {locale === 'ar' ? currentLine.title.ar : currentLine.title.en}
             </p>
-            <p className='customText uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold'>
+            <p className='customText uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold animate-text-blue1'>
               {locale === 'ar' ? currentLine.title.ar : currentLine.title.en}
             </p>
-            <p className='customText uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold'>
+            <p className='customText uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold animate-text-blue2'>
               {locale === 'ar' ? currentLine.title.ar : currentLine.title.en}
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div className="relative -mt-96 container bg-[#F9F9F9] rounded-md px-8 sm:px-16 py-6 sm:py-12 z-10">
+    <div className="relative -mt-20 container bg-[#F9F9F9] rounded-md px-8 sm:px-16 py-6 sm:py-12 z-10">
       <Title variant='default' className='my-4 sm:my-8'>
         {locale === 'ar' ? currentLine.machine.ar : currentLine.machine.en}
       </Title>
@@ -98,13 +112,13 @@ const Services: FC<ServicesProps> = ({ }) => {
           initialSlide={3}
 
           navigation={{ prevEl: navigationPrevRef?.current, nextEl: navigationNextRef?.current }}
-          onBeforeInit={(swiper: any) => {
+          onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = navigationPrevRef?.current;
             swiper.params.navigation.nextEl = navigationNextRef?.current;
           }}
         >
           {
-            [img1, img2, img3, img4, img5, img6, img7].map((item: any, index: number) => {
+            [img1, img2, img3, img4, img5, img6, img7].map((item, index) => {
               return <SwiperSlide key={index} className=''>
                 <Image
                   src={item}
@@ -164,16 +178,16 @@ const Services: FC<ServicesProps> = ({ }) => {
           {locale === 'ar' ? currentLine.productsTitle.ar : currentLine.productsTitle.en}
         </p>
         <ul className='grid grid-rows-4 justify-between list-disc'>
-          {currentLine.products[locale === 'ar' ? 'ar' : 'en'].
+          {currentLine?.products?.
             map((el, i) => <li key={i} className='text-base sm:text-lg text-black'>
-              {el}
+              {locale === 'ar' ? el.arName || '' : el.enName || ''}
             </li>
             )}
         </ul>
       </div>
       <div className="mb-3 sm:mb-6">
         <p className='text-xl sm:text-3xl text-primary font-bold mb-2 sm:mb-4'>
-          {locale === 'ar' ? currentLine.usedInTitle.ar : currentLine.usedInTitle.en}
+          {locale === 'ar' ? "يستخدم في: " : "Used in: "}
         </p>
         <ul className='grid grid-rows-4 justify-between list-disc'>
           {currentLine.usedIn[locale === 'ar' ? 'ar' : 'en'].

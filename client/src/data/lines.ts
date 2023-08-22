@@ -28,10 +28,9 @@ export const lines = [
       en: 'Slicing Products:',
       ar: 'منتجات خط التشريح:'
     },
-    products: {
-      en: ['Pipes and Cans', 'Rectangular Cans', 'Channels and Angle Bar'],
-      ar: ['أنابيب وعلب', 'علب مستطيلة', 'قنوات وزوايا']
-    },
+    products:
+      [{arName: 'المواسير والعلب', enName: 'Pipes and Cans'}, {arName: 'المواسير والعلب', enName: 'Pipes and Cans'}]
+    ,
     usedInTitle: {
       en: 'Used in:',
       ar: 'يستخدم في:'
@@ -69,10 +68,9 @@ export const lines = [
       en: 'Slicing Products:',
       ar: 'منتجات خط التشريح:'
     },
-    products: {
-      en: ['Pipes and Cans', 'Rectangular Cans', 'Channels and Angle Bar'],
-      ar: ['المواسير والعلب', 'والعلب المستطيلة', 'الكمر والزويه']
-    },
+    products:
+      [{arName: 'المواسير والعلب', enName: 'Pipes and Cans'}, {arName: 'المواسير والعلب', enName: 'Pipes and Cans'}]
+    ,
     usedInTitle: {
       en: 'Used in:',
       ar: 'يستخدم في:'

@@ -26,13 +26,14 @@ const categorySchema = new mongoose.Schema({
         en: { type: [String], required: [true, "english products title is required"], trim: true }
     },
     usedInTitle: {
-        ar: { type: String, default: "Used in:", trim: true },
-        en: { type: String, default: 'يستخدم في:', trim: true }
+        en: { type: String, default: "Used in:", trim: true },
+        ar: { type: String, default: 'يستخدم في:', trim: true }
     },
     usedIn: {
         ar: { type: [String], trim: true  },
         en: { type: [String], trim: true  }
     },
+    categoryImg: { type: String },
     products: [{
         type: mongoose.Types.ObjectId, 
         ref: "Product"

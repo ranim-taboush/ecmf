@@ -1,16 +1,53 @@
-import { FC } from 'react'
+"use client"
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 import { useLocale } from 'next-intl'
 
 import Navbar from '@/components/Navbar'
 import productsBg from '@/images/products_bg.png'
 import productImg from '@/images/product_test.png'
+import axios from "axios"
+import { Error } from '@/components/toast';
+import { useParams } from 'next/navigation'
 
-interface ProductDetailsProps {
-}
-
-const ProductDetails: FC<ProductDetailsProps> = ({ }) => {
+const ProductDetails = ({ }) => {
   const locale = useLocale()
+  const params = useParams()
+  const [product, setProduct] = useState({})
+  const [thickness, setThickness] = useState('')
+  const [madeBy, setMadeBy] = useState('')
+  
+  const findByHow = (name)=>{
+    console.log(madeBy)
+    let agent 
+    if(name === 'agent1')
+        agent =  {en: 'Kandil Steel', ar: 'قنديل للصلب'}
+    else if (name === 'agent2')
+      agent = {en: 'Egyptian Metal Forming', ar: "المصرية لتصنيع المعادن"}
+    else if (name === 'agent3')
+        agent =  {en: 'El Ola Steel Group', ar: "مجموعة العلا للصلب"}
+    else if (name === 'agent4')
+      agent =  {en: 'Al Ghurair Iron & Steel LLC', ar: "الغرير للحديد و الاستيل"}
+    else if (name === 'agent5')
+        agent =  {en: 'EZZ Dikheila Iron & Steel', ar: "عز الدخيلة للحديد والصلب"}
+    else
+        agent =  {en: 'error', ar: "خطأ"}
+    return agent
+  }
+
+  useEffect(()=>{
+    const getCategory = async () => {
+      await axios.get( `http://localhost:5000/product/${params.id}` )
+      .then(res=>{
+        setProduct(res?.data)
+      setThickness(thickness)
+      setMadeBy(findByHow(res?.data?.srcImg?.split('/')[2].split('.')[0]))
+      }).catch (err=>{
+       Error('Error While Loading Data')});
+    }
+    getCategory();
+  }, [])
+
   return <div>
     <div className="h-64 relative">
       <div className="absolute inset-0 ">
@@ -26,7 +63,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ }) => {
         <Navbar />
         <div className="container flex items-center justify-center">
           <p className='text-primary uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold'>
-            {locale === 'ar' ? 'الواح صاج ساخن' : 'Hot Metal Sheets'}
+            {locale === 'ar' ? product?.arName || 'الواح صاج ساخن' : product?.enName|| 'Hot Metal Sheets'}
           </p>
         </div>
       </div>
@@ -48,23 +85,22 @@ const ProductDetails: FC<ProductDetailsProps> = ({ }) => {
             {locale === 'ar' ? 'جديد' : 'New'}
           </p>
           <p className='text-gray-900 text-2xl sm:text-3xl font-bold'>
-            {locale === 'ar' ? 'الواح صاج ساخن' : 'Hot Metal Sheets'}
+            {locale === 'ar' ? product?.arName || '' : product?.enName|| ''}
           </p>
           <p className='text-primary text-2xl sm:text-3xl font-bold'>
-            {'52,000 '}{locale === 'ar' ? 'جنية' : 'EGP'}
+            {product?.price || 0}{locale === 'ar' ? 'جنية' : 'EGP'}
           </p>
           <div className="">
             <p className='text-black text-base sm:text-lg'>
               {locale === 'ar' ? 'مواصفات المنتج' : 'Product characteristics'}
             </p>
             <p className='text-gray-500 text-base sm:text-lg'>
-              {locale === 'ar' ? 'السمك' : 'Thickness'}: {locale === 'ar' ? 'من 1.5 مم الى 25 مم' : 'from 1.5 mm to 25 mm'}
+              {locale === 'ar' ? 'السمك' : 'Thickness'}: 
+              {locale === 'ar' ? `من ${product?.thickness?.from} ${product?.thickness?.arUnit} الى ${product?.thickness?.to} ${product?.thickness?.arUnit}` 
+              : `from ${product?.thickness?.from} ${product?.thickness?.enUnit} to ${product?.thickness?.to} ${product?.thickness?.enUnit}`}
             </p>
             <p className='text-gray-500 text-base sm:text-lg'>
-              {locale === 'ar' ? 'العرض' : 'Width'}: {locale === 'ar' ? 'حتى 1500 مم' : 'up to 1500 mm'}
-            </p>
-            <p className='text-gray-500 text-base sm:text-lg'>
-              {locale === 'ar' ? 'الطول' : 'Length'}: {locale === 'ar' ? 'حتى 6000 مم' : 'up to 6000 mm'}
+              {locale === 'ar' ? 'العرض' : 'Width'}: {locale === 'ar' ? `حتى ${product?.length || 0} مم` : `up to ${product?.length || 0} mm`}
             </p>
             <p className='text-gray-500 text-base sm:text-lg'>
               {locale === 'ar' ? 'ST 37-2. S235JR . ASTM A283' : 'ST 37-2. S235JR . ASTM A283'}
@@ -76,7 +112,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ }) => {
             </p>
             <div className="mt-2 sm:mt-4 flex gap-2 sm:gap-4 items-center">
               {
-                [0.20, 0.22, 0.25, 0.30]
+                ( product?.thicknessList||[0.20, 0.22, 0.25, 0.30])
                   .map((el, i) => <span
                     key={i}
                     className="inline-block border border-black text-center py-1 px-2 sm:px-4 cursor-pointer hover:bg-gray-200 focus:bg-gray-300"
@@ -93,7 +129,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ }) => {
             </p>
             <div className="mt-2 sm:mt-4 flex gap-2 sm:gap-4 items-center">
               {
-                [1000, 1250, 1500, 2000]
+                (product?.lengthList||[1000, 1250, 1500, 2000])
                   .map((el, i) => <span
                     key={i}
                     className="inline-block border border-black text-center py-1 px-2 sm:px-4 cursor-pointer hover:bg-gray-200 focus:bg-gray-300"
@@ -107,7 +143,7 @@ const ProductDetails: FC<ProductDetailsProps> = ({ }) => {
           <p className='text-gray-900 text-lg sm:text-xl font-medium'>
             {locale === 'ar' ? 'منتج من' : 'Made by'}
             {" : "}
-            {locale === 'ar' ? 'عز الدخيلة' : 'Ezz El-Dkhela'}
+            {locale === 'ar' ? madeBy?.ar || 'عز الدخيلة' : madeBy?.en || 'Ezz El-Dkhela'}
           </p>
         </div>
       </div>

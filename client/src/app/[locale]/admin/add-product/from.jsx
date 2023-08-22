@@ -20,13 +20,17 @@ import { Success, Error } from '@/components/toast';
 const Form = ({ }) => {
   axios.defaults.withCredentials = true;
   const locale = useLocale();
+  const router = useRouter();
   const agents = [{im: kandil, src: '/images/agent1.png'}, {im: egyptian, src: '/images/agent2.png'}, 
   {im: elola, src: '/images/agent3.png'}, {im: agis, src:'/images/agent4.png'}, {im: ezdk, src: '/images/agent5.png'}]
   const [data, setData] = useState({category: "Slicing Line", arName: '', enName: '', price: '',
-  thickness: {from: '', to: '', arUnit: '', enUnit: ''}, length: '', thicknessList: [], lengthList: [], srcImg: agents[0].src})
+  thickness: {from: '', to: '', arUnit: '', enUnit: ''}, length: '', thicknessList: [], lengthList: [], 
+  srcImg: agents[0].src, productImg: ''})
   const [choosenImg, setChooosenImg] = useState(agents[0].im)
   const [categories, setCategories] = useState([])
   const [openImg, setOpenImg] = useState(false)
+  const [image, setImage] = useState( null )
+  const [id, setId] = useState(null)
 
   const langEn = {
     "title": "New Product",
@@ -46,6 +50,7 @@ const Form = ({ }) => {
     "placeholder": "Enter ",
     "thicknessListPlaceholder": "Enter Available Thickness Number Seperated With ',' Ex: 0.3, 0.5, 2",
     "lengthListPlaceholder": "Enter Available Widths Number Seperated With ',' Ex: 0.3, 0.5, 2",
+    "productImg": "Product Image",
     "submit": "Add"
   }
   const langAr = {
@@ -66,6 +71,7 @@ const Form = ({ }) => {
     "placeholder": "ادخل ",
     "lengthListPlaceholder": "ادخل العروض المتاح للمنتج بينهم ',' مثال: 0.3, 0.5, 2",
     "thicknessListPlaceholder": "ادخل السمك المتاح للمنتج بينهم ',' مثال: 0.3, 0.5, 2",
+    "productImg": "صورة المنتج",
     "submit": "اضف"
   }
 
@@ -96,6 +102,7 @@ const Form = ({ }) => {
         );
         Success('success')
         Success('Product Added')
+        setId(res.data?._id)
         setData({category: "Slicing Line", arName: '', enName: '', price: '',
         thickness: {from: '', to: '', arUnit: '', enUnit: ''}, length: '', thicknessList: [], lengthList: [], srcImg: agents[0].src})
 
@@ -133,17 +140,48 @@ const Form = ({ }) => {
     }
   }
 
+  
+  const handleImageUpload = (e) =>{
+    const uploadImg = async () => {
+      setImage(e.target.files[0])
+      const formData = new FormData();
+      formData.append(
+        "image",
+        e.target.files[0],
+        e.target.files[0].name
+      );
+      try {
+        const res = await axios.patch(
+          `http://localhost:5000/upload/product/${id}`,
+          formData,
+          {headers: { accesstoken: localStorage.getItem('token') }}
+        );
+        Success('success')
+        Success('Image Uploaded Successfully')
+        setImage(null)
+        setId(null)
+        router.replace('/admin/add-product')
+
+      } catch (err) {
+        Error('Registered failed', err.message)
+      }
+    };
+
+    if(id) uploadImg();
+    else Error('You need to add the product first')
+  }
+
   return <div className="relative mt-4 sm:mt-8 rounded-md overflow-hidden">
     <div className="absolute inset-0 ">
       <Image src={adminBg} alt={locale === 'ar' ? langAr.title : langEn.title} width={adminBg.width} height={adminBg.height} className='w-full h-full rounded-xl blur-md' />
     </div>
     <form onSubmit={(e) => handleSubmit(e)}>
-      <div className="relative h-full grid sm:grid-cols-2 items-center">
+      <div className="relative h-full grid sm:grid-cols-2 items-start">
         <div className="py-12 sm:py-24 px-8 sm:px-16">
           <p className='text-xl sm:text-3xl text-white'>
             {locale === 'ar' ? langAr.title : langEn.title}
           </p>
-          <div className="flex flex-col gap-6 mt-4">
+          <div className={id ? "hidden" : "flex flex-col gap-6 mt-4"}>
             <Input required label={locale === 'ar' ? langAr.nameEn : langEn.nameEn} name='nameEn' 
             placeholder={(locale === 'ar' ? langAr.placeholder : langEn.placeholder) + (locale === 'ar' ? langAr.nameEn : langEn.nameEn)} value={data.enName} 
             onChange={(e)=>{ handleChange(e, 'enName')} } />
@@ -180,10 +218,15 @@ const Form = ({ }) => {
             </div>
             <Button type='submit' className='w-fit px-6'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
           </div>
+          <div className={!id? "hidden": "flex flex-col gap-6"}>
+            <Input label={locale === 'ar'? langAr.categoryImg: langEn.categoryImg} name='image' type="file"
+            placeholder={(locale === 'ar' ? langAr.placeholder : langEn.placeholder) + (locale === 'ar' ? langAr.categoryImg : langEn.categoryImg)} 
+            onChange={ handleImageUpload } />
+          </div>
 
         </div>
-        <div className="py-12 sm:py-24 px-8 sm:px-16">
-          <div className="flex flex-col gap-6">
+        <div className="py-12 sm:py-24 px-8 sm:px-16 mt-14">
+          <div className={id? "hidden": "flex flex-col gap-6"}>
             
             <div className="">
               <label htmlFor="category" className='text-white text-base sm:text-lg font-light px-1'>

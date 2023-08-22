@@ -10,10 +10,29 @@ interface ProductProps {
   madeBy: string
   price: number
   locale: string
+  element: any
 }
 
-const Product: FC<ProductProps> = ({ image, isNew, name, madeBy, price, locale }) => {
+const Product: FC<ProductProps> = ({ image, isNew, name, madeBy, price, locale, element }) => {
   const router = useRouter();
+  const findByHow = (name: string)=>{
+    console.log(madeBy)
+    let agent 
+    if(name === 'agent1')
+        agent =  {en: 'Kandil Steel', ar: 'قنديل للصلب'}
+    else if (name === 'agent2')
+      agent = {en: 'Egyptian Metal Forming', ar: "المصرية لتصنيع المعادن"}
+    else if (name === 'agent3')
+        agent =  {en: 'El Ola Steel Group', ar: "مجموعة العلا للصلب"}
+    else if (name === 'agent4')
+      agent =  {en: 'Al Ghurair Iron & Steel LLC', ar: "الغرير للحديد و الاستيل"}
+    else if (name === 'agent5')
+        agent =  {en: 'EZZ Dikheila Iron & Steel', ar: "عز الدخيلة للحديد والصلب"}
+    else
+        agent =  {en: 'error', ar: "خطأ"}
+    console.log(agent)
+    return agent
+  }
   return <div className="flex flex-col sm:flex-row justify-between items-center sm:items-end p-4 sm:hover:bg-gray-200 sm:duration-300">
     <div className="flex gap-8 flex-col sm:flex-row max-sm:items-center">
       <Image
@@ -33,7 +52,7 @@ const Product: FC<ProductProps> = ({ image, isNew, name, madeBy, price, locale }
         <p className='mt-2 sm:mt-8 text-gray-500 text-sm sm:text-base'>
           {locale === 'ar' ? 'منتج من' : 'Made by'}
           {" : "}
-          {madeBy}
+          {locale === 'ar' ? findByHow(madeBy)?.ar :  findByHow(madeBy)?.en}
         </p>
       </div>
     </div>
@@ -44,7 +63,7 @@ const Product: FC<ProductProps> = ({ image, isNew, name, madeBy, price, locale }
       </p>
       <p
         className={`relative text-primary text-base sm:text-lg font-medium mt-2 sm:mt-8 after:content-[""] after:w-0 hover:after:w-3/5 after:h-1 after:bg-primary after:absolute after:bottom-0  ${locale === 'ar' ? 'after:right-0' : 'after:left-0'}  after:duration-300 cursor-pointer`}
-        onClick={() => router.push(`/products/1`)}
+        onClick={() => router.push(`/products/${element?._id}`)}
       >
         {locale === 'ar' ? 'تفاصيل اكثر' : 'More Details'}
       </p>

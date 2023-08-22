@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 
 import './globals.css'
 import Navbar from '@/components/Navbar';
+import { cairo } from '@/utils/fonts'
 
 
 import "swiper/css";
@@ -32,7 +33,7 @@ export default function RootLayout({
   }
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-      <body>
+      <body className={cairo.className}>
         {/* <Navbar /> */}
         {children}
       <ToastContainer />

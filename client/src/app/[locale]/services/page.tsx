@@ -2,8 +2,7 @@
 import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl'
 import { FC } from 'react'
 
-import Services from './Services'
-import Browse from '@/components/sections/Browse'
+import Services from './Services.jsx'
 import Agents from '@/components/sections/Agents'
 import Footer from '@/components/Footer/Footer'
 import { notFound } from 'next/navigation'
@@ -23,11 +22,6 @@ const page: FC<pageProps> = async({ }) => {
   return <div className="">
     <NextIntlClientProvider locale={locale} messages={messages}  >
       <Services />
-    </NextIntlClientProvider>
-    <NextIntlClientProvider locale={locale}>
-      <div className="relative">
-        <Browse />
-      </div>
     </NextIntlClientProvider>
     <Agents />
     <Footer />

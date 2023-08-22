@@ -1,15 +1,14 @@
 const Category = require('./../models/categoryModel')
 
 const createCategory = async (req, res) =>{
-    const arName = req.body?.title?.ar;
-    const enName = req.body?.title?.en;
-    if(!arName || !enName) { res.status(400).send('category name is required'); console.log(arName, enName); return; }
-    else {
-        let category = new Category({ ...req.body })
-        await category.save()
-        .then(newCategory=> res.status(200).send("new category is added" + newCategory))
-        .catch(e=> console.log(e))
-    }
+    let category = new Category({ ...req.body })
+    await category.save()
+    .then(newCategory=> {
+        return res.status(200).json(newCategory)
+    })
+    .catch(e=> {
+        return res.status(500).send(e.message)
+    })
 }
 
 const getCategories = async(req, res) => {
@@ -29,5 +28,5 @@ const getCategory = async(req, res) => {
 module.exports = {
     createCategory,
     getCategories,
-    getCategory
+    getCategory,
 }

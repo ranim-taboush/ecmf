@@ -6,6 +6,7 @@ require("../config/dbConnection");
 const category = require('./../routes/categoryRouter')
 const product = require('./../routes/productRouter')
 const user = require('./../routes/userRouter')
+const upload = require('./../routes/uploadRouter')
 
 const port = process.env.PORT || 5000;
 
@@ -28,6 +29,7 @@ app.use(express.json());
 app.use('/', product);
 app.use('/', category)
 app.use('/', user)
+app.use('/', upload)
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;

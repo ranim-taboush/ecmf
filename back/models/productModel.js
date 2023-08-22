@@ -16,7 +16,8 @@ const productSchema = new mongoose.Schema({
     length: { type: "String", trim: true, default: "20" },
     thicknessList: { type: [Number], default: [6, 7, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32]},
     lengthList: { type: [Number], default: [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32]},
-    srcImg: { type: String }
+    srcImg: { type: String },
+    productImg: { type: String }
 
 }) 
 
