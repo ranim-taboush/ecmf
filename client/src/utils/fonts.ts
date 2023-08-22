@@ -1,4 +1,4 @@
-import { Cairo } from "@next/font/google"
+import { Cairo } from "next/font/google"
 
 export const cairo = Cairo({
     subsets: ['arabic'],
