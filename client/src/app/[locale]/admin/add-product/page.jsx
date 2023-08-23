@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl'
 import Footer from '@/components/Footer/Footer'
-import ShortNavbar from '@/components/ShortNavbar'
+import AdminNavbar from '@/components/AdminNavbar'
 import Title from '@/components/UI/typography/Title'
 import Form from './from'
 
@@ -9,7 +9,9 @@ const page = ({ }) => {
   const locale = useLocale()
   const t = useTranslations('addNewProduct')
   return <div className='overflow-hidden'>
-    <ShortNavbar />
+  <NextIntlClientProvider locale={locale}>
+    <AdminNavbar />
+  </NextIntlClientProvider>
     <main className="py-4 sm:py-8 container mx-auto">
       <div className="flex items-center justify-center">
         <Title variant='doubleBorder' className='text-center my-8 pl-0' borderDirection='right'>

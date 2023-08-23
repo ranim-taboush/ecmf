@@ -9,7 +9,7 @@ import Button from '@/components/UI/Button'
 import { lines } from '@/data/lines';
 import { useLocale, useTranslations } from 'next-intl';
 import Title from '@/components/UI/typography/Title';
-
+import Link from 'next/link';
 import img1 from '@/images/gallery/1.png'
 import img2 from '@/images/gallery/2.png'
 import img3 from '@/images/gallery/3.png'
@@ -29,6 +29,7 @@ import "swiper/css/effect-cards";
 const Services = ({ }) => {
   const [allLines, setAllLines] = useState(lines)
   const [currentLine, setCurrentLine] = useState(lines[0]);
+  const [index, setIndex] = useState(0)
 
   const navigationPrevRef = useRef(null)
   const navigationNextRef = useRef(null)
@@ -41,7 +42,6 @@ const Services = ({ }) => {
     const getCategory = async () => {
       await axios.get( `http://localhost:5000/category` )
       .then(res=>{
-        console.log(res?.data)
         setAllLines(res?.data)
         setCurrentLine(res?.data[0])
       }).catch (err=>{
@@ -70,9 +70,9 @@ const Services = ({ }) => {
             ?allLines.map((el, i) => 
             <div key={i}
               className={cn(
-                'text-2xl sm:text-3xl mb-5 sm:mb:10 font-bold cursor-pointer relative w-fit transition-holder',
+                'text-2xl sm:text-3xl mb-5 sm:mb:10 font-bold cursor-pointer relative w-fit',
                   currentLine?.title?.en === el?.title?.en ? 'text-primary' : 'text-white'
-              )} onClick={() => setCurrentLine(allLines[i])} >
+              )} onClick={() => {setCurrentLine(allLines[i]); setIndex(i)}} >
               {locale === 'ar' ? el?.title?.ar : el?.title?.en}
               <div className={currentLine?.title?.en === el?.title?.en? "absolute w-full h-1 bg-primary transition-underline" : ""}></div>
             </div>
@@ -198,13 +198,9 @@ const Services = ({ }) => {
         </ul>
       </div>
       <Button className='sm:px-6 sm:py-4'>
-        {
-          locale === 'ar' ?
-            'اكتشف المزيد من المنتجات'
-            :
-            'Explore More Products'
-        }
-
+        <Link href={`/${index}/products`}>
+          { locale === 'ar' ? 'اكتشف المزيد من المنتجات' : 'Explore More Products' }
+        </Link>
       </Button>
     </div>
   </div>

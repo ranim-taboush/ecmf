@@ -30,31 +30,16 @@ body {}
 }
 
 @keyframes animate-text-one {
-  0%,100%{
-    -webkit-text-fill-color: transparent;
-  }
-  50%{
-    -webkit-text-fill-color: white;
-  }
+  0%,100%{ -webkit-text-fill-color: transparent; }
+  50%{ -webkit-text-fill-color: white; }
 }
-
 @keyframes animate-text-two {
-  0%,100%{
-    -webkit-text-fill-color: white;
-  }
-  50%{
-    -webkit-text-fill-color: transparent;
-  }
+  0%,100%{ -webkit-text-fill-color: white; }
+  50%{ -webkit-text-fill-color: transparent; }
 }
 @keyframes animate-text-blue {
-  0%, 100%{
-    -webkit-text-fill-color: #1f96d3;
-    -webkit-text-stroke: 1px transparent;
-  }
-  50%{
-    -webkit-text-stroke: 1px white;
-    -webkit-text-fill-color: transparent;
-  }
+  0%, 100%{ -webkit-text-fill-color: #1f96d3; -webkit-text-stroke: 1px transparent; }
+  50%{ -webkit-text-stroke: 1px white; -webkit-text-fill-color: transparent; }
 }
 @keyframes animate-underline {
   0%{ width: 0;}

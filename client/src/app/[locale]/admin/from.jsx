@@ -43,7 +43,7 @@ const Form = ({ }) => {
         );
         localStorage.setItem('token', res?.data?.tokens[ res?.data?.tokens?.length-1 || [0]])
         Success('login success')
-        push('/admin/add-products');
+        push('/admin/add-product');
       } catch (err) {
         Error('login failed', err.message)
       }
