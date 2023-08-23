@@ -14,6 +14,12 @@ const Form = ({ }) => {
   const { push } = useRouter();
   const locale = useLocale();
   const [data, setData] = useState({username: '', password: ''})
+
+  useEffect(()=>{
+    if(localStorage.getItem('token')){
+      localStorage.removeItem('token')
+    }
+  }, [])
   
   const langEn = {
     "title": "Admin Login",
@@ -42,10 +48,12 @@ const Form = ({ }) => {
           {...data},
         );
         localStorage.setItem('token', res?.data?.tokens[ res?.data?.tokens?.length-1 || [0]])
-        Success('login success')
+        Success(locale === 'ar'?'تم تسجيل الدخول':'login success')
+        Success(locale === 'ar'? 'يرجى الانتظار ريثما يتم تحويلك لصفحة اضافة المنتجات':'Please Wait While Redirecting to Add Product Page...')
         push('/admin/add-product');
       } catch (err) {
-        Error('login failed', err.message)
+        Error(locale === 'ar'? 'فشل تسجيل الدخول':'login failed'+ err.message)
+        Error(locale === 'ar'? "يرجى التحقق من اسم المستخدم وكلمة المرور": "Please Check Username & Password")
       }
     };
     postCategory();
@@ -66,9 +74,9 @@ const Form = ({ }) => {
       <div className="relative h-full grid items-center">
         <div className="py-12 sm:py-24 px-8 sm:px-16">
           <div className="flex flex-col gap-6 mt-4 max-w-lg mx-auto">
-          <p className='text-xl sm:text-3xl text-white'>
-            {locale === 'ar' ? langAr.title : langEn.title}
-          </p>
+            <p className='text-xl sm:text-3xl text-white'>
+              {locale === 'ar' ? langAr.title : langEn.title}
+            </p>
             <Input required label={locale === 'ar' ? langAr.username : langEn.username} name='username' 
             placeholder={(locale === 'ar' ? langAr.usernamePlaceholder : langEn.usernamePlaceholder)} value={data.username}
             onChange={(e)=>{ handleChange(e, 'username') }} />
