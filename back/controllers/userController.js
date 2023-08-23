@@ -45,6 +45,27 @@ const login = async function (req, res, next) {
   }
 };
 
+const checkToken = async function (req, res, next) {
+  try {
+    const user = await User.findOne({ username: req.body.username });
+    if (!user) throw new Error("Wrong password or username!");
+
+    const isCorrect = bcrypt.compareSync(req.body.password, user.password);
+    if (!isCorrect)
+      throw new Error("Wrong password or username!");
+
+    const token = jwt.sign( { id: user._id, username: user.username }, "LMeD07g@[GA=C428" );
+    user.tokens=user.tokens.concat(token);
+    user.save(); 
+    const { password, ...info } = user._doc;
+    res.cookie("accessToken", token, { httpOnly: false, })
+      .status(200).send(info);
+  } catch (err) {
+    console.log(err)
+    res.status(500).send(err.message);
+  }
+};
+
 const logoutAll = async function (req, res) {
   try {
     req.user.tokens = []
