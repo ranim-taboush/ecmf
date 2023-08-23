@@ -7,20 +7,17 @@ import Button from '@/components/UI/Button'
 import { cn } from '@/utils/utils';
 import logo from '@/images/logo.png';
 import bg from '@/images/home-bg.png';
-import TopSales from '@/components/sections/TopSales';
-
+import TopSales from '@/components/sections/TopSales.jsx';
+import Link from 'next/link';
 import Gallery from '@/components/sections/Gallery';
 import AboutUs from '@/components/sections/AboutUs';
 import ContactUs from '@/components/sections/ContactUs';
-import Browse from '@/components/sections/Browse';
 import Agents from '@/components/sections/Agents';
 import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
   const locale = useLocale();
   const t = useTranslations('home');
-  const topSalesProducts = useTranslations('topSales');
-  const global = useTranslations('global');
 
   return (
     <main >
@@ -43,21 +40,14 @@ export default function Home() {
                 <span className='text-primary inline-block'>{t('introTwo')}</span>
                 {t('introThree')}
               </h1>
-              <Button className='mt-8 sm:px-8 sm:py-4'>
-                <div className="flex items-center gap-4">
-                  <span className='inline-block'>
-                    {t('cta')}
-                  </span>
-                  <MoveRight
-                    className={
-                      cn(
-                        'inline-block text-white',
-                        locale === 'ar' ? 'transform rotate-180' : ''
-                      )
-                    }
-                    size={16} />
-                </div>
-              </Button>
+              <Link href="/0/products">
+                <Button className='mt-8 sm:px-8 sm:py-4 hover:sm:px-6'>
+                  <div className="flex items-center gap-4 hover:gap-10">
+                    <span className='inline-block'> {t('cta')} </span>
+                    <MoveRight className={ cn( 'inline-block text-white', locale === 'ar' ? 'transform rotate-180' : '' ) } size={16} />
+                  </div>
+                </Button>
+              </Link>
             </div>
             <div className="">
               <Image
@@ -75,13 +65,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <TopSales
-        sectionTitle={topSalesProducts('title')}
-        productCurrency={global('currency')}
-        productDescription={topSalesProducts('productDescription')}
-        productPrice={topSalesProducts('productPrice')}
-        productTitle={topSalesProducts('productTitle')}
-      />
+      <NextIntlClientProvider locale={locale}>
+        <TopSales />
+      </NextIntlClientProvider>
       <NextIntlClientProvider locale={locale}>
         <Gallery />
       </NextIntlClientProvider>

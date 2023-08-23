@@ -17,6 +17,24 @@ interface NavbarProps {
 const Navbar: FC<NavbarProps> = ({ }) => {
   const t = useTranslations('navbar');
   const locale = useLocale();
+  const navbar = {
+    "title" : "ECMF",
+    "home" : "Home",
+    "about" : "About",
+    "gallery" : "Gallery",
+    "contactUs" : "Contact Us",
+    "products" : "Products",
+    "services" : "Services",
+    "termsOfSale" : "Terms of Sale",
+    "titleAr" : "ECMF",
+    "homeAr" : "الرئيسية",
+    "aboutAr" : "من نحن",
+    "galleryAr" : "معرض الصور",
+    "contactUsAr" : "تواصل معنا",
+    "productsAr" : "منتجاتنا",
+    "servicesAr" : "خدماتنا",
+    "termsOfSaleAr" : "شروط البيع"
+  }
 
   const getLocale = (el: string) => t(el)
 
@@ -39,14 +57,16 @@ const Navbar: FC<NavbarProps> = ({ }) => {
     </div>
     {
       navLinks.map(({ href, label }) => (
-        <p
+        <div
           key={`${href}${label}`}
-          className='hidden md:block text-sm font-medium text-white hover:text-gray-400 duration-200 cursor-pointer'
-        >
-          <Link href={href}>
-            <span>{getLocale(label)}</span>
+          className='hidden group md:block text-sm font-medium text-white duration-200 cursor-pointer relative w-fit'
+        > 
+          <Link className='group-hover:text-gray-400' href={href}>
+            <span>{(locale === 'ar' ? navbar[label+"Ar"  as keyof typeof navbar] : navbar[label as keyof typeof navbar]) || getLocale(label)}</span>
           </Link>
-        </p>
+          <div className={"absolute w-full h-0.5 bg-gray-400 transform scale-x-0 group-hover:scale-100 duration-200"}></div>
+
+        </div>
       ))
     }
     <div className="hidden md:block">

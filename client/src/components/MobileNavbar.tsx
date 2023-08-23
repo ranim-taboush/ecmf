@@ -30,7 +30,7 @@ const MobileNavbar = ({ navLinks, locale }: IMobileNavbarProps) => {
 
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden z-50">
       <button
         type="button"
         className="ml-1 mr-1 h-8 w-8 rounded py-1"
@@ -40,7 +40,7 @@ const MobileNavbar = ({ navLinks, locale }: IMobileNavbarProps) => {
         <Menu className='block md:hidden text-white hover:text-gray-400 cursor-pointer' size={24} />
       </button>
       <div
-        className={cn('fixed top-0 z-10 h-full w-3/4 transform bg-black/90 opacity-95 duration-300 ease-in-out',
+        className={cn('fixed top-0 h-full w-3/4 transform bg-black/90 opacity-95 duration-300 ease-in-out z-20',
           navShow ? 'translate-x-0' : locale === 'ar' ? '-translate-x-full' : 'translate-x-full',
           locale === 'ar' ? 'left-0' : 'right-0'
         )}
