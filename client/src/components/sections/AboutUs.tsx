@@ -12,22 +12,24 @@ interface AboutUsProps {
 
 const AboutUs: FC<AboutUsProps> = ({ }) => {
   const t = useTranslations('about')
-  return <section className='container py-8 '>
-    <About
-      title={t('aboutUs')}
-      titleVariant='doubleBorder'
-      body={t('aboutUsDescription')}
-      img={aboutUsImg}
-      direction='left'
-    />
-    <About
-      className='mt-8'
-      title={t('ourVision')}
-      titleVariant='doubleBorder'
-      body={t('ourVisionDescription').replaceAll('\n', '<br>')}
-      img={visionImg}
-      direction='right'
-    />
+  return <section className="py-4 sm:py-8 mx-auto">
+    <div className="container">
+      <About
+        title={t('aboutUs')}
+        titleVariant='doubleBorder'
+        body={t('aboutUsDescription')}
+        img={aboutUsImg}
+        direction='left'
+      />
+      <About
+        className='mt-8'
+        title={t('ourVision')}
+        titleVariant='doubleBorder'
+        body={t('ourVisionDescription').replaceAll('\n', '<br>')}
+        img={visionImg}
+        direction='right'
+      />
+    </div>
   </section>
 }
 

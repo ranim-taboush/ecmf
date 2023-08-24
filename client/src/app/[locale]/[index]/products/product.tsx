@@ -65,7 +65,7 @@ const Product: FC<ProductProps> = ({ image, isNew, name, madeBy, price, locale, 
       </p>
       <p className={`relative w-fit text-primary text-base sm:text-lg font-medium mt-2 sm:mt-8 after:content-[""] after:w-0 hover:after:w-4/5 after:h-1 after:bg-primary after:absolute after:bottom-0  
         ${locale === 'ar' ? 'after:right-0' : 'after:left-0'}  after:duration-300 cursor-pointer`}
-        onClick={() => router.push(`/products/${element?._id}`)} >
+        onClick={() => router.push(`/0/products/${element?._id}`)} >
         {locale === 'ar' ? 'تفاصيل اكثر' : 'More Details'}
       </p>
     </div>

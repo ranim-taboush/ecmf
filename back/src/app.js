@@ -30,6 +30,7 @@ app.use('/', product);
 app.use('/', category)
 app.use('/', user)
 app.use('/', upload)
+app.use('/images', express.static('images'))
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;

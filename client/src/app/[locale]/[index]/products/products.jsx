@@ -14,9 +14,11 @@ import { useParams } from 'next/navigation'
 const Products = ({}) => {
   const locale = useLocale()
   const params = useParams()
+  const baseUrl = "http://localhost:5000/"
   const index = params.index || 0
   const [categories, setCategories] = useState({})
   const [checked, setChecked] = useState([true])
+  const [imgs, setImgs] = useState([productImg])
 
   useEffect(()=>{
     const getCategory = async () => {
@@ -25,8 +27,23 @@ const Products = ({}) => {
         setCategories(res?.data)
         let arrLength = res?.data[index]?.products?.length || 0
         setChecked(new Array(arrLength).fill(true))
-      }).catch (err=>{
-        Error('Error While Loading Data')});
+
+      ////////////////////////Image Part////////////////////////////////////
+        setImgs(new Array(arrLength).fill(productImg))
+      res?.data[index]?.products?.forEach((pro, i)=>{
+        let finalImg = productImg;
+        if(pro.productImg && pro.productImg !== '' && (pro.productImg instanceof Blob || pro.productImg instanceof File)){
+          finalImg = baseUrl + URL.createObjectURL(pro.productImg)
+        }else if(pro.productImg && pro.productImg !== ''){
+          const sanitizedImg = pro.productImg.replace(/\\/g, "/");
+          finalImg = baseUrl + sanitizedImg
+        }
+        setImgs(prev=>{
+          prev[i] = finalImg
+          return prev
+        })
+      })
+      }).catch (err=>{Error(err.message)});
     }
     getCategory();
   }, [])
@@ -89,13 +106,14 @@ const Products = ({}) => {
               categories[index]?.products?.map(
                 (el, i) => <Product
                   key={i}
-                  image={productImg}
+                  image={imgs[i]||baseUrl+el.productImg?.replace("\\", "/")}
                   isNew={true}
                   isChecked={!checked[i]}
                   name={locale === 'ar' ? el?.arName || 'الواح صاج ساخن' : el?.enName || 'Hot Metal Sheets'}
-                  madeBy={locale === 'ar' ? el?.srcImg?.split('/')[2].split('.')[index] || 'عز الدخيلة' : el?.srcImg?.split('/')[2].split('.')[index] || 'Ezz El-Dkhela'}
+                  madeBy={locale === 'ar' ? el?.srcImg?.split('/')[2].split('.')[0] || 'عز الدخيلة' : el?.srcImg?.split('/')[2].split('.')[0] || 'Ezz El-Dkhela'}
                   price={el.price || 0}
                   locale={locale}
+                  index={index}
                   element={el}
                 />
               )

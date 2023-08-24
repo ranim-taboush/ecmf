@@ -13,9 +13,11 @@ import { useParams } from 'next/navigation'
 const ProductDetails = ({ }) => {
   const locale = useLocale()
   const params = useParams()
+  const baseUrl = "http://localhost:5000/"
   const [product, setProduct] = useState({})
   const [thickness, setThickness] = useState('')
   const [madeBy, setMadeBy] = useState('')
+  const [img, setImg] = useState(productImg)
   
   const findByHow = (name)=>{
     console.log(madeBy)
@@ -40,10 +42,19 @@ const ProductDetails = ({ }) => {
       await axios.get( `http://localhost:5000/product/${params.id}` )
       .then(res=>{
         setProduct(res?.data)
-      setThickness(thickness)
-      setMadeBy(findByHow(res?.data?.srcImg?.split('/')[2].split('.')[0]))
+        setThickness(thickness)
+        setMadeBy(findByHow(res?.data?.srcImg?.split('/')[2].split('.')[0]))
+
+        let finalImg = productImg;
+        if(res?.data?.productImg && res?.data?.productImg !== '' && (res?.data?.productImg instanceof Blob || res?.data?.productImg instanceof File)){
+          finalImg = baseUrl + URL.createObjectURL(res?.data?.productImg)
+        }else if(res?.data?.productImg && res?.data?.productImg !== ''){
+          const sanitizedImg = res?.data?.productImg.replace(/\\/g, "/");
+          finalImg = baseUrl + sanitizedImg
+        }
+        setImg(finalImg)
       }).catch (err=>{
-       Error('Error While Loading Data')});
+       Error('Error While Loading Data '+err.message)});
     }
     getCategory();
   }, [])
@@ -73,7 +84,7 @@ const ProductDetails = ({ }) => {
       <div className="grid sm:grid-cols-2 gap-4 sm:gap-8 items-start">
         <div className="">
           <Image
-            src={productImg}
+            src={img}
             alt={'Product'}
             width={productImg.width}
             height={productImg.height}

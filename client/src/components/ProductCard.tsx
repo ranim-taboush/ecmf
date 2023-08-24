@@ -17,11 +17,11 @@ const ProductCard: FC<ProductCardProps> = ({ title, description, image, price, c
   )}
   >
     <Image
-      src={image.src}
+      src={image}
       alt={title}
-      width={image.width}
-      height={image.height}
-      className='w-full h-auto rounded-3xl'
+      width={200}
+      height={250}
+      className='w-full h-96 rounded-3xl'
     />
     <div className="flex flex-col gap-1 mt-1 px-4 sm:px-8">
       <p className='text-black text-base sm:text-2xl font-bold'>{title}</p>

@@ -7,6 +7,9 @@ const withNextIntl = require('next-intl/plugin')(
 
 const nextConfig = withNextIntl({
   // Other Next.js configuration ...
+  images: {
+    domains: ['localhost'], 
+  },
 });
 
 module.exports = nextConfig

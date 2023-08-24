@@ -10,7 +10,7 @@
     "gallery" : "Gallery",
     "contactUs" : "Contact Us",
     "products" : "Products",
-    "services" : "Services",
+    "lines" : "Lines",
     "termsOfSale" : "Terms of Sale"
   },
   "home":{
@@ -48,7 +48,7 @@
   "aboutUs" : {
     "subtitle" : "Why ECMF ?",
     "aboutUs" : "About Us",
-    "aboutUsDescription" : "The Engineering Company for Metal Forming is a leading institution in Egypt that specializes in shaping a wide range of metal sheets. We pride ourselves on using cutting-edge production lines to ensure the highest quality results. Our products not only meet, but also exceed international standard specifications (including European and American), making us a trusted and reliable choice for customers who are seeking top-quality solutions.",
+    "aboutUsDescription" : "The Engineering Company for Metal Forming is a leading institution in Egypt that specializes in shaping a wide range of metal sheets.\n We pride ourselves on using cutting-edge production lines to ensure the highest quality results. Our products not only meet, but also exceed international standard specifications (including European and American), making us a trusted and reliable choice for customers who are seeking top-quality solutions.",
     "ourVision" : "Our Vision & Mission",
     "ourVisionDescription" : "Our Vision \n We aspire to be the global benchmark for the metalworking industry in the MENA region and then worldwide.\n \n Our Mission \n To achieve maximum value for our customer base by providing high-quality metal products and related services and solutions using innovative technologies.",
     "companyIdentification" : "Your first Choice:",
