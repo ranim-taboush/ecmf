@@ -8,6 +8,7 @@ import { cn } from '@/utils/utils';
 import logo from '@/images/logo.png';
 import bg from '@/images/home-bg.png';
 import TopSales from '@/components/sections/TopSales.jsx';
+import TopLines from '@/components/sections/TopLines.jsx'
 import Link from 'next/link';
 import Gallery from '@/components/sections/Gallery';
 import AboutUs from '@/components/sections/AboutUs';
@@ -72,6 +73,7 @@ export default function Home() {
         <Gallery />
       </NextIntlClientProvider>
       <AboutUs />
+      <TopLines />
       <ContactUs />
       {/* <NextIntlClientProvider locale={locale}>
         <Browse />

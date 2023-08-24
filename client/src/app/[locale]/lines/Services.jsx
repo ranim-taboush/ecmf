@@ -51,7 +51,7 @@ const Services = ({ }) => {
   }, [])
 
   return <div>
-    <div className="h-screen relative">
+    <div className=" min-h-screen pb-20 relative">
       <div className="absolute inset-0 ">
         <Image
           src={contactUsBg}

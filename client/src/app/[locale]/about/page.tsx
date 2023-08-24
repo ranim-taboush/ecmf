@@ -28,48 +28,26 @@ const page: FC<pageProps> = ({ }) => {
   return <div>
     <ShortNavbar />
     <main className="py-4 sm:py-8 mx-auto">
-      <div className='max-sm:container flex flex-col sm:flex-row items-center gap-8'>
-        <div className="relative flex-1">
-          <Image
-            src={aboutUsImg}
-            alt={'About Us'}
-            width={aboutUsImg.width}
-            height={aboutUsImg.height}
-            className='w-full h-auto flex-1'
-          />
-        </div>
-        <div className="sm:w-1/2 sm:mx-8 ">
-          <div className="flex items-start">
-            <Title variant='doubleBorder' borderDirection='right' className='pl-0'>
-              {t('aboutUs')}
-            </Title>
-          </div>
-          <p className='mt-4 ltr:pl-4 rtl:pl-4 sm:p-0'>
-            {t('aboutUsDescription')}
-          </p>
-        </div>
-
-      </div>
-      <div className='max-sm:container mt-8 sm:mt-12 flex flex-col sm:flex-row items-center gap-8'>
-        <div className="sm:w-1/2 sm:mx-8">
-          <div className="flex items-start">
-            <Title variant='doubleBorder' borderDirection='left' className='pr-0'>
-              {t('ourVision')}
-            </Title>
-          </div>
-          <p className='mt-4 ltr:pl-4 rtl:pl-4 sm:p-0'>
-            {parse(t('ourVisionDescription').replaceAll('\n', '<br>'))}
-          </p>
-        </div>
-        <div className="relative flex-1">
-          <Image
-            src={visionImg}
-            alt={'vision'}
-            width={visionImg.width}
-            height={visionImg.height}
-            className='w-full h-auto flex-1'
-          />
-        </div>
+      
+      <div className="container">
+        <About
+          className='mt-8'
+          title={t('aboutUs')}
+          titleVariant='doubleBorder'
+          body={t('aboutUsDescription').replaceAll('\n', '<br>')}
+          img={aboutUsImg}
+          roundedImg={true}
+          direction='left'
+        />
+        <About
+          className='mt-8'
+          title={t('ourVision')}
+          titleVariant='doubleBorder'
+          body={t('ourVisionDescription').replaceAll('\n', '<br>')}
+          img={visionImg}
+          roundedImg={true}
+          direction='right'
+        />
       </div>
       <div className="py-8 sm:py-16">
         <Title variant='default' className='text-center'>
@@ -106,11 +84,6 @@ const page: FC<pageProps> = ({ }) => {
         />
       </div>
     </main>
-    <NextIntlClientProvider locale={locale}>
-      <div className="relative">
-        <Browse />
-      </div>
-    </NextIntlClientProvider>
     <Agents />
     <Footer />
   </div>
