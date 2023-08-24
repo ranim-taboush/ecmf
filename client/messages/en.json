@@ -63,6 +63,9 @@
   "gallery" : {
     "title" : "Gallery"
   },
+  "terms" : {
+    "title" : "Terms Of Sale"
+  },
   "addNewCategory" :{
     "title": "New Line"
   },

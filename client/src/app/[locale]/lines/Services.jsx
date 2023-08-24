@@ -1,6 +1,6 @@
 'use client';
 
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/Navbar.jsx'
 import Image from 'next/image'
 import { FC, useRef, useState, useEffect } from 'react'
 

@@ -9,6 +9,7 @@ import Title from '../UI/typography/Title';
 import ProductCard from '../ProductCard';
 import axios from 'axios';
 import { useLocale } from 'next-intl';
+import { Error, Success } from '@/components/toast';
 
 import productImage1 from '@/images/top-sales/1.png'
 
@@ -23,7 +24,7 @@ const TopSales = () => {
   useEffect(()=>{
     const getCategory = async () => {
       let proAr, proEn
-      await axios.get( `http://localhost:5000/products/ar` )
+      await axios.get( `${baseUrl}products/ar` )
       .then(res=>{ 
         setProAr(res?.data) 
         ////////////////////////Image Part////////////////////////////////////
@@ -44,7 +45,7 @@ const TopSales = () => {
             })
           })
       }).catch (err=>{ Error('Error While Loading Data')});
-      await axios.get( `http://localhost:5000/products/en` )
+      await axios.get( `${baseUrl}products/en` )
       .then(res=>{ 
         setProEn(res?.data) 
         ////////////////////////Image Part////////////////////////////////////
@@ -92,7 +93,7 @@ const TopSales = () => {
       {
         locale === "ar" 
         ? proAr?.map((el, i)=>{
-        console.log(arImgs[i])
+        
           return <SwiperSlide key={i} >
             <ProductCard
               title={el?.arName || ''}

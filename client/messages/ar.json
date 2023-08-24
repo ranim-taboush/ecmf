@@ -63,6 +63,9 @@
   "gallery" : {
     "title" : "المعرض"
   },
+  "terms" : {
+    "title" : "شروط البيع"
+  },
   "addNewCategory" :{
     "title": "خط جديد"
   },

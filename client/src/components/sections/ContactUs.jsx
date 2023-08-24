@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import Title from '../UI/typography/Title'
 import Input from '../UI/Input'
 import Button from '../UI/Button'
@@ -8,11 +7,7 @@ import mapImg from '@/images/map.png'
 import contactUsBg from '@/images/contact-us-bg.png'
 import { useTranslations } from 'next-intl'
 
-interface ContactUsProps {
-
-}
-
-const ContactUs: FC<ContactUsProps> = ({ }) => {
+const ContactUs = ({ }) => {
   const t = useTranslations('contactUs');
 
   return <div className='relative mt-8'>

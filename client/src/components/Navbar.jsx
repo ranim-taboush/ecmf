@@ -1,20 +1,15 @@
-import { FC } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { Search } from 'lucide-react';
-
+import DropDown from '@/components/UI/DropDown'
 
 import logo from '@/images/logo.png';
 import { navLinks } from '@/utils/nav-links';
 import MobileNavbar from './MobileNavbar';
 import LocaleSwitcher from './LocaleSwitcher';
 
-interface NavbarProps {
-
-}
-
-const Navbar: FC<NavbarProps> = ({ }) => {
+const Navbar = ({ }) => {
   const t = useTranslations('navbar');
   const locale = useLocale();
   const navbar = {
@@ -24,19 +19,19 @@ const Navbar: FC<NavbarProps> = ({ }) => {
     "gallery" : "Gallery",
     "contactUs" : "Contact Us",
     "products" : "Products",
-    "services" : "Services",
+    "lines" : "Lines",
     "termsOfSale" : "Terms of Sale",
     "titleAr" : "ECMF",
     "homeAr" : "الرئيسية",
     "aboutAr" : "من نحن",
     "galleryAr" : "معرض الصور",
     "contactUsAr" : "تواصل معنا",
-    "productsAr" : "منتجاتنا",
-    "servicesAr" : "خدماتنا",
+    "productsAr" : "المنتجات",
+    "linesAr" : "الخطوط",
     "termsOfSaleAr" : "شروط البيع"
   }
 
-  const getLocale = (el: string) => t(el)
+  const getLocale = (el) => t(el)
 
   const localeNavLinks = navLinks.map(({ href, label }) => ({
     href: href,
@@ -59,11 +54,13 @@ const Navbar: FC<NavbarProps> = ({ }) => {
       navLinks.map(({ href, label }) => (
         <div
           key={`${href}${label}`}
-          className='hidden group md:block text-sm font-medium text-white duration-200 cursor-pointer relative w-fit'
+          className='hidden group md:block text-sm font-medium text-white duration-200 cursor-pointer relative w-fit navbar'
         > 
           <Link className='group-hover:text-gray-400' href={href}>
-            <span>{(locale === 'ar' ? navbar[label+"Ar"  as keyof typeof navbar] : navbar[label as keyof typeof navbar]) || getLocale(label)}</span>
+            <span>{(locale === 'ar' ? navbar[label+"Ar"] : navbar[label]) || getLocale(label)}</span>
           </Link>
+          {(label === "lines" || label === "linesAr") ? <DropDown locale={locale} name={"lines"} />
+          : ((label === "products" || label === "productsAr")? <DropDown locale = {locale} name={"products"}/> : "")}
           <div className={"absolute w-full h-0.5 bg-gray-400 transform scale-x-0 group-hover:scale-100 duration-200"}></div>
 
         </div>

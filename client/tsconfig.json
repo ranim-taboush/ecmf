@@ -23,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/[locale]/admin/add-category/Form.jsx", "src/components/UI/Input.jsx", "src/app/[locale]/contact-us/Form.jsx", "src/app/[locale]/products/page.jsx", "src/app/[locale]/products/products.jsx", "src/app/[locale]/products/[id]/ProductDetails.jsx", "src/app/[locale]/lines/Services.jsx", "src/components/sections/TopSales.jsx", "src/components/UI/Button.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/[locale]/admin/add-category/Form.jsx", "src/components/UI/Input.jsx", "src/app/[locale]/contact-us/Form.jsx", "src/app/[locale]/products/page.jsx", "src/app/[locale]/products/products.jsx", "src/app/[locale]/products/[id]/ProductDetails.jsx", "src/app/[locale]/lines/Services.jsx", "src/components/sections/TopSales.jsx", "src/components/UI/Button.tsx", "src/components/Navbar.jsx", "src/components/sections/ContactUs.jsx"],
   "exclude": ["node_modules"]
 }

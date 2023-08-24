@@ -2,7 +2,7 @@ import { useLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 
 import './globals.css'
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar.jsx';
 import { cairo } from '@/utils/fonts'
 
 

@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useLocale, useTranslations } from 'next-intl';
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar.jsx';
 import productsBg from '@/images/products_bg.png'
 import productImg from '@/images/product_test.png'
 import Product from './product';

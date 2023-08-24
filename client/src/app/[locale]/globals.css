@@ -89,3 +89,16 @@ body {}
   height: max-content !important;
   padding-bottom: 20px;
 }
+*{
+  scrollbar-color:#1F96D3 #76787a !important;
+  scrollbar-width: thin !important;
+  scroll-margin-block: 5px !important;
+}
+*::-webkit-scrollbar { width: 10px; }
+*::-webkit-scrollbar-button { background: #1F96D3;}
+*::-webkit-scrollbar-track { background: #76787a; }
+*::-webkit-scrollbar-thumb { background: #76787a; border-radius: 5px; }
+*::-webkit-scrollbar-thumb:hover { background: #1F96D3; }
+.navbar:hover .dropdown, .dropdown:hover{
+  display: block;
+}

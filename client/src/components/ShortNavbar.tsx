@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Navbar from './Navbar'
+import Navbar from './Navbar.jsx'
 
 import bg from '@/images/short-navbar-bg.png'
 import Image from 'next/image'

@@ -2,17 +2,17 @@ import Image from 'next/image';
 import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl';
 import { MoveRight } from 'lucide-react';
 
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar.jsx';
 import Button from '@/components/UI/Button'
 import { cn } from '@/utils/utils';
 import logo from '@/images/logo.png';
 import bg from '@/images/home-bg.png';
 import TopSales from '@/components/sections/TopSales.jsx';
-import TopLines from '@/components/sections/TopLines.jsx'
+import Managers from '@/components/sections/Managers.jsx'
 import Link from 'next/link';
 import Gallery from '@/components/sections/Gallery';
 import AboutUs from '@/components/sections/AboutUs';
-import ContactUs from '@/components/sections/ContactUs';
+import ContactUs from '@/components/sections/ContactUs.jsx';
 import Agents from '@/components/sections/Agents';
 import Footer from '@/components/Footer/Footer';
 
@@ -73,7 +73,7 @@ export default function Home() {
         <Gallery />
       </NextIntlClientProvider>
       <AboutUs />
-      <TopLines />
+      <Managers />
       <ContactUs />
       {/* <NextIntlClientProvider locale={locale}>
         <Browse />

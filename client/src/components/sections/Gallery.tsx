@@ -23,8 +23,10 @@ interface GalleryProps {
 
 const Gallery: FC<GalleryProps> = ({ }) => {
   const locale = useLocale();
-  const [currentImage, setCurrentImage] = useState<any>(images[0]);
+  const [i, setCurrentI] = useState<number>(0)
+  const [currentImage, setCurrentImage] = useState<any>(images[i]);
   const changeImageHandler = (index: number) => {
+    setCurrentI(index)
     setCurrentImage(images[index]);
   }
 
@@ -40,7 +42,7 @@ const Gallery: FC<GalleryProps> = ({ }) => {
         alt="ECMF"
         width={1920}
         height={1080}
-        className='w-full h-auto'
+        className='w-full h-96'
       />
 
     </div>
@@ -68,7 +70,7 @@ const Gallery: FC<GalleryProps> = ({ }) => {
         </Swiper>
       </div>
       <Arrow
-        variant='prev'
+        variant='prev' onClick={()=>changeImageHandler(i-1)}
         className={cn('arrow-prev p-2 sm:p-3 absolute bottom-0 sm:-bottom-1 z-10',
           locale === 'ar' ? 'right-[5%] sm:right-1/4' : 'left-[5%] sm:left-1/4'
         )}
@@ -76,7 +78,7 @@ const Gallery: FC<GalleryProps> = ({ }) => {
         Prev
       </Arrow>
       <Arrow
-        variant='next'
+        variant='next' onClick={()=>changeImageHandler(i+1)}
         className={cn('arrow-next p-2 sm:p-3 absolute bottom-0 sm:-bottom-1 z-10',
           locale === 'ar' ? 'left-[5%] sm:left-1/4' : 'right-[5%] sm:right-1/4'
         )}

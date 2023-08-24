@@ -33,8 +33,8 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4">
               <FooterLink title="Home" href="/">Home</FooterLink>
-              <FooterLink title="Shop" href="/shop">Shop</FooterLink>
-              <FooterLink title="Contact us" href="/contact">Contact us</FooterLink>
+              <FooterLink title="Gallery" href="/gallery">Gallery</FooterLink>
+              <FooterLink title="Contact us" href="/contact-us">Contact us</FooterLink>
               <FooterLink title="Terms of Sale" href="/terms-of-sale">Terms of Sale</FooterLink>
             </ul>
           </div>
@@ -43,12 +43,12 @@ const Footer = () => {
             <p className="text-sm font-semibold tracking-widest text-white uppercase">Shop</p>
 
             <ul className="mt-6 grid grid-cols-2 gap-2">
-              <FooterLink title="Lines" href="/shop?category=Laptop">Lines</FooterLink>
-              <FooterLink title="Products" href="/shop?category=Products">Products</FooterLink>
-              <FooterLink title="about us" href="/shop?category=about us">about us</FooterLink>
-              <FooterLink title="Lines" href="/shop?category=Laptop">Lines</FooterLink>
-              <FooterLink title="Products" href="/shop?category=Products">Products</FooterLink>
-              <FooterLink title="about us" href="/shop?category=about us">about us</FooterLink>
+              <FooterLink title="Lines" href="/lines">Lines</FooterLink>
+              <FooterLink title="Products" href="/0/products">Products</FooterLink>
+              <FooterLink title="about us" href="/about">about us</FooterLink>
+              <FooterLink title="Lines" href="/lines">Lines</FooterLink>
+              <FooterLink title="Products" href="/0/products">Products</FooterLink>
+              <FooterLink title="about us" href="/about">about us</FooterLink>
             </ul>
           </div>
 
