@@ -15,9 +15,12 @@ import agis from '@/images/agent4.png'
 import ezdk from '@/images/agent5.png'
 import axios from "axios"
 import { Success, Error } from '@/components/toast';
+import { Api, ApiKey } from '@/config/api'
 
 
 const Form = ({ }) => {
+  axios.defaults.headers['api-key'] = ApiKey;
+  axios.defaults.headers['content-type'] = "application/json";
   axios.defaults.withCredentials = true;
   const locale = useLocale();
   const router = useRouter();
@@ -81,7 +84,7 @@ const Form = ({ }) => {
 
     const getCategory = async () => {
       try {
-        const res = await axios.get( `http://localhost:5000/category` );
+        const res = await axios.get( `${Api}/category` );
         const catName = res.data?.map(val=> val.title)
         setCategories(catName)
 
@@ -107,7 +110,7 @@ const Form = ({ }) => {
     const postCategory = async () => {
       try {
         const res = await axios.post(
-          `http://localhost:5000/product`,
+          `${Api}/product`,
           {...data,
             thicknessList: data.thicknessList?.map(v=>v.trim()).filter(n=>n) || '', 
             lengthList: data.lengthList?.map(v=>v.trim()).filter(n=>n) || ''},
@@ -164,7 +167,7 @@ const Form = ({ }) => {
       );
       try {
         const res = await axios.patch(
-          `http://localhost:5000/upload/product/${id}`,
+          `${Api}/upload/product/${id}`,
           formData,
           {headers: { accesstoken: localStorage.getItem('token') }}
         );

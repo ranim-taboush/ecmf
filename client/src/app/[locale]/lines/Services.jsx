@@ -23,10 +23,13 @@ import { cn } from '@/utils/utils';
 import Arrow from '@/components/UI/Arrow';
 import axios, { all } from "axios"
 import { Error } from '@/components/toast';
+import { Api, ApiKey } from '@/config/api'
 
 import "swiper/css/effect-cards";
 
 const Services = ({ }) => {
+  axios.defaults.headers['api-key'] = ApiKey;
+  axios.defaults.headers['content-type'] = "application/json";
   const [allLines, setAllLines] = useState(lines)
   const [currentLine, setCurrentLine] = useState(lines[0]);
   const [index, setIndex] = useState(0)
@@ -40,7 +43,7 @@ const Services = ({ }) => {
   
   useEffect(()=>{
     const getCategory = async () => {
-      await axios.get( `http://localhost:5000/category` )
+      await axios.get( `${Api}/category` )
       .then(res=>{
         setAllLines(res?.data)
         setCurrentLine(res?.data[0])

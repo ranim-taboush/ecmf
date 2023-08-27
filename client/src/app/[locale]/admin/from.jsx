@@ -8,8 +8,11 @@ import Input from '@/components/UI/Input.jsx'
 import Button from '@/components/UI/Button'
 import axios from "axios"
 import { Error, Success } from '@/components/toast';
+import { Api, ApiKey } from '@/config/api'
 
 const Form = ({ }) => {
+  axios.defaults.headers['api-key'] = ApiKey;
+  axios.defaults.headers['content-type'] = "application/json";
   axios.defaults.withCredentials = true;
   const { push } = useRouter();
   const locale = useLocale();
@@ -44,7 +47,7 @@ const Form = ({ }) => {
     const postCategory = async () => {
       try {
         const res = await axios.post(
-          `http://localhost:5000/login`,
+          `${Api}/login`,
           {...data},
         );
         localStorage.setItem('token', res?.data?.tokens[ res?.data?.tokens?.length-1 || [0]])

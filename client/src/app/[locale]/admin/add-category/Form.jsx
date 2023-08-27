@@ -8,8 +8,11 @@ import Input from '@/components/UI/Input.jsx'
 import Button from '@/components/UI/Button'
 import axios from "axios"
 import { Error, Success } from '@/components/toast';
+import { Api, ApiKey } from '@/config/api'
 
 const Form = ({ }) => {
+  axios.defaults.headers['api-key'] = ApiKey;
+  axios.defaults.headers['content-type'] = "application/json";
   axios.defaults.withCredentials = true;
   const locale = useLocale();
   const router = useRouter();
@@ -79,7 +82,7 @@ const Form = ({ }) => {
     const postCategory = async () => {
       try {
         const res = await axios.post(
-          `http://localhost:5000/category`,
+          `${Api}/category`,
           {...data,
           productsTitle: {ar: data.productsTitle?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.productsTitle?.en?.map(v=>v.trim()).filter(n=>n) || ''}, 
           usedIn: {ar: data.usedIn?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.usedIn?.en?.map(v=>v.trim()).filter(n=>n) || ''}},
@@ -120,7 +123,7 @@ const Form = ({ }) => {
   const handleImageUpload = (e) =>{
     const uploadImg = async () => {
       setImage(e.target.files[0])
-      const formData = new FormData();
+      const formData = new FormData(); 
       formData.append(
         "image",
         e.target.files[0],
@@ -128,7 +131,7 @@ const Form = ({ }) => {
       );
       try {
         const res = await axios.patch(
-          `http://localhost:5000/upload/category/${id}`,
+          `${Api}/upload/category/${id}`,
           formData,
           {headers: { accesstoken: localStorage.getItem('token') }}
         );

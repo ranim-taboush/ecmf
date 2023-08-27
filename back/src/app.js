@@ -1,6 +1,7 @@
 const cors = require("cors");
 const express = require("express");
 const app = express();
+require('dotenv').config()
 require("../config/dbConnection");
 
 const category = require('./../routes/categoryRouter')
@@ -38,6 +39,4 @@ app.use((err, req, res, next) => {
   return res.status(errorStatus).send(errorMessage);
 });
 
-app.listen(port, () => {
-  console.log("This Application is running On Localhost  " + port);
-});
+module.exports = app;

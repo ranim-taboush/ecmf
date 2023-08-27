@@ -3,14 +3,19 @@ import { useState, useEffect } from 'react'
 import axios from 'axios';
 import { Error, Success } from '@/components/toast';
 import Link from 'next/link';
+import { Api, ApiKey } from '@/config/api'
 
 const DropDown = ({ name, locale  }) => {
-    const baseUrl = "http://localhost:5000/"
+  axios.defaults.headers['api-key'] = ApiKey;
+  axios.defaults.headers['content-type'] = "application/json";
+    const baseUrl = Api
     const [categoriesName, setCategoriesName] = useState([{ar: "خط التشريح", en:"Slicing Line"}])
     const [productsName, setProductsName] = useState([{ar: "الايكون", en:"Icon", category: "0"}])
     
 useEffect(()=>{
     const getProducts = async () => {
+      console.log("Api", Api)
+      console.log("Api Key", ApiKey)
       await axios.get( `${baseUrl}products/en` )
       .then(res=>{ 
         setProductsName(res?.data?.map((pro, i)=>{
