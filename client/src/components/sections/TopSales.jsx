@@ -10,16 +10,19 @@ import ProductCard from '../ProductCard';
 import axios from 'axios';
 import { useLocale } from 'next-intl';
 import { Error, Success } from '@/components/toast';
+import { Api, ApiKey } from '@/config/api'
 
 import productImage1 from '@/images/top-sales/1.png'
 
 const TopSales = () => {
+  axios.defaults.headers['api-key'] = ApiKey;
+  axios.defaults.headers['content-type'] = "application/json";
   const locale = useLocale();
   const [arImgs, setArImgs] = useState([productImage1])
   const [enImgs, setEnImgs] = useState([productImage1])
   const [proAr, setProAr] = useState([{}])
   const [proEn, setProEn] = useState([{}])
-  const baseUrl = "http://localhost:5000/"
+  const baseUrl = Api
 
   useEffect(()=>{
     const getCategory = async () => {

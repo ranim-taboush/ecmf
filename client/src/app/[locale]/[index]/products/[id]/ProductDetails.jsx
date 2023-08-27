@@ -9,11 +9,14 @@ import productImg from '@/images/product_test.png'
 import axios from "axios"
 import { Error } from '@/components/toast';
 import { useParams } from 'next/navigation'
+import { Api, ApiKey } from '@/config/api'
 
 const ProductDetails = ({ }) => {
+  axios.defaults.headers['api-key'] = ApiKey;
+  axios.defaults.headers['content-type'] = "application/json";
   const locale = useLocale()
   const params = useParams()
-  const baseUrl = "http://localhost:5000/"
+  const baseUrl = Api
   const [product, setProduct] = useState({})
   const [thickness, setThickness] = useState('')
   const [madeBy, setMadeBy] = useState('')
@@ -39,7 +42,7 @@ const ProductDetails = ({ }) => {
 
   useEffect(()=>{
     const getCategory = async () => {
-      await axios.get( `http://localhost:5000/product/${params.id}` )
+      await axios.get( `${Api}/product/${params.id}` )
       .then(res=>{
         setProduct(res?.data)
         setThickness(thickness)

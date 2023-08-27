@@ -10,11 +10,14 @@ import LittleNav from './littleNav'
 import axios from "axios"
 import { Error } from '@/components/toast';
 import { useParams } from 'next/navigation'
+import { Api, ApiKey } from '@/config/api'
 
 const Products = ({}) => {
+  axios.defaults.headers['api-key'] = ApiKey;
+  axios.defaults.headers['content-type'] = "application/json";
   const locale = useLocale()
   const params = useParams()
-  const baseUrl = "http://localhost:5000/"
+  const baseUrl = Api
   const index = params.index || 0
   const [categories, setCategories] = useState({})
   const [checked, setChecked] = useState([true])
@@ -22,7 +25,7 @@ const Products = ({}) => {
 
   useEffect(()=>{
     const getCategory = async () => {
-      await axios.get( `http://localhost:5000/category` )
+      await axios.get( `${Api}/category` )
       .then(res=>{
         setCategories(res?.data)
         let arrLength = res?.data[index]?.products?.length || 0

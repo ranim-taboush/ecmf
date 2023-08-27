@@ -8,8 +8,12 @@ const withNextIntl = require('next-intl/plugin')(
 const nextConfig = withNextIntl({
   // Other Next.js configuration ...
   images: {
-    domains: ['localhost'], 
+    domains: ['localhost', 'ecmf-project.vercel.app'], 
   },
+  env: {
+    Api: process.env.DATA_API_URL,
+    ApiKey: process.env.DATA_API_KEY
+  }
 });
 
 module.exports = nextConfig
