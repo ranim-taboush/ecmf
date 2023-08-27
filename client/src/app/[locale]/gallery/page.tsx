@@ -4,7 +4,6 @@ import GallerySwiper from '@/components/GallerySwiper'
 import ShortNavbar from '@/components/ShortNavbar'
 import Title from '@/components/UI/typography/Title'
 import Agents from '@/components/sections/Agents'
-import Browse from '@/components/sections/Browse'
 import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl'
 import { FC } from 'react'
 
@@ -46,15 +45,8 @@ const page: FC<pageProps> = ({ }) => {
           />
         </div>
 
-
-
       </NextIntlClientProvider>
     </main>
-    <NextIntlClientProvider locale={locale}>
-      <div className="relative">
-        <Browse />
-      </div>
-    </NextIntlClientProvider>
     <Agents />
     <Footer />
   </div>

@@ -74,7 +74,9 @@ export default function Home() {
       </NextIntlClientProvider>
       <AboutUs />
       <Managers />
-      <ContactUs />
+      <NextIntlClientProvider locale={locale}>
+        <ContactUs />
+      </NextIntlClientProvider>
       {/* <NextIntlClientProvider locale={locale}>
         <Browse />
       </NextIntlClientProvider> */}

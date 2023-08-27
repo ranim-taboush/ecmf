@@ -11,13 +11,12 @@ import aboutUsImg from '@/images/about-us.png'
 import visionImg from '@/images/vision.png'
 import companyIdentificationImg from '@/images/company-identification.png'
 import qualityAssuranceImg from '@/images/quality-assurance.png'
-import qualityControlImg from '@/images/quality-control.png'
+import qualityControlImg from '@/images/quality-control1.png'
 import objectivesImg from '@/images/objectives.png'
 
 import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl';
 import Agents from '@/components/sections/Agents';
 import Footer from '@/components/Footer/Footer';
-import Browse from '@/components/sections/Browse';
 interface pageProps {
 
 }

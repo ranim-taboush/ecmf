@@ -1,19 +1,55 @@
+"use client"
 import Image from 'next/image'
-
 import contactUsBg from '@/images/contact-us-page-bg.png'
-import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
+import { useState } from 'react'
 import Input from '@/components/UI/Input.jsx'
 import Button from '@/components/UI/Button'
 
 const Form = ({ }) => {
-  const t = useTranslations('contactUs');
+  const locale = useLocale()
+  const localTime = new Date().toLocaleString('en-CA').split(', ') //2023-08-27, 9:29:04 a.m.
+  const today = localTime[0]
+  const [date, setDate] = useState(today)
+  const [time, setTime] = useState("09:00")
+  
+  const contactEn ={
+    title : "تواصل معنا",
+    description : "ابق على تواصل معنا",
+    name : "الاسم",
+    namePlaceholder : "حامد اسامه",
+    email : "البريد الالكتروني",
+    emailPlaceholder : "hamed@trendlix.com",
+    message : "التعليق",
+    messagePlaceholder : "اكتب ما تريده",
+    date: "التاريخ",
+    time: "الوقت",
+    comment: "التعليق",
+    commentPlaceholder: "اكتب تعليقك هنا",
+    submit : "ارسال"
+  }
+  const contactAr ={
+    title : "تواصل معنا",
+    description : "ابق على تواصل معنا",
+    name : "الاسم",
+    namePlaceholder : "حامد اسامه",
+    email : "البريد الالكتروني",
+    emailPlaceholder : "hamed@trendlix.com",
+    message : "التعليق",
+    messagePlaceholder : "اكتب ما تريده",
+    date: "التاريخ",
+    time: "الوقت",
+    comment: "التعليق",
+    commentPlaceholder: "اكتب تعليقك هنا",
+    submit : "ارسال"
+  }
 
   return <div className="relative mt-4 sm:mt-8 rounded-md overflow-hidden">
 
     <div className="absolute inset-0 ">
       <Image
         src={contactUsBg}
-        alt={t('title')}
+        alt={locale ==='ar'? contactAr.title: contactEn.title}
         width={contactUsBg.width}
         height={contactUsBg.height}
         className='w-full h-full rounded-xl'
@@ -22,28 +58,58 @@ const Form = ({ }) => {
     <div className="relative h-full grid sm:grid-cols-2 items-center">
       <div className="py-12 sm:py-24 px-8 sm:px-16">
         <p className='text-xl sm:text-3xl text-white'>
-          {t('description')}
+        {locale ==='ar'? contactAr.description: contactEn.description}
         </p>
         <div className="flex flex-col gap-6 mt-4">
 
-          <Input
-            label={t('name')}
-            name='name'
-            placeholder={t('namePlaceholder')}
-          />
-          <Input
-            label={t('email')}
-            name='email'
-            placeholder={t('emailPlaceholder')}
-          />
-          <Input
-            label={t('message')}
-            name='message'
-            placeholder={t('messagePlaceholder')}
-          />
-          <Button className='w-fit px-6'>
-            {t('submit')}
-          </Button>
+        <Input
+              label={locale === 'ar'? contactAr.name: contactEn.name}
+              name='name'
+              placeholder={locale === 'ar'? contactAr.namePlaceholder: contactEn.namePlaceholder}
+            />
+            <Input
+              label={locale === 'ar'? contactAr.email: contactEn.email}
+              name='email'
+              placeholder={locale === 'ar'? contactAr.emailPlaceholder: contactEn.emailPlaceholder}
+            />
+            <Input
+              label={locale === 'ar'? contactAr.message: contactEn.message}
+              name='message'
+              placeholder={locale === 'ar'? contactAr.messagePlaceholder: contactEn.messagePlaceholder}
+              className=" !h-36"
+            />
+            <div className="grid grid-cols-4">
+              <div className='col-span-2'>
+              <Input
+                label={locale === 'ar'? contactAr.date: contactEn.date}
+                name='date'
+                type="date"
+                min={today}
+                max={`${parseInt(today.split("-")[0])+2}-${today.split('-')[1]}-${today.split('-')[2]}`}
+                value={date}
+                onChange={(e)=> {setDate(e.target.value); }}
+              />
+              </div>
+              <div className='col-span-1'></div>
+              <div className='col-span-1'>
+                <Input
+                  label={locale === 'ar'? contactAr.time: contactEn.time}
+                  name='time'
+                  type="time"
+                  value={time}
+                  onChange={(e)=> {setTime(e.target.value); }}
+                />
+              </div>
+            </div>
+            <Input
+              label={locale === 'ar'? contactAr.comment: contactEn.comment}
+              name='comment'
+              placeholder={locale === 'ar'? contactAr.commentPlaceholder: contactEn.commentPlaceholder}
+              style={{height: "56px"}}
+            />
+            <Button className='w-fit px-6'>
+              {locale === 'ar'? contactAr.submit: contactEn.submit}
+            </Button>
         </div>
 
       </div>
