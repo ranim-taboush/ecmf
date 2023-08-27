@@ -21,7 +21,7 @@ import { Api, ApiKey } from '@/config/api'
 const Form = ({ }) => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
-  axios.defaults.headers['Access-Control-Allow-Origin'] ="*";
+  axios.defaults.headers['Access-Control-Allow-Origin'] ="*"; 
   axios.defaults.withCredentials = true;
   const locale = useLocale();
   const router = useRouter();

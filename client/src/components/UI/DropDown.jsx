@@ -8,7 +8,7 @@ import { Api, ApiKey } from '@/config/api'
 const DropDown = ({ name, locale  }) => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
-  axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
+  axios.defaults.headers['Access-Control-Allow-Origin'] = "*"; 
     const baseUrl = Api
     const [categoriesName, setCategoriesName] = useState([{ar: "خط التشريح", en:"Slicing Line"}])
     const [productsName, setProductsName] = useState([{ar: "الايكون", en:"Icon", category: "0"}])
