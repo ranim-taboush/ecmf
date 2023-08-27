@@ -16,7 +16,7 @@ useEffect(()=>{
         setProductsName(res?.data?.map((pro, i)=>{
             return {ar: pro?.arName || "الايكون", en: pro?.enName || "Icon", id: pro?._id, cat: pro?.category }
         }))
-      }).catch (err=>{ Error('Error While Loading Data')});
+      }).catch (err=>{ console.log('Error While Loading Data')});
     }
     const getCategories = async () => {
       await axios.get( `${baseUrl}category` )
@@ -24,7 +24,7 @@ useEffect(()=>{
         setCategoriesName(res?.data?.map((cat, i)=>{
             return {ar: cat?.title?.ar || "خط التشريح", en: cat?.title?.en || "Slicing Line", id: cat?._id }
         }))
-      }).catch (err=>{ Error('Error While Loading Data')});
+      }).catch (err=>{ console.log('Error While Loading Data')});
     }
     getCategories()
     getProducts()

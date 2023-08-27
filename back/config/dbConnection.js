@@ -1,2 +1,2 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/ECMF"); 
+mongoose.connect("mongodb+srv://LgTv:HXD6ploNYKNIyyCi@ecmf.serebvg.mongodb.net/?retryWrites=true&w=majority"); 
