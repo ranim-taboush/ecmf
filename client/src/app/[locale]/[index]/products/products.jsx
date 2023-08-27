@@ -15,6 +15,7 @@ import { Api, ApiKey } from '@/config/api'
 const Products = ({}) => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
+  axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
   const locale = useLocale()
   const params = useParams()
   const baseUrl = Api
