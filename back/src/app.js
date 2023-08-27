@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://ecmf-project.vercel.app"],
+    origin: ["http://localhost:3000", "https://ecmf-project.vercel.app", "https://vercel.com/trendlix/"],
     credentials: true,
     exposedHeader: ['set-cookie']
   })
