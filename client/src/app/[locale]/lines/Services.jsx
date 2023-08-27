@@ -30,7 +30,7 @@ import "swiper/css/effect-cards";
 const Services = ({ }) => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
-  axios.defaults.headers['Access-Control-Allow-Origin'] = "*"; 
+  axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
   const [allLines, setAllLines] = useState(lines)
   const [currentLine, setCurrentLine] = useState(lines[0]);
   const [index, setIndex] = useState(0)

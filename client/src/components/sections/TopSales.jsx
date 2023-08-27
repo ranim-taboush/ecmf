@@ -17,7 +17,7 @@ import productImage1 from '@/images/top-sales/1.png'
 const TopSales = () => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
-  axios.defaults.headers['Access-Control-Allow-Origin'] = "*"; 
+  axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
   const locale = useLocale();
   const [arImgs, setArImgs] = useState([productImage1])
   const [enImgs, setEnImgs] = useState([productImage1])
