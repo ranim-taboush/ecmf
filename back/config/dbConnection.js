@@ -1,2 +1,3 @@
 const mongoose = require('mongoose');
-mongoose.connect("mongodb+srv://LgTv:HXD6ploNYKNIyyCi@ecmf.serebvg.mongodb.net/?retryWrites=true&w=majority"); 
+require('dotenv').config()
+mongoose.connect(`mongodb+srv://LgTv:${process.env.Mongodb_Pass}@ecmf.serebvg.mongodb.net/?retryWrites=true&w=majority`);
