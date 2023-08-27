@@ -15,7 +15,7 @@ const DropDown = ({ name, locale  }) => {
     
 useEffect(()=>{
     const getProducts = async () => {
-      await axios.get( `${baseUrl}products/en` )
+      await axios.get( `${baseUrl}/products/en` )
       .then(res=>{ 
         setProductsName(res?.data?.map((pro, i)=>{
             return {ar: pro?.arName || "الايكون", en: pro?.enName || "Icon", id: pro?._id, cat: pro?.category }
@@ -23,7 +23,7 @@ useEffect(()=>{
       }).catch (err=>{ console.log('Error While Loading Data') });
     }
     const getCategories = async () => {
-      await axios.get( `${baseUrl}category` )
+      await axios.get( `${baseUrl}/category` )
       .then(res=>{ 
         setCategoriesName(res?.data?.map((cat, i)=>{
             return {ar: cat?.title?.ar || "خط التشريح", en: cat?.title?.en || "Slicing Line", id: cat?._id }

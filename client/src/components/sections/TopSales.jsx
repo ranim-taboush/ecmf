@@ -28,7 +28,7 @@ const TopSales = () => {
   useEffect(()=>{
     const getCategory = async () => {
       let proAr, proEn
-      await axios.get( `${baseUrl}products/ar` )
+      await axios.get( `${baseUrl}/products/ar` )
       .then(res=>{ 
         setProAr(res?.data) 
         ////////////////////////Image Part////////////////////////////////////
@@ -49,7 +49,7 @@ const TopSales = () => {
             })
           })
       }).catch (err=>{ Error('Error While Loading Data')});
-      await axios.get( `${baseUrl}products/en` )
+      await axios.get( `${baseUrl}/products/en` )
       .then(res=>{ 
         setProEn(res?.data) 
         ////////////////////////Image Part////////////////////////////////////
