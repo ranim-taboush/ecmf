@@ -15,8 +15,6 @@ const DropDown = ({ name, locale  }) => {
     
 useEffect(()=>{
     const getProducts = async () => {
-      console.log("Api", Api)
-      console.log("Api Key", ApiKey)
       await axios.get( `${baseUrl}products/en` )
       .then(res=>{ 
         setProductsName(res?.data?.map((pro, i)=>{
