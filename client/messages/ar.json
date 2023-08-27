@@ -43,6 +43,10 @@
     "emailPlaceholder" : "hamed@trendlix.com",
     "message" : "التعليق",
     "messagePlaceholder" : "اكتب ما تريده",
+    "date": "التاريخ",
+    "time": "الوقت",
+    "comment": "التعليق",
+    "commentPlaceholder": "اكتب تعليقك هنا",
     "submit" : "ارسال"
   },
   "aboutUs" : {

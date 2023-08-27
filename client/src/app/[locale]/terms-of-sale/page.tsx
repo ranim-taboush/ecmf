@@ -32,6 +32,7 @@ const page: FC<pageProps> = ({ }) => {
         </p>
         <br />
         <br />
+        <p className=" text-3xl text-gradient">Our Policy:</p>
         <p className=' text-base '>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, porro accusamus quasi illo atque temporibus facere corporis? Quaerat impedit similique dolorum optio odit aperiam, in, itaque rerum dolore at quis
         </p>

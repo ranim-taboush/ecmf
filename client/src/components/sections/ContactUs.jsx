@@ -1,3 +1,4 @@
+"use client"
 import Title from '../UI/typography/Title'
 import Input from '../UI/Input'
 import Button from '../UI/Button'
@@ -5,51 +6,118 @@ import Image from 'next/image'
 
 import mapImg from '@/images/map.png'
 import contactUsBg from '@/images/contact-us-bg.png'
-import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
+import { useState } from 'react'
 
 const ContactUs = ({ }) => {
-  const t = useTranslations('contactUs');
+  const locale = useLocale()
+  const localTime = new Date().toLocaleString('en-CA').split(', ') //2023-08-27, 9:29:04 a.m.
+  const today = localTime[0]
+  const [date, setDate] = useState(today)
+  const [time, setTime] = useState("09:00")
+  
+  const contactEn ={
+    title : "تواصل معنا",
+    description : "ابق على تواصل معنا",
+    name : "الاسم",
+    namePlaceholder : "حامد اسامه",
+    email : "البريد الالكتروني",
+    emailPlaceholder : "hamed@trendlix.com",
+    message : "التعليق",
+    messagePlaceholder : "اكتب ما تريده",
+    date: "التاريخ",
+    time: "الوقت",
+    comment: "التعليق",
+    commentPlaceholder: "اكتب تعليقك هنا",
+    submit : "ارسال"
+  }
+  const contactAr ={
+    title : "تواصل معنا",
+    description : "ابق على تواصل معنا",
+    name : "الاسم",
+    namePlaceholder : "حامد اسامه",
+    email : "البريد الالكتروني",
+    emailPlaceholder : "hamed@trendlix.com",
+    message : "التعليق",
+    messagePlaceholder : "اكتب ما تريده",
+    date: "التاريخ",
+    time: "الوقت",
+    comment: "التعليق",
+    commentPlaceholder: "اكتب تعليقك هنا",
+    submit : "ارسال"
+  }
+ 
 
   return <div className='relative mt-8'>
     <div className="absolute inset-0 ">
       <Image
         src={contactUsBg}
-        alt={t('title')}
+        alt={locale ==='ar'? contactAr.title: contactEn.title}
         width={contactUsBg.width}
         height={contactUsBg.height}
         className='w-full h-full'
       />
     </div>
-    <div className="container sm:h-screen relative py-12 sm:py-16">
+    <div className="container sm:min-h-screen relative py-12 sm:py-16">
       <div className="flex items-center justify-center">
         <Title variant='doubleBorder' borderDirection='right'>
-          {t('title')}
+          {locale ==='ar'? contactAr.title: contactEn.title}
         </Title>
       </div>
-      <div className="h-full grid sm:grid-cols-2 items-center gap-8 sm:gap-16 mt-4 sm:-mt-4">
+      <div className="min-h-full h-fit grid sm:grid-cols-2 items-center gap-8 sm:gap-16 mt-4 sm:-mt-4">
         <div className="">
           <p className='text-xl sm:text-3xl text-white'>
-            {t('description')}
+            {locale ==='ar'? contactAr.description: contactEn.description}
           </p>
           <div className="flex flex-col gap-6 mt-4">
 
             <Input
-              label={t('name')}
+              label={locale === 'ar'? contactAr.name: contactEn.name}
               name='name'
-              placeholder={t('namePlaceholder')}
+              placeholder={locale === 'ar'? contactAr.namePlaceholder: contactEn.namePlaceholder}
             />
             <Input
-              label={t('email')}
+              label={locale === 'ar'? contactAr.email: contactEn.email}
               name='email'
-              placeholder={t('emailPlaceholder')}
+              placeholder={locale === 'ar'? contactAr.emailPlaceholder: contactEn.emailPlaceholder}
             />
             <Input
-              label={t('message')}
+              label={locale === 'ar'? contactAr.message: contactEn.message}
               name='message'
-              placeholder={t('messagePlaceholder')}
+              placeholder={locale === 'ar'? contactAr.messagePlaceholder: contactEn.messagePlaceholder}
+              className=" !h-36"
+            />
+            <div className="grid grid-cols-4">
+              <div className='col-span-2'>
+              <Input
+                label={locale === 'ar'? contactAr.date: contactEn.date}
+                name='date'
+                type="date"
+                value={date}
+                min={today}
+                max={`${parseInt(today.split("-")[0])+2}-${today.split('-')[1]}-${today.split('-')[2]}`}
+                onChange={(e)=> {setDate(e.target.value); }}
+              />
+              </div>
+              <div className='col-span-1'></div>
+              <div className='col-span-1'>
+                <Input
+                  label={locale === 'ar'? contactAr.time: contactEn.time}
+                  name='time'
+                  type="time"
+                  value={time}
+                  onChange={(e)=> {setTime(e.target.value); }}
+                />
+              </div>
+            </div>
+            <Input
+              label={locale === 'ar'? contactAr.comment: contactEn.comment}
+              name='comment'
+              placeholder={locale === 'ar'? contactAr.commentPlaceholder: contactEn.commentPlaceholder}
+              style={{height: "56px"}}
             />
             <Button className='w-fit px-6'>
-              {t('submit')}
+              {locale === 'ar'? contactAr.submit: contactEn.submit}
             </Button>
           </div>
 
@@ -59,7 +127,7 @@ const ContactUs = ({ }) => {
           allowFullScreen={true}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className='rounded-md w-full sm:w-2/3 mx-auto h-64 sm:h-1/2'
+          className='rounded-md w-full sm:w-2/3 mx-auto h-64 sm:h-1/2 lg:h-3/4'
         >
 
         </iframe>

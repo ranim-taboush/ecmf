@@ -89,6 +89,13 @@ body {}
   height: max-content !important;
   padding-bottom: 20px;
 }
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+    display: block;
+    width: 100%;
+    opacity: 0;
+}
 *{
   scrollbar-color:#1F96D3 #76787a !important;
   scrollbar-width: thin !important;

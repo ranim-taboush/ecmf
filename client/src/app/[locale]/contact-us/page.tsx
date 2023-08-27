@@ -5,7 +5,6 @@ import Footer from '@/components/Footer/Footer'
 import ShortNavbar from '@/components/ShortNavbar'
 import Title from '@/components/UI/typography/Title'
 import Agents from '@/components/sections/Agents'
-import Browse from '@/components/sections/Browse'
 import Form from './Form'
 
 
@@ -24,13 +23,10 @@ const page: FC<pageProps> = ({ }) => {
           {t('title')}
         </Title>
       </div>
-      <Form />
+      <NextIntlClientProvider locale={locale}>
+        <Form />
+      </NextIntlClientProvider>
     </main>
-    <NextIntlClientProvider locale={locale}>
-      <div className="relative">
-        <Browse />
-      </div>
-    </NextIntlClientProvider>
     <Agents />
     <Footer />
   </div>
