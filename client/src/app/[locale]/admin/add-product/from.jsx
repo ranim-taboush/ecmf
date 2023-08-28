@@ -115,7 +115,7 @@ const Form = ({ }) => {
           {...data,
             thicknessList: data.thicknessList?.map(v=>v.trim()).filter(n=>n) || '', 
             lengthList: data.lengthList?.map(v=>v.trim()).filter(n=>n) || ''},
-            {headers: { accesstoken: localStorage.getItem('token')}}
+            { headers:{ Authorization: `Bearer ${localStorage.getItem('token')}` } }
         );
         Success('success')
         Success('Product Added')
