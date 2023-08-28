@@ -17,19 +17,19 @@ const ContactUs = ({ }) => {
   const [time, setTime] = useState("09:00")
   
   const contactEn ={
-    title : "تواصل معنا",
-    description : "ابق على تواصل معنا",
-    name : "الاسم",
-    namePlaceholder : "حامد اسامه",
-    email : "البريد الالكتروني",
-    emailPlaceholder : "hamed@trendlix.com",
-    message : "التعليق",
-    messagePlaceholder : "اكتب ما تريده",
-    date: "التاريخ",
-    time: "الوقت",
-    comment: "التعليق",
-    commentPlaceholder: "اكتب تعليقك هنا",
-    submit : "ارسال"
+    "title" : "Contact Us",
+    "description" : "Get in touch with us",
+    "name" : "Name",
+    "namePlaceholder" : "Hamed Osama",
+    "email" : "Email",
+    "emailPlaceholder" : "hamed@trendlix.com",
+    "message" : "Message",
+    "messagePlaceholder" : "Type your query here.....",
+    "date": "Date",
+    "time": "Time", 
+    "comment": "Comment",
+    "commentPlaceholder": "Type your comment here",
+    "submit" : "Send"
   }
   const contactAr ={
     title : "تواصل معنا",
@@ -47,7 +47,6 @@ const ContactUs = ({ }) => {
     submit : "ارسال"
   }
  
-
   return <div className='relative mt-8'>
     <div className="absolute inset-0 ">
       <Image
@@ -58,7 +57,7 @@ const ContactUs = ({ }) => {
         className='w-full h-full'
       />
     </div>
-    <div className="container sm:min-h-screen relative py-12 sm:py-16">
+    <div className="container sm:min-h-[600px] relative py-8 sm:py-12">
       <div className="flex items-center justify-center">
         <Title variant='doubleBorder' borderDirection='right'>
           {locale ==='ar'? contactAr.title: contactEn.title}
