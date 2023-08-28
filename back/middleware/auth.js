@@ -3,8 +3,8 @@ const User = require("../models/userModel");
 
 const auth = (req, res, next) => {
   try {
-    if (!req.headers?.Authorization) return res.status(401).send("Wrong token!");
-    const token = req.headers?.Authorization 
+    if (!req.headers?.access-token) return res.status(401).send("Wrong token!" + token);
+    const token = req.headers?.access-token
     
     if (!token) return res.status(401).send("You are not authenticated!");
 
