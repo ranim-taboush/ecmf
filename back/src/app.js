@@ -14,6 +14,7 @@ const allowedOrigins = ["*", "http://localhost:3000", "https://ecmf-project.verc
 app.use(
   cors({
     origin: function(origin, callback){
+      console.log(origin, " this is the origin")
       if (!origin) {
         return callback(null, true);
       }
@@ -38,11 +39,11 @@ app.use(function (req, res, next) {
 
 app.use(express.json());
 
-app.use('/data/v1/', product);
-app.use('/data/v1/', category)
-app.use('/data/v1/', user)
-app.use('/data/v1/', upload)
-app.use('/data/v1/images', express.static('images'))
+app.use('/', product);
+app.use('/', category)
+app.use('/', user)
+app.use('/', upload)
+app.use('/images', express.static('images'))
 
 app.use((err, req, res, next) => {
   const errorStatus = err.status || 500;
