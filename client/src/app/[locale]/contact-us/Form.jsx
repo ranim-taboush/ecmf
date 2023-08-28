@@ -13,36 +13,36 @@ const Form = ({ }) => {
   const [date, setDate] = useState(today)
   const [time, setTime] = useState("09:00")
   
-    const contactEn ={
-      "title" : "Contact Us",
-      "description" : "Get in touch with us",
-      "name" : "Name",
-      "namePlaceholder" : "Hamed Osama",
-      "email" : "Email",
-      "emailPlaceholder" : "hamed@trendlix.com",
-      "message" : "Message",
-      "messagePlaceholder" : "Type your query here.....",
-      "date": "Date",
-      "time": "Time", 
-      "comment": "Comment",
-      "commentPlaceholder": "Type your comment here",
-      "submit" : "Send"
-    }
-    const contactAr ={
-      title : "تواصل معنا",
-      description : "ابق على تواصل معنا",
-      name : "الاسم",
-      namePlaceholder : "حامد اسامه",
-      email : "البريد الالكتروني",
-      emailPlaceholder : "hamed@trendlix.com",
-      message : "التعليق",
-      messagePlaceholder : "اكتب ما تريده",
-      date: "التاريخ",
-      time: "الوقت",
-      comment: "التعليق",
-      commentPlaceholder: "اكتب تعليقك هنا",
-      submit : "ارسال"
-    }
+  const contactEn ={
+    "title" : "Contact Us",
+    "description" : "Get in touch with us",
+    "name" : "Name",
+    "namePlaceholder" : "Hamed Osama",
+    "email" : "Email",
+    "emailPlaceholder" : "hamed@trendlix.com",
+    "message" : "Message",
+    "messagePlaceholder" : "Type your query here.....",
+    "date": "Date",
+    "time": "Time", 
+    "comment": "Comment",
+    "commentPlaceholder": "Type your comment here",
+    "submit" : "Send"
+  }
+  const contactAr ={
+    title : "تواصل معنا",
+    description : "ابق على تواصل معنا",
+    name : "الاسم",
+    namePlaceholder : "حامد اسامه",
+    email : "البريد الالكتروني",
+    emailPlaceholder : "hamed@trendlix.com",
+    message : "التعليق",
+    messagePlaceholder : "اكتب ما تريده",
+    date: "التاريخ",
+    time: "الوقت",
+    comment: "التعليق",
+    commentPlaceholder: "اكتب تعليقك هنا",
+    submit : "ارسال"
+  }
 
   return <div className="relative mt-4 sm:mt-8 rounded-md overflow-hidden">
 

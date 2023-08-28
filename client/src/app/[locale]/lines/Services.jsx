@@ -55,7 +55,7 @@ const Services = ({ }) => {
   }, [])
 
   return <div>
-    <div className="min-h-[600px] pb-20 relative">
+    <div className="sm:min-h-[600px] min-h-[400px] pb-20 relative">
       <div className="absolute inset-0 ">
         <Image
           src={contactUsBg}

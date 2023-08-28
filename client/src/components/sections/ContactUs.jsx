@@ -16,36 +16,36 @@ const ContactUs = ({ }) => {
   const [date, setDate] = useState(today)
   const [time, setTime] = useState("09:00")
   
-    const contactEn ={
-      "title" : "Contact Us",
-      "description" : "Get in touch with us",
-      "name" : "Name",
-      "namePlaceholder" : "Hamed Osama",
-      "email" : "Email",
-      "emailPlaceholder" : "hamed@trendlix.com",
-      "message" : "Message",
-      "messagePlaceholder" : "Type your query here.....",
-      "date": "Date",
-      "time": "Time", 
-      "comment": "Comment",
-      "commentPlaceholder": "Type your comment here",
-      "submit" : "Send"
-    }
-    const contactAr ={
-      title : "تواصل معنا",
-      description : "ابق على تواصل معنا",
-      name : "الاسم",
-      namePlaceholder : "حامد اسامه",
-      email : "البريد الالكتروني",
-      emailPlaceholder : "hamed@trendlix.com",
-      message : "التعليق",
-      messagePlaceholder : "اكتب ما تريده",
-      date: "التاريخ",
-      time: "الوقت",
-      comment: "التعليق",
-      commentPlaceholder: "اكتب تعليقك هنا",
-      submit : "ارسال"
-    }
+  const contactEn ={
+    "title" : "Contact Us",
+    "description" : "Get in touch with us",
+    "name" : "Name",
+    "namePlaceholder" : "Hamed Osama",
+    "email" : "Email",
+    "emailPlaceholder" : "hamed@trendlix.com",
+    "message" : "Message",
+    "messagePlaceholder" : "Type your query here.....",
+    "date": "Date",
+    "time": "Time", 
+    "comment": "Comment",
+    "commentPlaceholder": "Type your comment here",
+    "submit" : "Send"
+  }
+  const contactAr ={
+    title : "تواصل معنا",
+    description : "ابق على تواصل معنا",
+    name : "الاسم",
+    namePlaceholder : "حامد اسامه",
+    email : "البريد الالكتروني",
+    emailPlaceholder : "hamed@trendlix.com",
+    message : "التعليق",
+    messagePlaceholder : "اكتب ما تريده",
+    date: "التاريخ",
+    time: "الوقت",
+    comment: "التعليق",
+    commentPlaceholder: "اكتب تعليقك هنا",
+    submit : "ارسال"
+  }
  
   return <div className='relative mt-8'>
     <div className="absolute inset-0 ">
@@ -57,13 +57,13 @@ const ContactUs = ({ }) => {
         className='w-full h-full'
       />
     </div>
-    <div className="container  sm:min-h-[600px] relative py-8 sm:py-12">
+    <div className="container sm:min-h-[600px] relative py-8 sm:py-12">
       <div className="flex items-center justify-center">
         <Title variant='doubleBorder' borderDirection='right'>
           {locale ==='ar'? contactAr.title: contactEn.title}
         </Title>
       </div>
-      <div className="min-h-full h-fit grid sm:grid-cols-2 items-center gap-8 sm:gap-16 mt-4 sm:-mt-4">
+      <div className="sm:min-h-[600px] min-h-[400px] grid sm:grid-cols-2 items-center gap-8 sm:gap-16 mt-4 sm:-mt-4">
         <div className="">
           <p className='text-xl sm:text-3xl text-white'>
             {locale ==='ar'? contactAr.description: contactEn.description}
