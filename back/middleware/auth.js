@@ -3,10 +3,9 @@ const User = require("../models/userModel");
 
 const auth = (req, res, next) => {
   try {
-    const token = req.headers?.accesstoken || req.headers?.accessToken
-    if (!req.headers?.accessToken) return res.status(401).json(req?.headers); 
+    const token = req.headers?.accesstoken || req.headers?.accessToken || null
     
-    if (!token) return res.status(401).send("You are not authenticated!");
+    if (!token || token === null) return res.status(401).send("You are not authenticated!");
 
     jwt.verify(token, "LMeD07g@[GA=C428", async (err, obj) => {
       if (err) return res.status(403).send("Token is not valid!");
