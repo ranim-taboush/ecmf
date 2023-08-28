@@ -111,7 +111,7 @@ const Products = ({}) => {
               categories[index]?.products?.map(
                 (el, i) => <Product
                   key={i}
-                  image={imgs[i]||baseUrl+el.productImg?.replace("\\", "/")}
+                  image={imgs[i]||baseUrl+el.productImg?.replace("\\", "/") || productImg}
                   isNew={true}
                   isChecked={!checked[i]}
                   name={locale === 'ar' ? el?.arName || 'الواح صاج ساخن' : el?.enName || 'Hot Metal Sheets'}

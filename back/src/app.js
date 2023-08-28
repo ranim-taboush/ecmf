@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 const allowedOrigins = ["http://localhost:3000", "https://ecmf-project.vercel.app", "https://ecmf-project.vercel.app/", "https://vercel.com/trendlix", "https://vercel.com/trendlix/"];
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://ecmf-project.vercel.app", "https://ecmf-project.vercel.app/", "https://vercel.com/trendlix", "https://vercel.com/trendlix/"],  
+    origin: ["http://localhost:3000", "https://ecmf-project.vercel.app", "https://ecmf-project.vercel.app/", "https://vercel.com/trendlix", "https://vercel.com/trendlix/", "*"],  
     credentials: true,
     exposedHeader: ["Authorization", 'Access-Control-Allow-Origin'],
   })
