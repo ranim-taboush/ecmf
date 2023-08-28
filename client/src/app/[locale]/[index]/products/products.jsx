@@ -15,7 +15,7 @@ import { Api, ApiKey } from '@/config/api'
 const Products = ({}) => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json"; 
-  axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
+  // axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
   axios.defaults.withCredentials = true;
   const locale = useLocale()
   const params = useParams()
@@ -41,7 +41,7 @@ const Products = ({}) => {
           finalImg = baseUrl + URL.createObjectURL(pro.productImg)
         }else if(pro.productImg && pro.productImg !== ''){
           const sanitizedImg = pro.productImg.replace(/\\/g, "/");
-          finalImg = baseUrl + sanitizedImg
+          finalImg = baseUrl + "/" + sanitizedImg
         }
         setImgs(prev=>{
           prev[i] = finalImg

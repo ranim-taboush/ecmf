@@ -17,7 +17,7 @@ import productImage1 from '@/images/top-sales/1.png'
 const TopSales = () => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
-  axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
+  // axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
   axios.defaults.withCredentials = true;
   const locale = useLocale();
   const [arImgs, setArImgs] = useState([productImage1])
@@ -42,7 +42,7 @@ const TopSales = () => {
               finalImg = baseUrl + URL.createObjectURL(pro.productImg)
             }else if(pro.productImg && pro.productImg !== ''){
               const sanitizedImg = pro.productImg.replace(/\\/g, "/");
-              finalImg = baseUrl + sanitizedImg
+              finalImg = baseUrl + "/" + sanitizedImg
             }
             setArImgs(prev=>{
               prev[i] = finalImg
@@ -63,7 +63,7 @@ const TopSales = () => {
               finalImg = baseUrl + URL.createObjectURL(pro.productImg)
             }else if(pro.productImg && pro.productImg !== ''){
               const sanitizedImg = pro.productImg.replace(/\\/g, "/");
-              finalImg = baseUrl + sanitizedImg
+              finalImg = baseUrl + "/" + sanitizedImg
             }
             setEnImgs(prev=>{
               prev[i] = finalImg
