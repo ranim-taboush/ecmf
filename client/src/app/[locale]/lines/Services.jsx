@@ -2,12 +2,12 @@
 
 import Navbar from '@/components/Navbar.jsx'
 import Image from 'next/image'
-import { FC, useRef, useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 
 import contactUsBg from '@/images/contact-us-bg.png'
 import Button from '@/components/UI/Button'
 import { lines } from '@/data/lines';
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import Title from '@/components/UI/typography/Title';
 import Link from 'next/link';
 import img1 from '@/images/gallery/1.png'
@@ -40,7 +40,6 @@ const Services = ({ }) => {
   const navigationNextRef = useRef(null)
 
   const locale = useLocale()
-  const t = useTranslations('contactUs')
 
   
   useEffect(()=>{
@@ -56,7 +55,7 @@ const Services = ({ }) => {
   }, [])
 
   return <div>
-    <div className=" min-h-screen pb-20 relative">
+    <div className="min-h-[600px] pb-20 relative">
       <div className="absolute inset-0 ">
         <Image
           src={contactUsBg}
