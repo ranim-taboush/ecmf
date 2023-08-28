@@ -87,7 +87,7 @@ const Form = ({ }) => {
           {...data,
           productsTitle: {ar: data.productsTitle?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.productsTitle?.en?.map(v=>v.trim()).filter(n=>n) || ''}, 
           usedIn: {ar: data.usedIn?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.usedIn?.en?.map(v=>v.trim()).filter(n=>n) || ''}},
-          { headers:{ "access-token": `${localStorage.getItem('token')}` } }
+          { headers:{ "accessToken": `${localStorage.getItem('token')}` } }
         );
         Success('success')
         Success('Category Added')
