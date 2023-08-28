@@ -28,5 +28,5 @@ const page: FC<pageProps> = async({ }) => {
   </div>
 
 }
-
+ 
 export default page
