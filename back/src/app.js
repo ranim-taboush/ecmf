@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: ["http://localhost:3000", "https://ecmf-project.vercel.app", "https://ecmf-project.vercel.app/", "https://vercel.com/trendlix", "https://vercel.com/trendlix/", "*"],  
     credentials: true,
-    exposedHeader: ["accessToken", 'Access-Control-Allow-Origin'],
+    exposedHeader: ["accessToken", 'Access-Control-Allow-Origin'], 
   })
 );
 app.use(function (req, res, next) {
