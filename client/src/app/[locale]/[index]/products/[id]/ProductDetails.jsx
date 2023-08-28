@@ -15,6 +15,7 @@ const ProductDetails = ({ }) => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
   axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
+  axios.defaults.withCredentials = true;
   const locale = useLocale()
   const params = useParams()
   const baseUrl = Api
