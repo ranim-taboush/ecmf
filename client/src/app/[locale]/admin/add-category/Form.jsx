@@ -12,7 +12,6 @@ import { Api, ApiKey } from '@/config/api'
 
 const Form = ({ }) => {
   axios.defaults.headers['api-key'] = ApiKey;
-  axios.defaults.headers['content-type'] = "application/json";
   // axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
   axios.defaults.withCredentials = true;
   const locale = useLocale();
@@ -23,6 +22,7 @@ const Form = ({ }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [image, setImage] = useState( null )
   const [id, setId] = useState(null)
+  const [loading, setLoading] = useState( false )
 
   const langEn = {
     "title": "New Line",
@@ -79,6 +79,8 @@ const Form = ({ }) => {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
+    setLoading(true)
+    console.log('loading...')
 
     const postCategory = async () => {
       try {
@@ -87,7 +89,7 @@ const Form = ({ }) => {
           {...data,
           productsTitle: {ar: data.productsTitle?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.productsTitle?.en?.map(v=>v.trim()).filter(n=>n) || ''}, 
           usedIn: {ar: data.usedIn?.ar?.map(v=>v.trim()).filter(n=>n) || '', en: data.usedIn?.en?.map(v=>v.trim()).filter(n=>n) || ''}},
-          { headers:{ "accessToken": `${localStorage.getItem('token')}` } }
+          { headers:{ "accessToken": `${localStorage.getItem('token')}`, 'content-type': "application/json" } }
         );
         Success('success')
         Success('Category Added')
@@ -99,6 +101,7 @@ const Form = ({ }) => {
       } catch (err) {
         Error('Category Adding failed', err.message)
       }
+      setLoading(false)
     };
     postCategory();
   }
@@ -114,8 +117,9 @@ const Form = ({ }) => {
   }
 
   const AddNewLine = ()  =>{
-    setImage( null )
+    setImage(null)
     setId(null)
+    setLoading(false)
     setData({title: {en: '', ar: ''}, machine: {en: '', ar: ''}, 
       description: {en: '', ar: ''}, subtitle: {en: '', ar: ''},
       subDescription: {en: '', ar: ''}, productsTitle: [{en: '', ar: ''}], usedIn: [{en: '', ar: ''}]})
@@ -134,7 +138,7 @@ const Form = ({ }) => {
         const res = await axios.patch(
           `${Api}/upload/category/${id}`,
           formData,
-          {headers: { accesstoken: localStorage.getItem('token') }}
+          {headers: { "accesstoken": localStorage.getItem('token'), 'content-type': "multipart/form-data" }}
         );
         Success(locale === 'ar'?'تم رفع الصورة': 'Image Uploaded Successfully')
         if(e?.target?.files && e?.target?.files[0]){ e.target.value = null}
@@ -182,7 +186,7 @@ const Form = ({ }) => {
           <Input required label={locale === 'ar' ? langAr.usedInEn : langEn.usedInEn} name='usedInEn' 
           placeholder={(locale === 'ar' ? langAr.usedInPlaceholderEn : langEn.usedInPlaceholderEn)} value={data.usedIn?.en || ''}
           onChange={(e)=>{ handleChange(e, 'usedIn', 'en') }} />
-          <Button onClick={(e) => handleSubmit(e)} type='submit' className='w-fit px-6 hidden md:block'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
+          <Button onClick={(e) => handleSubmit(e)} isLoading={loading} type='submit' className='w-fit px-6 hidden md:block'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
         </div>
         <div className={!id? "hidden": "flex flex-col gap-6"}>
           <Input label={locale === 'ar'? langAr.categoryImg: langEn.categoryImg} name='image' type="file"
@@ -218,7 +222,7 @@ const Form = ({ }) => {
           <Input required label={locale === 'ar' ? langAr.usedInAr : langEn.usedInAr} name='usedInAr' 
           placeholder={(locale === 'ar' ? langAr.usedInPlaceholderAr : langEn.usedInPlaceholderAr)} value={data.usedIn?.ar || ''}
           onChange={(e)=>{ handleChange(e, 'usedIn', 'ar') }} />
-          <Button onClick={(e) => handleSubmit(e)} type='submit' className='w-fit px-6 md:hidden'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
+          <Button onClick={(e) => handleSubmit(e)} isLoading={loading} type='submit' className='w-fit px-6 md:hidden'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
         </div>
       </div>
    
