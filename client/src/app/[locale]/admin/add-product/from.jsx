@@ -36,6 +36,7 @@ const Form = ({ }) => {
   const [openImg, setOpenImg] = useState(false)
   const [image, setImage] = useState( null )
   const [id, setId] = useState(null)
+  const [loading, setLoading] = useState( false )
 
   const langEn = {
     "title": "New Product",
@@ -108,6 +109,8 @@ const Form = ({ }) => {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
+    setLoading(true)
+    console.log('loading...')
     const postCategory = async () => {
       try {
         const res = await axios.post(
@@ -126,6 +129,7 @@ const Form = ({ }) => {
       } catch (err) {
         Error('Product Add failed '+ err.message)
       }
+      setLoading(false)
     };
     postCategory();
   }
@@ -170,7 +174,7 @@ const Form = ({ }) => {
         const res = await axios.patch(
           `${Api}/upload/product/${id}`,
           formData,
-          {headers: { accesstoken: localStorage.getItem('token') }}
+          {headers: { "accesstoken": localStorage.getItem('token'), 'content-type': "multipart/form-data" }}
         );
         Success(locale === 'ar'?'تم رفع الصورة': 'Image Uploaded Successfully')
         if(e?.target?.files && e?.target?.files[0]){ e.target.value = null}
@@ -231,7 +235,7 @@ const Form = ({ }) => {
                 </div>
             </div>
           </div>
-          <Button type='submit' className='w-fit px-6 hidden md:block'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
+          <Button type='submit' isLoading={loading} className='w-fit px-6 hidden md:block'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
         </div>
         <div className={!id? "hidden": "flex flex-col gap-6"}>
           <Input label={locale === 'ar'? langAr.categoryImg: langEn.categoryImg} name='image' type="file"
@@ -284,7 +288,7 @@ const Form = ({ }) => {
           <Input required label={locale === 'ar' ? langAr.lengthList : langEn.lengthList} name='lengthList' 
           placeholder={(locale === 'ar' ? langAr.lengthListPlaceholder : langEn.lengthListPlaceholder)} value={data.lengthList || ''}
           onChange={(e)=>{ handleChange(e, 'lengthList') }} />
-          <Button type='submit' className='w-fit px-6 md:hidden'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
+          <Button type='submit' isLoading={loading} className='w-fit px-6 md:hidden'> {locale === 'ar' ? langAr.submit : langEn.submit} </Button>
         </div>
       </div>
     </div>
