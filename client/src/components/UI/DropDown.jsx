@@ -5,7 +5,7 @@ import { Error, Success } from '@/components/toast';
 import Link from 'next/link';
 import { Api, ApiKey } from '@/config/api'
 
-const DropDown = ({ name, locale  }) => {
+const DropDown = ({ name, locale }) => {
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
   // axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
@@ -40,7 +40,7 @@ useEffect(()=>{
     <Link key={i} href={`/0/products/${_.id}`} className='w-full block border-b-2 p-1 hover:bg-gray-200 '>{locale === 'ar'? _.ar : _.en}</Link>
     )
     :categoriesName.map((_, i)=>
-    <Link key={i} href="/lines" className='w-full block border-b-2 p-1 hover:bg-gray-200 '>{locale === 'ar'? _.ar : _.en}</Link>
+    <Link key={i} href={`/${i}/products/`} className='w-full block border-b-2 p-1 hover:bg-gray-200 '>{locale === 'ar'? _.ar : _.en}</Link>
     )
     }
   </div >
