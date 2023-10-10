@@ -17,6 +17,18 @@ import img4 from '@/images/gallery/4.png'
 import img5 from '@/images/gallery/5.png'
 import img6 from '@/images/gallery/6.png'
 import img7 from '@/images/gallery/7.png'
+import line1 from '@/images/lines/normal1.png'
+import line2 from '@/images/lines/normal2.png'
+import line3 from '@/images/lines/normal3.png'
+import line4 from '@/images/lines/normal4.png'
+import line5 from '@/images/lines/normal5.png'
+import line6 from '@/images/lines/normal6.png'
+import lineActive1 from '@/images/lines/active1.png'
+import lineActive2 from '@/images/lines/active2.png'
+import lineActive3 from '@/images/lines/active3.png'
+import lineActive4 from '@/images/lines/active4.png'
+import lineActive5 from '@/images/lines/active5.png'
+import lineActive6 from '@/images/lines/active6.png'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards, Navigation } from 'swiper';
 import { cn } from '@/utils/utils';
@@ -38,7 +50,14 @@ const Services = ({ }) => {
 
   const navigationPrevRef = useRef(null)
   const navigationNextRef = useRef(null)
-
+  const lineImgs = {
+    active: [lineActive2, lineActive1, lineActive4, lineActive5, lineActive3, lineActive6],
+    normal: [line2, line1, line4, line5, line3, line6],
+    names: {
+      en: ["Cutting Line", "Slicing Line", "Icon & Steel Deck Line", "Purlins & Ornaments Line", "Pipes & Cans Line", "Shatter Door Line"],
+      ar: ["خط التقطيع", "خط التشريح", "خط الايكون و الاستيل ديك", "خط الحليات و المدادات", "خط المواسير و العلب", "خط ابواب المحلات التجارية"],
+    }
+  }
   const locale = useLocale()
 
   
@@ -67,38 +86,27 @@ const Services = ({ }) => {
       </div>
       <div className="relative">
         <Navbar />
-        <div className="container mt-6 grid grid-cols-2 content-start justify-between">
-          <div className="">
+        <div className="container grid grid-cols-2 content-start justify-between">
+          <div className="flex justify-between items-center w-[200%]">
             {
-            allLines
-            ?allLines.map((el, i) => 
-            <div key={i}
-              className={cn(
-                'text-2xl sm:text-3xl mb-5 sm:mb:10 font-bold cursor-pointer relative w-fit',
-                  currentLine?.title?.en === el?.title?.en ? 'text-primary' : 'text-white'
-              )} onClick={() => {setCurrentLine(allLines[i]); setIndex(i)}} >
-              {locale === 'ar' ? el?.title?.ar : el?.title?.en}
-              <div className={currentLine?.title?.en === el?.title?.en? "absolute w-full h-1 bg-primary transition-underline" : ""}></div>
-            </div>
-            )
-            :''
-          }
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <p className='text-primary uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold animate-text-blue'>
-              {locale === 'ar' ? currentLine.title.ar : currentLine.title.en}
-            </p>
-            <p className='customText uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold animate-text-blue1'>
-              {locale === 'ar' ? currentLine.title.ar : currentLine.title.en}
-            </p>
-            <p className='customText uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold animate-text-blue2'>
-              {locale === 'ar' ? currentLine.title.ar : currentLine.title.en}
-            </p>
+              allLines
+              ?lineImgs.normal.map((_, i) => <div key={i} className='flex flex-col justify-between items-center cursor-pointer text-[#4b4b4b]'
+              onClick={()=> {setCurrentLine(allLines[i] || allLines[0]); setIndex(i);}}>
+                <Image src={currentLine?.title?.en === lineImgs.names.en[i]?lineImgs.active[i]:_} alt={lineImgs.names[i]} width={500} height={500}
+                  className='w-32 h-32'
+                />
+                <p className={cn('font-extrabold text-xl relative', currentLine?.title?.en === lineImgs.names.en[i]?'text-primary': '')}>
+                  {locale === 'ar' ?lineImgs.names.ar[i]:lineImgs.names.en[i]}
+                <div className={currentLine?.title?.en === lineImgs.names.en[i]? "absolute w-full h-1 bg-primary transition-underline left-1/2 -translate-x-1/2" : ""}></div>
+                </p>
+              </div>)
+              : ''
+            }
           </div>
         </div>
       </div>
     </div>
-    <div className="relative -mt-20 container bg-[#F9F9F9] rounded-md px-8 sm:px-16 py-6 sm:py-12 z-10">
+    <div className="relative -mt-60 container bg-[#F9F9F9] rounded-md px-8 sm:px-16 py-6 sm:py-12 z-10">
       <Title variant='default' className='my-4 sm:my-8'>
         {locale === 'ar' ? currentLine.machine.ar : currentLine.machine.en}
       </Title>
@@ -165,7 +173,7 @@ const Services = ({ }) => {
         <p className='text-xl sm:text-3xl text-primary font-bold mb-2 sm:mb-4'>
           {locale === 'ar' ? currentLine.title.ar : currentLine.title.en}
         </p>
-        <p className='text-base sm:text-lg text-black'>
+        <p className='text-base sm:text-lg text-black indent-4'>
           {locale === 'ar' ? currentLine.description.ar : currentLine.description.en}
         </p>
       </div>
@@ -173,7 +181,7 @@ const Services = ({ }) => {
         <p className='text-xl sm:text-3xl text-primary font-bold mb-2 sm:mb-4'>
           {locale === 'ar' ? currentLine.subtitle.ar : currentLine.subtitle.en}
         </p>
-        <p className='text-base sm:text-lg text-black'>
+        <p className='text-base sm:text-lg text-black indent-4'>
           {locale === 'ar' ? currentLine.subDescription.ar : currentLine.subDescription.en}
         </p>
       </div>

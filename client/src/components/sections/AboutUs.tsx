@@ -3,6 +3,7 @@ import { FC } from 'react'
 
 import aboutUsImg from '@/images/about-us.png'
 import visionImg from '@/images/vision.png'
+import qualityAssuranceImg from '@/images/quality-assurance.png'
 import Title from '../UI/typography/Title'
 import About from './About'
 import { useTranslations } from 'next-intl'
@@ -25,9 +26,17 @@ const AboutUs: FC<AboutUsProps> = ({ }) => {
         className='mt-8'
         title={t('ourVision')}
         titleVariant='doubleBorder'
-        body={t('ourVisionDescription').replaceAll('\n', '<br>')}
+        body={t('ourVisionDescription')}
         img={visionImg}
         direction='right'
+      />
+      <About
+        className='mt-8'
+        title={t('ourMission')}
+        titleVariant='doubleBorder'
+        body={t('ourMissionDescription')}
+        img={qualityAssuranceImg}
+        direction='left'
       />
     </div>
   </section>

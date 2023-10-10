@@ -116,7 +116,6 @@ const Products = ({}) => {
                   isChecked={!checked[i]}
                   name={locale === 'ar' ? el?.arName || 'الواح صاج ساخن' : el?.enName || 'Hot Metal Sheets'}
                   madeBy={locale === 'ar' ? el?.srcImg?.split('/')[2].split('.')[0] || 'عز الدخيلة' : el?.srcImg?.split('/')[2].split('.')[0] || 'Ezz El-Dkhela'}
-                  price={el.price || 0}
                   locale={locale}
                   index={index}
                   element={el}

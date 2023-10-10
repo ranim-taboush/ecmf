@@ -73,7 +73,6 @@ export default function Home() {
         <Gallery />
       </NextIntlClientProvider>
       <AboutUs />
-      <Managers />
       <NextIntlClientProvider locale={locale}>
         <ContactUs />
       </NextIntlClientProvider>

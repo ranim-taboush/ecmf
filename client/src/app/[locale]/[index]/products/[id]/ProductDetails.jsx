@@ -103,9 +103,6 @@ const ProductDetails = ({ }) => {
           <p className='text-gray-900 text-2xl sm:text-3xl font-bold'>
             {locale === 'ar' ? product?.arName || '' : product?.enName|| ''}
           </p>
-          <p className='text-primary text-2xl sm:text-3xl font-bold'>
-            {product?.price || 0}{locale === 'ar' ? 'جنية' : 'EGP'}
-          </p>
           <div className="">
             <p className='text-black text-base sm:text-lg'>
               {locale === 'ar' ? 'مواصفات المنتج' : 'Product characteristics'}

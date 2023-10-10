@@ -3,7 +3,7 @@ import Link from 'next/link'
 import FooterLink from './FooterLink'
 
 import logo from '@/images/logo.png';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin  } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -22,10 +22,11 @@ const Footer = () => {
             </Link>
             <p className="text-base leading-relaxed text-white mt-7">To know more about out products</p>
             <ul className="flex items-center space-x-3 mt-9">
-              <Facebook className='text-white text-base hover:text-primary focus:text-primary duration-200 cursor-pointer' />
-              <Twitter className='text-white text-base hover:text-primary focus:text-primary duration-200 cursor-pointer' />
-              <Instagram className='text-white text-base hover:text-primary focus:text-primary duration-200 cursor-pointer' />
-            </ul>
+              
+              <a href="https://www.facebook.com/profile.php?id=100077992483712&mibextid=LQQJ4d"><Facebook className='text-white text-base hover:text-primary focus:text-primary duration-200 cursor-pointer' /></a>
+              <a href="https://www.linkedin.com/in/engineering-company-for-metal-forming-90687825b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><Linkedin className='text-white text-base hover:text-primary focus:text-primary duration-200 cursor-pointer' /></a>
+              <a href="https://instagram.com/ecmf_official?igshid=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr"><Instagram className='text-white text-base hover:text-primary focus:text-primary duration-200 cursor-pointer' /></a>
+            </ul> 
           </div>
 
           <div className=''>

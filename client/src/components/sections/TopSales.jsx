@@ -78,7 +78,7 @@ const TopSales = () => {
   
   return <section className='py-8'>
     <Title variant="default" className='container' >
-      {locale === 'ar'? "منتجاتنا:": "Our Products:"}
+      {locale === 'ar'? "منتجاتنا": "Our Products"}
     </Title>
     <Swiper
       scrollbar={{
@@ -104,7 +104,6 @@ const TopSales = () => {
               title={el?.arName || ''}
               description="جودة عالية"
               image={arImgs[i] || productImage1}
-              price={el?.price || '0'}
               currency={"جنيه"}
             />
           </SwiperSlide>
@@ -115,7 +114,6 @@ const TopSales = () => {
               title={el?.enName || ''}
               description="Premium Quality"
               image={enImgs[i] || productImage1}
-              price={el?.price || ''}
               currency={"EGP"}
             />
           </SwiperSlide>
