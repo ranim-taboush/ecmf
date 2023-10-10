@@ -1,7 +1,7 @@
 {
   "global" : {
     "currency" : "EGP",
-    "agentsFor" : "Agents For"
+    "agentsFor" : "Our Partners"
   },
   "navbar" : {
     "title" : "ECMF",
@@ -25,8 +25,10 @@
   "about":{
     "aboutUs" : "About Us",
     "aboutUsDescription" : "The Engineering Company for Metal Forming is a leading institution in Egypt that specializes in shaping a wide range of metal sheets. We pride ourselves on using cutting-edge production lines to ensure the highest quality results. Our products not only meet, but also exceed international standard specifications (including European and American), making us a trusted and reliable choice for customers who are seeking top-quality solutions.",
-    "ourVision" : "Our Vision & Mission",
-    "ourVisionDescription" : "Our Vision \n We aspire to be the global benchmark for the metalworking industry in the MENA region and then worldwide.\n \n Our Mission \n To achieve maximum value for our customer base by providing high-quality metal products and related services and solutions using innovative technologies."
+    "ourVision" : "Our Vision",
+    "ourMission" : "Our Mission",
+    "ourVisionDescription" : "We aspire to be the global benchmark for the metalworking industry in the MENA region and then worldwide.",
+    "ourMissionDescription" : "To achieve maximum value for our customer base by providing high-quality metal products and related services and solutions using innovative technologies."
   },
   "topSales":{
     "title" : "Products",
@@ -55,7 +57,7 @@
     "aboutUsDescription" : "The Engineering Company for Metal Forming is a leading institution in Egypt that specializes in shaping a wide range of metal sheets.\n We pride ourselves on using cutting-edge production lines to ensure the highest quality results. Our products not only meet, but also exceed international standard specifications (including European and American), making us a trusted and reliable choice for customers who are seeking top-quality solutions.",
     "ourVision" : "Our Vision & Mission",
     "ourVisionDescription" : "Our Vision \n We aspire to be the global benchmark for the metalworking industry in the MENA region and then worldwide.\n \n Our Mission \n To achieve maximum value for our customer base by providing high-quality metal products and related services and solutions using innovative technologies.",
-    "companyIdentification" : "Your first Choice:",
+    "companyIdentification" : "Your First Choice",
     "companyIdentificationDescription" : "As customer satisfaction is our goal, we are distinguished by having a product development team \n The company's board of directors oversees the total quality management projects and always motivates them on innovative ideas and their development for the benefit of the company and customer service",
     "qualityAssurance" : "Quality Assurance",
     "qualityAssuranceDescription" : "The company has proven its strong focus on quality and continuous improvement. So, we are proud to have received the certificate of standardization, which was awarded to us in 2011. \n We have also obtained the certificate of Civil Defense and occupational health 2011 for our commitment to public safety, health and Environmental Protection",

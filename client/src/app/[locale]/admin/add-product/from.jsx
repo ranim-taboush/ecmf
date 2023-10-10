@@ -28,7 +28,7 @@ const Form = ({ }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const agents = [{im: kandil, src: '/images/agent1.png'}, {im: egyptian, src: '/images/agent2.png'}, 
   {im: elola, src: '/images/agent3.png'}, {im: agis, src:'/images/agent4.png'}, {im: ezdk, src: '/images/agent5.png'}]
-  const [data, setData] = useState({category: "Slicing Line", arName: '', enName: '', price: '',
+  const [data, setData] = useState({category: "Slicing Line", arName: '', enName: '', price: '0',
   thickness: {from: '', to: '', arUnit: '', enUnit: ''}, length: '', thicknessList: [], lengthList: [], 
   srcImg: agents[0].src, productImg: ''})
   const [choosenImg, setChooosenImg] = useState(agents[0].im)
@@ -64,7 +64,6 @@ const Form = ({ }) => {
     "line": "خط المنتج",
     "nameAr": "اسم المنتج بالعربي",
     "nameEn": "اسم المنتج بالانكليزي",
-    "price": "سعر المنتج",
     "thickness": "سمك المنتج",
     "from": "من",
     "to": "إلى",
@@ -123,7 +122,7 @@ const Form = ({ }) => {
         Success('success')
         Success('Product Added')
         setId(res.data?._id)
-        setData({category: "Slicing Line", arName: '', enName: '', price: '',
+        setData({category: "Slicing Line", arName: '', enName: '', 
         thickness: {from: '', to: '', arUnit: '', enUnit: ''}, length: '', thicknessList: [], lengthList: [], srcImg: agents[0].src})
 
       } catch (err) {
@@ -159,6 +158,7 @@ const Form = ({ }) => {
         })
       }
     }
+    console.log(data)
   }
 
   const handleImageUpload = (e) =>{
@@ -207,9 +207,6 @@ const Form = ({ }) => {
           <Input required label={locale === 'ar' ? langAr.nameAr : langEn.nameAr} name='nameAr' 
           placeholder={(locale === 'ar' ? langAr.placeholder : langEn.placeholder) + (locale === 'ar' ? langAr.nameAr : langEn.nameAr)} value={data.arName} 
           onChange={(e)=>{ handleChange(e, 'arName')} } />
-          <Input required label={locale === 'ar' ? langAr.price : langEn.price} name='price' type='number'
-          placeholder={(locale === 'ar' ? langAr.placeholder : langEn.placeholder) + (locale === 'ar' ? langAr.price : langEn.price)} value={data.price} 
-          onChange={(e)=>{ handleChange(e, 'price')} } />
           <div className="">
             <label htmlFor="category" className='text-white text-base sm:text-lg font-light px-1'>
                 {locale === 'ar' ? langAr.line : langEn.line}
