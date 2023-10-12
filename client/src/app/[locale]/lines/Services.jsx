@@ -70,7 +70,7 @@ const Services = ({ }) => {
       }).catch (err=>{
         Error('Error While Loading Data')});
     }
-    getCategory();
+    // getCategory();
   }, [])
 
   return <div>
@@ -95,10 +95,10 @@ const Services = ({ }) => {
                 <Image src={currentLine?.title?.en === lineImgs.names.en[i]?lineImgs.active[i]:_} alt={lineImgs.names[i]} width={500} height={500}
                   className='w-32 h-32'
                 />
-                <p className={cn('font-extrabold text-xl relative', currentLine?.title?.en === lineImgs.names.en[i]?'text-primary': '')}>
+                <div className={cn('font-extrabold text-xl relative', currentLine?.title?.en === lineImgs.names.en[i]?'text-primary': '')}>
                   {locale === 'ar' ?lineImgs.names.ar[i]:lineImgs.names.en[i]}
                 <div className={currentLine?.title?.en === lineImgs.names.en[i]? "absolute w-full h-1 bg-primary transition-underline left-1/2 -translate-x-1/2" : ""}></div>
-                </p>
+                </div>
               </div>)
               : ''
             }
@@ -107,7 +107,7 @@ const Services = ({ }) => {
       </div>
     </div>
     <div className="relative -mt-60 container bg-[#F9F9F9] rounded-md px-8 sm:px-16 py-6 sm:py-12 z-10">
-      <Title variant='default' className='my-4 sm:my-8'>
+      <Title variant='default' className='my-4 sm:my-8 uppercase'>
         {locale === 'ar' ? currentLine.machine.ar : currentLine.machine.en}
       </Title>
 
@@ -130,15 +130,11 @@ const Services = ({ }) => {
           }}
         >
           {
-            [img1, img2, img3, img4, img5, img6, img7].map((item, index) => {
+            currentLine.catImgs.map((item, index) => {
               return <SwiperSlide key={index} className=''>
-                <Image
-                  src={item}
-                  alt="product"
-                  width={item.width}
-                  height={item.height}
-                  className='w-full h-full'
-                />
+                <div className='w-[30rem] h-80'>
+                  <Image src={item} alt="product" placeholder='blur' blurDataURL='data:...' fill sizes='100%' style={{objectFit:"cover"}}/>
+                </div>
               </SwiperSlide>
             })
           }
@@ -173,40 +169,75 @@ const Services = ({ }) => {
         <p className='text-xl sm:text-3xl text-primary font-bold mb-2 sm:mb-4'>
           {locale === 'ar' ? currentLine.title.ar : currentLine.title.en}
         </p>
-        <p className='text-base sm:text-lg text-black indent-4'>
-          {locale === 'ar' ? currentLine.description.ar : currentLine.description.en}
-        </p>
+        <div className='text-lg text-black'>
+          {locale === 'ar' ? currentLine.description.ar.split('\\n').map((p, i)=>{
+            return <div key={i} id={i} className={cn(i==0?' indent-4':'')}>
+              {p.includes('%%%')
+                ?<p>
+                  <span className={cn('text-primary')}>{p.split('%%%')[0]}</span> 
+                  <span>{p.split('%%%')[1]}</span>
+                </p>
+                : <p>{p}</p>}
+              </div>
+          }) : currentLine.description.en.split('\\n').map((p, i)=>{
+            return <div key={i} id={i} className={cn(i==0?' indent-4':'')}>
+              {p.includes('%%%')
+                ?<p>
+                  <span className={cn('text-primary')}>{p.split('%%%')[0]}</span> 
+                  <span>{p.split('%%%')[1]}</span>
+                </p>
+                : <p>{p}</p>}
+              </div>
+          })}
+        </div>
       </div>
+      {currentLine.subDescription &&
       <div className="mb-3 sm:mb-6">
         <p className='text-xl sm:text-3xl text-primary font-bold mb-2 sm:mb-4'>
           {locale === 'ar' ? currentLine.subtitle.ar : currentLine.subtitle.en}
         </p>
-        <p className='text-base sm:text-lg text-black indent-4'>
-          {locale === 'ar' ? currentLine.subDescription.ar : currentLine.subDescription.en}
+        <p className='text-lg text-black'>
+        {locale === 'ar' ? currentLine.subDescription.ar.split('\\n').map((p, i)=>{
+            return <div key={i} className={cn(i==0?' indent-4':'')}>
+              {p.includes('%%%')
+                ?<p>
+                  <span className={cn('text-primary')}>{p.split('%%%')[0]}</span> 
+                  <span>{p.split('%%%')[1]}</span>
+                </p>
+                : <p>{p}</p>}
+              </div>
+              }) : currentLine.subDescription.en.split('\\n').map((p, i)=>{
+            return <div key={i} className={cn(i==0?' indent-4':'')}>
+              {p.includes('%%%')
+                ?<p>
+                  <span className={cn('text-primary')}>{p.split('%%%')[0]}</span> 
+                  <span>{p.split('%%%')[1]}</span>
+                </p>
+                : <p>{p}</p>}
+              </div>
+              })}
         </p>
-      </div>
+      </div>}
       <div className="mb-3 sm:mb-6">
         <p className='text-xl sm:text-3xl text-primary font-bold mb-2 sm:mb-4'>
-          {locale === 'ar' ? currentLine.productsTitle.ar : currentLine.productsTitle.en}
+          {locale === 'ar' ? currentLine.productTitle.ar : currentLine.productTitle.en}
         </p>
-        <ul className='grid grid-rows-4 justify-between list-disc'>
-          {currentLine?.products?.
-            map((el, i) => <li key={i} className='text-base sm:text-lg text-black'>
-              {locale === 'ar' ? el.arName || '' : el.enName || ''}
-            </li>
-            )}
+        <ul className='flex flex-col justify-between list-disc'>
+          {locale === 'ar' ?
+          currentLine?.productsTitle?.ar?.map((_, i) => <li key={i} className='text-lg text-black'> {_ || ''} </li>)
+          :currentLine?.productsTitle?.en?.map((_, i) => <li key={i} className='text-lg text-black'> {_ || ''} </li>)
+          }
         </ul>
       </div>
       <div className="mb-3 sm:mb-6">
         <p className='text-xl sm:text-3xl text-primary font-bold mb-2 sm:mb-4'>
-          {locale === 'ar' ? "يستخدم في: " : "Used in: "}
+          {locale === 'ar' ? currentLine?.usedInTitle?.ar : currentLine?.usedInTitle?.en}
         </p>
-        <ul className='grid grid-rows-4 justify-between list-disc'>
-          {currentLine.usedIn[locale === 'ar' ? 'ar' : 'en'].
-            map((el, i) => <li key={i} className='text-base sm:text-lg text-black'>
+        <ul className='flex flex-col flex-wrap items-start justify-start list-disc max-h-32'>
+          {currentLine.usedIn[locale === 'ar' ? 'ar' : 'en'].map((el, i) => <li key={i} className='text-lg max-sm:text-xs text-black'>
               {el}
-            </li>
-            )}
+            </li>)
+          }
         </ul>
       </div>
       <Button className='sm:px-6 sm:py-4'>
