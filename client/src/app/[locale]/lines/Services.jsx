@@ -93,9 +93,9 @@ const Services = ({ }) => {
               ?lineImgs.normal.map((_, i) => <div key={i} className='flex flex-col justify-between items-center cursor-pointer text-[#4b4b4b]'
               onClick={()=> {setCurrentLine(allLines[i] || allLines[0]); setIndex(i);}}>
                 <Image src={currentLine?.title?.en === lineImgs.names.en[i]?lineImgs.active[i]:_} alt={lineImgs.names[i]} width={500} height={500}
-                  className='w-32 h-32'
+                  className='w-32 h-32 max-2xl:w-24 max-2xl:h-24 max-md:w-20 max-md:h-20 max-sm:w-14 max-sm:h-14'
                 />
-                <div className={cn('font-extrabold text-xl relative', currentLine?.title?.en === lineImgs.names.en[i]?'text-primary': '')}>
+                <div className={cn('font-extrabold text-center text-xl relative max-2xl:text-base max-lg:text-sm max-md:text-xs max-sm:text-[10px]', currentLine?.title?.en === lineImgs.names.en[i]?'text-primary': '')}>
                   {locale === 'ar' ?lineImgs.names.ar[i]:lineImgs.names.en[i]}
                 <div className={currentLine?.title?.en === lineImgs.names.en[i]? "absolute w-full h-1 bg-primary transition-underline left-1/2 -translate-x-1/2" : ""}></div>
                 </div>
@@ -106,7 +106,7 @@ const Services = ({ }) => {
         </div>
       </div>
     </div>
-    <div className="relative -mt-60 container bg-[#F9F9F9] rounded-md px-8 sm:px-16 py-6 sm:py-12 z-10">
+    <div className="relative -mt-60 max-sm:-mt-20 container bg-[#F9F9F9] rounded-md px-8 sm:px-16 py-6 sm:py-12 z-10">
       <Title variant='default' className='my-4 sm:my-8 uppercase'>
         {locale === 'ar' ? currentLine.machine.ar : currentLine.machine.en}
       </Title>
@@ -132,7 +132,7 @@ const Services = ({ }) => {
           {
             currentLine.catImgs.map((item, index) => {
               return <SwiperSlide key={index} className=''>
-                <div className='w-[30rem] h-80'>
+                <div className='w-[30rem] h-80 max-md:w-72 max-md:h-56'>
                   <Image src={item} alt="product" placeholder='blur' blurDataURL='data:...' fill sizes='100%' style={{objectFit:"cover"}}/>
                 </div>
               </SwiperSlide>
