@@ -10,13 +10,13 @@ import { lines } from '@/data/lines';
 import { useLocale } from 'next-intl';
 import Title from '@/components/UI/typography/Title';
 import Link from 'next/link';
-import img1 from '@/images/gallery/1.png'
-import img2 from '@/images/gallery/2.png'
-import img3 from '@/images/gallery/3.png'
-import img4 from '@/images/gallery/4.png'
-import img5 from '@/images/gallery/5.png'
-import img6 from '@/images/gallery/6.png'
-import img7 from '@/images/gallery/7.png'
+// import img1 from '@/images/gallery/1.png'
+// import img2 from '@/images/gallery/2.png'
+// import img3 from '@/images/gallery/3.png'
+// import img4 from '@/images/gallery/4.png'
+// import img5 from '@/images/gallery/5.png'
+// import img6 from '@/images/gallery/6.png'
+// import img7 from '@/images/gallery/7.png'
 import line1 from '@/images/lines/normal1.png'
 import line2 from '@/images/lines/normal2.png'
 import line3 from '@/images/lines/normal3.png'

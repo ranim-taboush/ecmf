@@ -4,6 +4,8 @@ import axios from 'axios';
 import { Error, Success } from '@/components/toast';
 import Link from 'next/link';
 import { Api, ApiKey } from '@/config/api'
+import { products } from '@/data/products';
+import { lines } from '@/data/lines';
 
 const DropDown = ({ name, locale }) => {
   axios.defaults.headers['api-key'] = ApiKey;
@@ -31,8 +33,17 @@ useEffect(()=>{
         }))
       }).catch (err=>{ console.log('Error While Loading Data') });
     }
-    getCategories()
-    getProducts()
+    const setLinesAndProducts = () => {
+      setProductsName(products?.map((pro, i)=>{
+        return {ar: pro?.arName || "الايكون", en: pro?.enName || "Icon", id: pro?._id?.$oid, cat: pro?.category?.$oid }
+      }))
+      setCategoriesName(lines?.map((cat, i)=>{
+        return {ar: cat?.title?.ar || "خط التشريح", en: cat?.title?.en || "Slicing Line", id: cat?._id }
+      }))
+    }
+    setLinesAndProducts()
+    // getCategories()
+    // getProducts()
   }, [])
   return <div className={"absolute top-6 left-0 right-0 bg-white text-black rounded-md p-2 w-max max-h-48 overflow-y-scroll hidden scrollbar dropdown"}>
     {name === "products"
