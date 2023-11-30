@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
 
           <div className='col-span-2'>
-            <p className="text-sm font-semibold tracking-widest text-white uppercase">Shop</p>
+            {/* <p className="text-sm font-semibold tracking-widest text-white uppercase">Shop</p> */}
 
             <ul className="mt-6 grid grid-cols-2 gap-2">
               <FooterLink title="Lines" href="/lines">Lines</FooterLink>

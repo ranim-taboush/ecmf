@@ -44,9 +44,9 @@ const Navbar = ({ }) => {
         <Image
           src={logo}
           alt="ECMF"
-          width={147}
+          width={155}
           height={45}
-          className='w-28 h-7 sm:w-36 sm:h-11'
+          className='sm:w-36 sm:h-11 object-contain -mt-4'
         />
       </Link>
     </div>

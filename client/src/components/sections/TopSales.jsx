@@ -8,6 +8,7 @@ import { Scrollbar, Navigation } from "swiper";
 import Title from '../UI/typography/Title';
 import ProductCard from '../ProductCard';
 import axios from 'axios';
+import { products } from '@/data/products'
 import { useLocale } from 'next-intl';
 import { Error, Success } from '@/components/toast';
 import { Api, ApiKey } from '@/config/api'
@@ -28,7 +29,6 @@ const TopSales = () => {
 
   useEffect(()=>{
     const getCategory = async () => {
-      let proAr, proEn
       await axios.get( `${baseUrl}/products/ar` )
       .then(res=>{ 
         setProAr(res?.data) 
@@ -73,7 +73,33 @@ const TopSales = () => {
       }).catch (err=>{ Error('Error While Loading Data')});
       return {productsAr: proAr, productsEn: proEn}
     }
-    getCategory()
+    const getProducts = () => {
+      setProAr(products)
+      setProEn(products)
+      ////////////////////////Image Part////////////////////////////////////
+      let arrLength = products?.length || 0
+      setArImgs(new Array(arrLength).fill(productImage1))
+      if(products)
+        products?.forEach((pro, i)=>{
+          let finalImg = productImage1;
+          if(pro.productImg && pro.productImg !== '' && (pro.productImg instanceof Blob || pro.productImg instanceof File)){
+            finalImg = baseUrl + URL.createObjectURL(pro.productImg)
+          }else if(pro.productImg && pro.productImg !== ''){
+            const sanitizedImg = pro.productImg.replace(/\\/g, "/");
+            finalImg = baseUrl + "/" + sanitizedImg
+          }
+          setArImgs(prev=>{
+            prev[i] = finalImg
+            return prev
+          })
+          setEnImgs(prev=>{
+            prev[i] = finalImg
+            return prev
+          })
+        })
+    }
+    getProducts()
+    // getCategory()
   }, [])
   
   return <section className='py-8'>

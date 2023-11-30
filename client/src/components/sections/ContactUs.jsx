@@ -91,7 +91,7 @@ const ContactUs = ({ }) => {
               <Input
                 label={locale === 'ar'? contactAr.date: contactEn.date}
                 name='date'
-                type="date"
+                type="date"  placeholder="yyyy-dd-mm"
                 value={date}
                 min={today}
                 max={`${parseInt(today.split("-")[0])+2}-${today.split('-')[1]}-${today.split('-')[2]}`}
