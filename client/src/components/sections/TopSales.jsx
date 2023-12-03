@@ -88,6 +88,7 @@ const TopSales = () => {
             const sanitizedImg = pro.productImg.replace(/\\/g, "/");
             finalImg = baseUrl + "/" + sanitizedImg
           }
+          console.log(pro.arName, ', ', finalImg)
           setArImgs(prev=>{
             prev[i] = finalImg
             return prev
