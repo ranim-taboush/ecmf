@@ -80,7 +80,6 @@ const Form = ({ }) => {
   const handleSubmit = (e) =>{
     e.preventDefault();
     setLoading(true)
-    console.log('loading...')
 
     const postCategory = async () => {
       try {
