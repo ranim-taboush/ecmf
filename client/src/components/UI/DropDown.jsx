@@ -51,7 +51,7 @@ useEffect(()=>{
     <Link key={i} href={`/0/products/${_.id}`} className='w-full block border-b-2 p-1 hover:bg-gray-200 '>{locale === 'ar'? _.ar : _.en}</Link>
     )
     :categoriesName.map((_, i)=>
-    <Link key={i} href={`/${i}/products/`} className='w-full block border-b-2 p-1 hover:bg-gray-200 '>{locale === 'ar'? _.ar : _.en}</Link>
+    <Link key={i} href={`/lines/${i}/`} className='w-full block border-b-2 p-1 hover:bg-gray-200 '>{locale === 'ar'? _.ar : _.en}</Link>
     )
     }
   </div >
