@@ -97,7 +97,7 @@ const Form = ({ }) => {
   }, [])
 
   const addNewProduct = ()  =>{
-    setData({category: "Slicing Line", arName: '', enName: '', price: '',
+    setData({category: "Slicing Line", arName: '', enName: '', price: '0',
     thickness: {from: '', to: '', arUnit: '', enUnit: ''}, length: '', thicknessList: [], lengthList: [], 
     srcImg: agents[0].src, productImg: ''})
     setChooosenImg(agents[0].im)
@@ -109,7 +109,6 @@ const Form = ({ }) => {
   const handleSubmit = (e) =>{
     e.preventDefault();
     setLoading(true)
-    console.log('loading...')
     const postCategory = async () => {
       try {
         const res = await axios.post(
@@ -158,7 +157,6 @@ const Form = ({ }) => {
         })
       }
     }
-    console.log(data)
   }
 
   const handleImageUpload = (e) =>{

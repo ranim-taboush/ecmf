@@ -25,7 +25,6 @@ const ProductDetails = ({ }) => {
   const [img, setImg] = useState(productImg)
   
   const findByHow = (name)=>{
-    console.log(madeBy)
     let agent 
     if(name === 'agent1')
         agent =  {en: 'Kandil Steel', ar: 'قنديل للصلب'}

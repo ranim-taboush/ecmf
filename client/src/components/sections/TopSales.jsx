@@ -88,7 +88,6 @@ const TopSales = () => {
             const sanitizedImg = pro.productImg.replace(/\\/g, "/");
             finalImg = baseUrl + "/" + sanitizedImg
           }
-          console.log(pro.arName, ', ', finalImg)
           setArImgs(prev=>{
             prev[i] = finalImg
             return prev
@@ -107,7 +106,7 @@ const TopSales = () => {
     <Title variant="default" className='container' >
       {locale === 'ar'? "منتجاتنا": "Our Products"}
     </Title>
-    <Swiper
+        <Swiper
       scrollbar={{
         draggable: true, hide: false, dragSize: 75,
       }}
