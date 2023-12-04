@@ -1,74 +1,5 @@
 export const products = [{
   "_id": {
-    "$oid": "64e5cbc3664dfd6d08b8d908"
-  },
-  "category": {
-    "$oid": "64e5b6bc79d8b810bbea00d8"
-  },
-  "arName": "الواح صاج",
-  "enName": "Cold Rolled Sheets",
-  "price": 21000,
-  "thickness": {
-    "from": "5",
-    "to": "8",
-    "arUnit": "مم",
-    "enUnit": "mm"
-  },
-  "length": "8",
-  "thicknessList": [
-    5,
-    6,
-    7,
-    8
-  ],
-  "lengthList": [
-    3,
-    4,
-    4.5,
-    5,
-    6,
-    7,
-    8
-  ],
-  "srcImg": "/public/agent2.png",
-  "productImg": "public\\1692781548486--cold.png",
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64e5cf5e664dfd6d08b8d939"
-  },
-  "category": {
-    "$oid": "64e5b2e979d8b810bbea00d2"
-  },
-  "arName": "المستطيل",
-  "enName": "Rectangular",
-  "price": 45000,
-  "thickness": {
-    "from": "8",
-    "to": "11",
-    "arUnit": "سم",
-    "enUnit": "cm"
-  },
-  "length": "15",
-  "thicknessList": [
-    8,
-    9,
-    10,
-    11
-  ],
-  "lengthList": [
-    5,
-    8,
-    11,
-    15
-  ],
-  "srcImg": "/public/agent3.png",
-  "productImg": "public\\1692782541495--rectangle.jpg",
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "64e5d577664dfd6d08b8d972"
   },
   "category": {
@@ -596,5 +527,41 @@ export const products = [{
   ],
   "srcImg": "/images/agent1.png",
   "productImg": "public/1701679430688--colored.jpeg",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "656dde8b333eccdaeb71cd93"
+  },
+  "category": {
+    "$oid": "64e5b6bc79d8b810bbea00d8"
+  },
+  "arName": "الواح مجلفنة",
+  "enName": "Galvanized Sheets",
+  "price": 0,
+  "thickness": {
+    "from": "5",
+    "to": "8",
+    "arUnit": "مم",
+    "enUnit": "mm"
+  },
+  "length": "8",
+  "thicknessList": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "lengthList": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "srcImg": "/images/agent1.png",
+  "productImg": "public/1701699218343--galvanised.jpg",
   "__v": 0
 }]
