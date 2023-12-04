@@ -10,7 +10,7 @@ import bg from '@/images/home-bg.png';
 import TopSales from '@/components/sections/TopSales.jsx';
 import Managers from '@/components/sections/Managers.jsx'
 import Link from 'next/link';
-import Gallery from '@/components/sections/Gallery';
+// import Gallery from '@/components/sections/Gallery';
 import AboutUs from '@/components/sections/AboutUs';
 import ContactUs from '@/components/sections/ContactUs.jsx';
 import Agents from '@/components/sections/Agents';
@@ -69,9 +69,9 @@ export default function Home() {
       <NextIntlClientProvider locale={locale}>
         <TopSales />
       </NextIntlClientProvider>
-      <NextIntlClientProvider locale={locale}>
+      {/* <NextIntlClientProvider locale={locale}>
         <Gallery />
-      </NextIntlClientProvider>
+      </NextIntlClientProvider> */}
       <AboutUs />
       <NextIntlClientProvider locale={locale}>
         <ContactUs />
