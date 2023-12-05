@@ -76,7 +76,7 @@ const TopSales = () => {
     const getProducts = () => {
       setProAr(products)
       setProEn(products)
-      ////////////////////////Image Part////////////////////////////////////
+      ////////////////////////Image Part////////////////////////
       let arrLength = products?.length || 0
       setArImgs(new Array(arrLength).fill(productImage1))
       if(products)
@@ -127,6 +127,7 @@ const TopSales = () => {
         
           return <SwiperSlide key={i} >
             <ProductCard
+              id={el?._id?.$oid}
               title={el?.arName || ''}
               description="جودة عالية"
               image={arImgs[i] || productImage1}
@@ -137,6 +138,7 @@ const TopSales = () => {
         :proEn?.map((el, i)=>{
           return <SwiperSlide key={i}>
             <ProductCard
+              id={el?._id?.$oid}
               title={el?.enName || ''}
               description="Premium Quality"
               image={enImgs[i] || productImage1}

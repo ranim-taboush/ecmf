@@ -242,7 +242,7 @@ const Services = ({ }) => {
           }
         </ul>
       </div>
-      <Button className='sm:px-6 sm:py-4'>
+      <Button  className={index ==="1"? 'sm:px-6 sm:py-4 hidden':'sm:px-6 sm:py-4'}>
         <Link href={`/${index}/products`}>
           { locale === 'ar' ? 'اكتشف المزيد من المنتجات' : 'Explore More Products' }
         </Link>

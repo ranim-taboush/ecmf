@@ -20,7 +20,7 @@ const Footer = () => {
                 height={91}
               />
             </Link>
-            <p className="text-base leading-relaxed text-white mt-7">To know more about out products</p>
+            {/* <p className="text-base leading-relaxed text-white mt-7">To know more about out products</p> */}
             <ul className="flex items-center space-x-3 mt-9">
               
               <a href="https://www.facebook.com/profile.php?id=100077992483712&mibextid=LQQJ4d"><Facebook className='text-white text-base hover:text-primary focus:text-primary duration-200 cursor-pointer' /></a>
@@ -34,7 +34,7 @@ const Footer = () => {
 
             <ul className="mt-6 space-y-4">
               <FooterLink title="Home" href="/">Home</FooterLink>
-              <FooterLink title="Gallery" href="/gallery">Gallery</FooterLink>
+              {/* <FooterLink title="Gallery" href="/gallery">Gallery</FooterLink> */}
               <FooterLink title="Contact us" href="/contact-us">Contact us</FooterLink>
               <FooterLink title="Terms of Sale" href="/terms-of-sale">Terms of Sale</FooterLink>
             </ul>
