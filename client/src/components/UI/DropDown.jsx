@@ -45,7 +45,7 @@ useEffect(()=>{
     // getCategories()
     // getProducts()
   }, [])
-  return <div className={"absolute top-6 left-0 right-0 bg-white text-black rounded-md p-2 w-max max-h-48 overflow-y-scroll hidden scrollbar dropdown"}>
+  return <div className={"absolute top-6 left-0 right-0 bg-white text-black rounded-md p-2 w-max max-h-48 overflow-y-scroll hidden scrollbar dropdown z-10"}>
     {name === "products"
     ?productsName.map((_, i)=>
     <Link key={i} href={`/0/products/${_.id}`} className='w-full block border-b-2 p-1 hover:bg-gray-200 '>{locale === 'ar'? _.ar : _.en}</Link>
