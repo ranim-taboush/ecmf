@@ -118,12 +118,13 @@ const Services = ({ }) => {
           effect='cards'
           cardsEffect={{
             slideShadows: false,
-            perSlideOffset: 16,
+            perSlideOffset: 0,
+            perSlideRotate: 0,
           }}
           grabCursor={true}
           modules={[EffectCards, Navigation]}
           className="mySwiper w-10/12 sm:w-3/5 mx-auto h-48 sm:h-96 "
-          initialSlide={3}
+          initialSlide={0}
 
           navigation={{ prevEl: navigationPrevRef?.current, nextEl: navigationNextRef?.current }}
           onBeforeInit={(swiper) => {

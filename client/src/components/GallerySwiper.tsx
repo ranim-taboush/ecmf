@@ -31,15 +31,16 @@ const GallerySwiper: FC<GallerySwiperProps> = ({ images, nextArrowId, prevArrowI
             {locale === 'ar' ? 'الألات المعدنية' : 'Iron Gallery'}
           </Title>
           <Swiper
-            effect='cards'
-            cardsEffect={{
-              slideShadows: false,
-              perSlideOffset: 16,
-            }}
-            grabCursor={true}
-            modules={[EffectCards, Navigation]}
-            className="mySwiper w-10/12 sm:w-3/5 mx-auto h-48 sm:h-96 flex items-center"
-            initialSlide={3}
+          effect='cards'
+          cardsEffect={{
+            slideShadows: false,
+            perSlideOffset: 0,
+            perSlideRotate: 0,
+          }}
+          grabCursor={true}
+          modules={[EffectCards, Navigation]}
+          className="mySwiper w-10/12 sm:w-3/5 mx-auto h-48 sm:h-96 "
+          initialSlide={0}
 
             navigation={{ prevEl: navigationPrevRef?.current, nextEl: navigationNextRef?.current }}
             onBeforeInit={(swiper: any) => {
