@@ -1,9 +1,9 @@
 export const navLinks = [
-  { href: '/', label: 'home' },
-  { href: '/about', label: 'about' },
-  // { href: '/gallery', label: 'gallery' },
-  { href: '/contact-us', label: 'contactUs' },
-  { href: '/lines', label: 'lines' },
-  { href: '/products', label: 'products' },
-  { href: '/terms-of-sale', label: 'termsOfSale' },
+  { href: '/', label: 'Home', arLabel: 'الرئيسية' },
+  { href: '/about', label: 'About', arLabel: "من نحن" },
+  // { href: '/gallery', label: 'Gallery', arLabel: "معرض الصور" },
+  { href: '/contact-us', label: 'Contact Us', arLabel: "تواصل معنا" },
+  { href: '/lines', label: 'Lines', arLabel: 'الخطوط' },
+  { href: '/products', label: 'Products', arLabel: 'منتجاتنا' },
+  { href: '/terms-of-sale', label: 'Terms of Sale', arLabel: "شروط البيع" },
 ]

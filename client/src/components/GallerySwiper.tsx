@@ -63,7 +63,7 @@ const GallerySwiper: FC<GallerySwiperProps> = ({ images, nextArrowId, prevArrowI
             }
             <div
               className={cn('absolute -bottom-12 sm:-bottom-20 z-50',
-                locale === 'ar' ? 'right-[5%] sm:right-1/4' : 'left-[5%] sm:left-1/4',
+                locale === 'ar' ? '-right-[5%] sm:right-1/4' : '-left-[5%] sm:left-1/4',
               )}
               ref={navigationPrevRef}
             >
@@ -76,7 +76,7 @@ const GallerySwiper: FC<GallerySwiperProps> = ({ images, nextArrowId, prevArrowI
             </div>
             <div
               className={cn('absolute -bottom-12 sm:-bottom-20 z-50',
-                locale === 'ar' ? 'left-[5%] sm:left-1/4' : 'right-[5%] sm:right-1/4'
+                locale === 'ar' ? '-left-[5%] sm:left-1/4' : '-right-[5%] sm:right-1/4'
               )}
               ref={navigationNextRef}
             >
