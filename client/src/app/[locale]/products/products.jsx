@@ -101,9 +101,9 @@ const Products = ({}) => {
         </div>
       </div>
     </div>
-    <div className="grid grid-cols-4 max-md:grid-cols-1 relative -mt-8 container bg-[#F9F9F9] rounded-md z-10">
+    <div className="grid grid-cols-4  max-md:grid-cols-1 relative -mt-8 container bg-[#F9F9F9] rounded-md z-10">
       
-      <div className="md:col-span-1 bg-white rounded-md px-4 sm:px-12 py-6 sm:py-12">
+      <div className="md:col-span-1  bg-white rounded-md px-4 sm:px-12 py-6 sm:py-12">
         <p className='font-semibold mb-4'>{locale === 'ar' ?"خطوط انتاجنا" : "Our Lines"}</p>
         {categories?.map((_, i)=>{
           return <div key={i} className='w-full flex justify-start gap-3 items-center'>
