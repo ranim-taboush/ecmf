@@ -33,9 +33,9 @@ const Navbar = ({ }) => {
 
   const getLocale = (el) => t(el)
 
-  const localeNavLinks = navLinks.map(({ href, label }) => ({
+  const localeNavLinks = navLinks.map(({ href, label, arLabel }) => ({
     href: href,
-    label: getLocale(label)
+    label: locale ==="ar"? arLabel: label
   }))
 
   return <header className='container pt-12 pb-8 mx-auto flex items-start justify-between'>
@@ -51,16 +51,18 @@ const Navbar = ({ }) => {
       </Link>
     </div>
     {
-      navLinks.map(({ href, label }) => (
+      localeNavLinks.map((_, i) => (
         <div
-          key={`${href}${label}`}
+          key={i}
           className='hidden group md:block text-sm font-medium text-white duration-200 cursor-pointer relative w-fit navbar'
         > 
-          <Link className='group-hover:text-gray-400' href={href}>
-            <span>{(locale === 'ar' ? navbar[label+"Ar"] : navbar[label]) || getLocale(label)}</span>
+          <Link className='group-hover:text-gray-400' href={_.href}>
+            <span>{_.label}</span>
           </Link>
-          {(label === "lines" || label === "linesAr") ? <DropDown locale={locale} name={"lines"} />
-          : ((label === "products" || label === "productsAr")? <DropDown locale = {locale} name={"products"}/> : "")}
+          {(_.label === "Lines") 
+          ? <DropDown locale={locale} name={"lines"} />
+          : ((_.label === "Products")? <DropDown locale = {locale} name={"products"}/> : "")}
+          {console.log(_.label, _.label === "Lines", _.label === "Products")}
           <div className={"absolute w-full h-0.5 bg-gray-400 transform scale-x-0 group-hover:scale-100 duration-200"}></div>
 
         </div>

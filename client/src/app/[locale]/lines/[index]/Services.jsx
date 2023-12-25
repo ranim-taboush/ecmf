@@ -143,7 +143,7 @@ const Services = ({ }) => {
           }
           <div
             className={cn('absolute -bottom-12 sm:-bottom-20 z-50',
-              locale === 'ar' ? 'right-[5%] sm:right-1/4' : 'left-[5%] sm:left-1/4',
+              locale === 'ar' ? '-right-[5%] sm:right-1/4' : '-left-[5%] sm:left-1/4',
             )}
             ref={navigationPrevRef}
           >
@@ -156,7 +156,7 @@ const Services = ({ }) => {
           </div>
           <div
             className={cn('absolute -bottom-12 sm:-bottom-20 z-50',
-              locale === 'ar' ? 'left-[5%] sm:left-1/4' : 'right-[5%] sm:right-1/4'
+              locale === 'ar' ? '-left-[5%] sm:left-1/4' : '-right-[5%] sm:right-1/4'
             )}
             ref={navigationNextRef}
           >
@@ -236,8 +236,8 @@ const Services = ({ }) => {
         <p className='text-xl sm:text-3xl text-primary font-bold mb-2 sm:mb-4'>
           {locale === 'ar' ? currentLine?.usedInTitle?.ar : currentLine?.usedInTitle?.en}
         </p>
-        <ul className='flex flex-col flex-wrap items-start justify-start list-disc max-h-32'>
-          {currentLine.usedIn[locale === 'ar' ? 'ar' : 'en'].map((el, i) => <li key={i} className='text-lg max-lg:text-xs text-black'>
+        <ul className='flex flex-col flex-wrap items-start justify-start list-disc max-h-32 max-lg:max-h-96'>
+          {currentLine.usedIn[locale === 'ar' ? 'ar' : 'en'].map((el, i) => <li key={i} className='text-lg text-black'>
               {el}
             </li>)
           }

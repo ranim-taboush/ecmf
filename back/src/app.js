@@ -12,7 +12,7 @@ const upload = require('./../routes/uploadRouter')
 const port = process.env.PORT || 5000;
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://ecmf-project.vercel.app", "https://ecmf-project.vercel.app/", "https://vercel.com/trendlix", "https://vercel.com/trendlix/", "*"],  
+    origin: ["http://localhost:3000", "https://ecmf-project.vercel.app", "https://ecmf-project.vercel.app/", "https://www.ecmf-eg.com", "https://www.ecmf-eg.com/", "https://vercel.com/trendlix", "https://vercel.com/trendlix/", "*"],  
     credentials: true,
     exposedHeader: ["accessToken", "accesstoken", 'Access-Control-Allow-Origin'], 
   })
