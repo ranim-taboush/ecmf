@@ -20,7 +20,7 @@ const About: FC<AboutProps> = ({ title, titleVariant, body, direction, img, roun
     direction === 'right' ? 'flex-col sm:flex-row-reverse' : 'flex-col sm:flex-row',
     className
   )}>
-    <div className="relative flex-1 col-span-1">
+    <div className="relative flex-1 col-span-1 w-2/4">
       <Image
         src={img}
         alt={title}
@@ -38,7 +38,7 @@ const About: FC<AboutProps> = ({ title, titleVariant, body, direction, img, roun
           {title}
         </Title>
       </div>
-      <p className='mt-4 ltr:pl-4 rtl:pl-4 sm:p-0'>
+      <p className='mt-4 ltr:pl-4 rtl:pl-4 sm:p-0 max-md:text-sm'>
         {parse(body)}
       </p>
     </div>

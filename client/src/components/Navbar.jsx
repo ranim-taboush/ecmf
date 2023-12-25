@@ -33,9 +33,9 @@ const Navbar = ({ }) => {
 
   const getLocale = (el) => t(el)
 
-  const localeNavLinks = navLinks.map(({ href, label }) => ({
+  const localeNavLinks = navLinks.map(({ href, label, arLabel }) => ({
     href: href,
-    label: getLocale(label)
+    label: locale ==="ar"? arLabel: label
   }))
 
   return <header className='container pt-12 pb-8 mx-auto flex items-start justify-between'>

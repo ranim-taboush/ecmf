@@ -22,10 +22,10 @@ const ProductCard: FC<ProductCardProps> = ({ id, title, description, image, curr
       alt={title}
       width={200}
       height={250}
-      className='w-full h-96 rounded-3xl'
+      className='w-full h-96 rounded-3xl max-md:object-contain max-md:h-32'
     />
     <div className="flex flex-col gap-1 mt-1 px-4 sm:px-8">
-      <p className='text-black text-base sm:text-2xl font-bold'>{title}</p>
+      <p className='text-black text-base sm:text-2xl font-bold max-md:text-xs'>{title}</p>
     </div>
   </Link >
 }
