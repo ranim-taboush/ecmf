@@ -62,7 +62,6 @@ const Navbar = ({ }) => {
           {(_.label === "Lines") 
           ? <DropDown locale={locale} name={"lines"} />
           : ((_.label === "Products")? <DropDown locale = {locale} name={"products"}/> : "")}
-          {console.log(_.label, _.label === "Lines", _.label === "Products")}
           <div className={"absolute w-full h-0.5 bg-gray-400 transform scale-x-0 group-hover:scale-100 duration-200"}></div>
 
         </div>

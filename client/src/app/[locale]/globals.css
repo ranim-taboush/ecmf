@@ -104,6 +104,11 @@ body {}
     width: 100%;
     opacity: 0;
 }
+.PrivateSwitchBase-input.css-1m9pwf3{
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+}
 *{
   scrollbar-color:#1F96D3 #76787a !important;
   scrollbar-width: thin !important;
