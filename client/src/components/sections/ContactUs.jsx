@@ -20,9 +20,9 @@ const ContactUs = ({ }) => {
     "title" : "Contact Us",
     "description" : "Get in touch with us",
     "name" : "Name",
-    "namePlaceholder" : "Hamed Osama",
+    "namePlaceholder" : "Your Name",
     "email" : "Email",
-    "emailPlaceholder" : "hamed@trendlix.com",
+    "emailPlaceholder" : "Example@gmail.com",
     "message" : "Message",
     "messagePlaceholder" : "Type your query here.....",
     "date": "Date",
@@ -35,9 +35,9 @@ const ContactUs = ({ }) => {
     title : "تواصل معنا",
     description : "ابق على تواصل معنا",
     name : "الاسم",
-    namePlaceholder : "حامد اسامه",
+    namePlaceholder : "اسمك الكامل",
     email : "البريد الالكتروني",
-    emailPlaceholder : "hamed@trendlix.com",
+    emailPlaceholder : "Example@gmail.com",
     message : "التعليق",
     messagePlaceholder : "اكتب ما تريده",
     date: "التاريخ",
@@ -86,8 +86,8 @@ const ContactUs = ({ }) => {
               placeholder={locale === 'ar'? contactAr.messagePlaceholder: contactEn.messagePlaceholder}
               className=" !h-36"
             />
-            <div className="grid grid-cols-4">
-              <div className='col-span-2'>
+            <div className="grid grid-cols-4 max-md:gap-6">
+              <div className='col-span-2 min-w-fit'>
               <Input
                 label={locale === 'ar'? contactAr.date: contactEn.date}
                 name='date'
@@ -98,14 +98,15 @@ const ContactUs = ({ }) => {
                 onChange={(e)=> {setDate(e.target.value); }}
               />
               </div>
-              <div className='col-span-1'></div>
-              <div className='col-span-1'>
+              <div className='col-span-1 max-md:hidden'></div>
+              <div className='col-span-1 min-w-fit'>
                 <Input
                   label={locale === 'ar'? contactAr.time: contactEn.time}
                   name='time'
                   type="time"
                   value={time}
                   onChange={(e)=> {setTime(e.target.value); }}
+                  className="min-w-[7rem]"
                 />
               </div>
             </div>

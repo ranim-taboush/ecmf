@@ -21,12 +21,14 @@ const AdminNavbar: FC<AdminNavbarProps> = ({ }) => {
     "title" : "ECMF",
     "Login" : "Admin Login",
     "AddNewProduct" : "Add New Product",
+    "ViewProducts": "View Products",
     "AddNewCategory" : "Add New Line",
     "Logout": "Admin Logout",
     "titleAr" : "ECMF",
     "LoginAr" : "تسجيل الدخول",
     "LogoutAr": "تسجيل الخروج",
     "AddNewProductAr" : "اضافة منتج جديد",
+    "ViewProductsAr": "عرض المنتجات",
     "AddNewCategoryAr" : "اضافة خط جديد",
   }
 

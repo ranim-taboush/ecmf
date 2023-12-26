@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require('path')
 const Category = require('./../models/categoryModel')
 const Product = require('./../models/productModel')
+const ObjectId = require('mongoose').Types.ObjectId; 
 
 const createProduct = async (req, res) => {
     const category = req.body.category;
@@ -47,6 +48,27 @@ const getProduct = async (req, res) => {
     .catch(e=>res.status(500).send(e.message))
 }
 
+const deleteProduct = async (req, res) => {
+    const _id = req.params.id;
+    await Product.findByIdAndDelete(_id)
+    .then(async product=>{
+        if(!product) return res.status(400).json({message: "product not found"})
+        const category = await Category.findById(product.category)
+        const index = category.products.indexOf(product._id);
+        if (index > -1) { // only splice array when product id found
+            category.products.splice(index, 1);
+        }
+        // category.products.forEach((_, i)=>{
+        //     console.log(_.toString(), product._id.toString(), " ",_.toString() != product._id.toString())
+        //     if(_.toString() != product._id.toString()) 
+        // })
+        await category.save()
+        .then(()=>{return res.status(200).json({message: "deleted successfully"})})
+        .catch(e=>{return res.status(500).send(e.message); })
+        
+    }).catch(e=>res.status(500).send(e.message))
+}
+
 module.exports = {
-    createProduct, getArProducts, getEnProducts, getProduct
+    createProduct, getArProducts, getEnProducts, getProduct, deleteProduct
 }

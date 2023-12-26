@@ -1,4 +1,5 @@
 import { FC, forwardRef } from 'react'
+import { cn } from '@/utils/utils';
 
 // interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 //   label: string,
@@ -9,7 +10,7 @@ import { FC, forwardRef } from 'react'
 // }
 
 const Input = forwardRef (({
-  label, name, placeholder, onChange, value, type, style, min, max
+  label, name, placeholder, onChange, value, type, style, min, max, className
 }, ref) => {
   return (
     <div className="">
@@ -25,7 +26,7 @@ const Input = forwardRef (({
         min={min}
         max={max}
         type={type || 'text'}
-        className={'bg-transparent border border-white rounded-md px-4 py-2 w-full focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 text-white duration-300' }
+        className={cn('bg-transparent border border-white rounded-md px-4 py-2 w-full focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 text-white duration-300 ', className) }
         style={style} />
     </div>
   )

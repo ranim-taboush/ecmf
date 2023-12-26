@@ -23,6 +23,7 @@ const Form = ({ }) => {
   axios.defaults.headers['content-type'] = "application/json";
   // axios.defaults.headers['Access-Control-Allow-Origin'] ="*";
   axios.defaults.withCredentials = true;
+  
   const locale = useLocale();
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -118,8 +119,7 @@ const Form = ({ }) => {
             lengthList: data.lengthList?.map(v=>v.trim()).filter(n=>n) || ''},
             { headers:{ "accessToken": `${localStorage.getItem('token')}` } }
         );
-        Success('success')
-        Success('Product Added')
+        Success('Product Added Successfully')
         setId(res.data?._id)
         setData({category: "Slicing Line", arName: '', enName: '', 
         thickness: {from: '', to: '', arUnit: '', enUnit: ''}, length: '', thicknessList: [], lengthList: [], srcImg: agents[0].src})

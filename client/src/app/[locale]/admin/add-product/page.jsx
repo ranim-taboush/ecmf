@@ -5,7 +5,7 @@ import AdminNavbar from '@/components/AdminNavbar'
 import Title from '@/components/UI/typography/Title'
 import Form from './from'
 
-const page = ({ }) => {
+const Page = ({ }) => {
   const locale = useLocale()
   const t = useTranslations('addNewProduct')
   return <div className='overflow-hidden'>
@@ -28,4 +28,4 @@ const page = ({ }) => {
   </div>
 }
 
-export default page
+export default Page

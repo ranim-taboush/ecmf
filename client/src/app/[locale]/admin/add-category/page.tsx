@@ -18,19 +18,20 @@ const page: FC<pageProps> = ({ }) => {
   return <div className='overflow-hidden'>
       <NextIntlClientProvider locale={locale}>
         <AdminNavbar />
-      </NextIntlClientProvider>    <main className="py-4 sm:py-8 container mx-auto">
-      <div className="flex items-center justify-center">
-        <Title variant='doubleBorder' className='text-center my-8 pl-0' borderDirection='right'>
-          {t('title')}
-        </Title>
-      </div>
-      <NextIntlClientProvider locale={locale}>
-        <div className="relative">
-          <Form />
+      </NextIntlClientProvider>    
+      <main className="py-4 sm:py-8 container mx-auto">
+        <div className="flex items-center justify-center">
+          <Title variant='doubleBorder' className='text-center my-8 pl-0' borderDirection='right'>
+            {t('title')}
+          </Title>
         </div>
-      </NextIntlClientProvider>
-    </main>
-    <Footer />
+        <NextIntlClientProvider locale={locale}>
+          <div className="relative">
+            <Form />
+          </div>
+        </NextIntlClientProvider>
+      </main>
+      <Footer />
   </div>
 }
 
