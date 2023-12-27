@@ -21,7 +21,9 @@ function View() {
                 <ProductsList />
             </div>
         </main>
-        <Footer />
+        <NextIntlClientProvider locale={locale}>
+            <Footer />
+        </NextIntlClientProvider>
     </div>
 }
 

@@ -59,9 +59,9 @@ const Navbar = ({ }) => {
           <Link className='group-hover:text-gray-400' href={_.href}>
             <span>{_.label}</span>
           </Link>
-          {(_.label === "Lines") 
+          {(navLinks[i].label === "Lines") 
           ? <DropDown locale={locale} name={"lines"} />
-          : ((_.label === "Products")? <DropDown locale = {locale} name={"products"}/> : "")}
+          : ((navLinks[i].label === "Products")? <DropDown locale = {locale} name={"products"}/> : "")}
           <div className={"absolute w-full h-0.5 bg-gray-400 transform scale-x-0 group-hover:scale-100 duration-200"}></div>
 
         </div>

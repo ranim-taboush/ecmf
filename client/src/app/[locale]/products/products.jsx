@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useLocale, useTranslations } from 'next-intl';
 import Navbar from '@/components/Navbar.jsx';
 import productsBg from '@/images/products_bg.png'
-import productImg from '@/images/product_test.png'
+import productImg from '@/images/0.png'
 import Product from './product';
 import productsData from '@/data/products'
 import { lines } from '@/data/lines'

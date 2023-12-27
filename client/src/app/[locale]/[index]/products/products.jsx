@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useLocale, useTranslations } from 'next-intl';
 import Navbar from '@/components/Navbar.jsx';
 import productsBg from '@/images/products_bg.png'
-import productImg from '@/images/product_test.png'
+import productImg from '@/images/0.png'
 import Product from './product';
 import LittleNav from './littleNav';
 import productsData from '@/data/products'
@@ -92,7 +92,7 @@ const Products = ({}) => {
       <div className="relative">
         <Navbar />
         <div className="container flex items-center justify-center">
-          <p className='text-primary uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold'>
+          <p className='text-primary uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold max-md:-mt-5'>
             {locale === 'ar' ? categories[index]?.title?.ar||'الواح صاج ساخن' : categories[index]?.title?.en || 'Hot Metal Sheets'}
           </p>
         </div>

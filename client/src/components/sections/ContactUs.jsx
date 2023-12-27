@@ -86,8 +86,8 @@ const ContactUs = ({ }) => {
               placeholder={locale === 'ar'? contactAr.messagePlaceholder: contactEn.messagePlaceholder}
               className=" !h-36"
             />
-            <div className="grid grid-cols-4 max-md:gap-6">
-              <div className='col-span-2 min-w-fit'>
+            <div className="flex items-center justify-between flex-wrap">
+              <div className='min-w-fit max-lg:w-full'>
               <Input
                 label={locale === 'ar'? contactAr.date: contactEn.date}
                 name='date'
@@ -96,17 +96,17 @@ const ContactUs = ({ }) => {
                 min={today}
                 max={`${parseInt(today.split("-")[0])+2}-${today.split('-')[1]}-${today.split('-')[2]}`}
                 onChange={(e)=> {setDate(e.target.value); }}
+                className="min-w-[7rem] max-lg:w-full"
               />
               </div>
-              <div className='col-span-1 max-md:hidden'></div>
-              <div className='col-span-1 min-w-fit'>
+              <div className='min-w-fit max-lg:w-full'>
                 <Input
                   label={locale === 'ar'? contactAr.time: contactEn.time}
                   name='time'
                   type="time"
                   value={time}
                   onChange={(e)=> {setTime(e.target.value); }}
-                  className="min-w-[7rem]"
+                  className="min-w-[7rem] max-lg:w-full"
                 />
               </div>
             </div>

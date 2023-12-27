@@ -53,11 +53,11 @@ const Services = ({ }) => {
   const navigationPrevRef = useRef(null)
   const navigationNextRef = useRef(null)
   const lineImgs = {
-    active: [lineActive2, lineActive1, lineActive4, lineActive5, lineActive3, lineActive6],
-    normal: [line2, line1, line4, line5, line3, line6],
+    active: [lineActive1, lineActive2, lineActive4, lineActive5, lineActive3, lineActive6],
+    normal: [line1, line2, line4, line5, line3, line6],
     names: {
-      en: ["Cutting Line", "Slicing Line", "Icon & Steel Deck Line", "Purlins & Ornaments Line", "Pipes & Cans Line", "Shatter Door Line"],
-      ar: ["خط التقطيع", "خط التشريح", "خط الايكون و الاستيل ديك", "خط الحليات و المدادات", "خط المواسير و العلب", "خط ابواب المحلات التجارية"],
+      en: ["Slicing Line", "Cutting Line", "Icon & Steel Deck Line", "Purlins & Ornaments Line", "Pipes & Cans Line", "Shatter Door Line"],
+      ar: ["خط التشريح", "خط التقطيع", "خط الايكون و الاستيل ديك", "خط الحليات و المدادات", "خط المواسير و العلب", "خط ابواب المحلات التجارية"],
     }
   }
   const locale = useLocale()
@@ -243,7 +243,7 @@ const Services = ({ }) => {
           }
         </ul>
       </div>
-      <Button  className={index ==="1"? 'sm:px-6 sm:py-4 hidden':'sm:px-6 sm:py-4'}>
+      <Button  className={index == 0? 'sm:px-6 sm:py-4 hidden':'sm:px-6 sm:py-4'}>
         <Link href={`/${index}/products`}>
           { locale === 'ar' ? 'اكتشف المزيد من المنتجات' : 'Explore More Products' }
         </Link>

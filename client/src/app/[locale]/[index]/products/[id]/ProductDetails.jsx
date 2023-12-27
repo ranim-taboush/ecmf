@@ -5,7 +5,7 @@ import { useLocale } from 'next-intl'
 
 import Navbar from '@/components/Navbar.jsx'
 import productsBg from '@/images/products_bg.png'
-import productImg from '@/images/product_test.png'
+import productImg from '@/images/0.png'
 import axios from "axios"
 import { Error } from '@/components/toast';
 import { useParams } from 'next/navigation'
@@ -77,7 +77,7 @@ const ProductDetails = ({ }) => {
       <div className="relative">
         <Navbar />
         <div className="container flex items-center justify-center">
-          <p className='text-primary uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold'>
+          <p className='text-primary uppercase text-center text-4xl md:text-4xl xl:text-5xl font-bold max-md:-mt-5'>
             {locale === 'ar' ? product?.arName || 'الواح صاج ساخن' : product?.enName|| 'Hot Metal Sheets'}
           </p>
         </div>

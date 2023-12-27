@@ -31,7 +31,9 @@ const page: FC<pageProps> = ({ }) => {
           </div>
         </NextIntlClientProvider>
       </main>
-      <Footer />
+      <NextIntlClientProvider locale={locale}>
+        <Footer />
+      </NextIntlClientProvider>
   </div>
 }
 
