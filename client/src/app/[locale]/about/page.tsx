@@ -84,7 +84,9 @@ const page: FC<pageProps> = ({ }) => {
       </div>
     </main>
     <Agents />
-    <Footer />
+    <NextIntlClientProvider locale={locale}>
+      <Footer />
+    </NextIntlClientProvider>
   </div>
 }
 

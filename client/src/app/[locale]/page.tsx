@@ -38,10 +38,10 @@ export default function Home() {
             <div className="flex flex-col items-center sm:items-start">
               <h1 className='text-white text-center sm:text-start text-5xl md:text-6xl xl:text-7xl font-bold'>
                 {t('introOne')}
-                <span className='text-primary inline-block'>{t('introTwo')}</span>
+                <span className='text-primary inline-block'> {t('introTwo')} </span>
                 {t('introThree')}
               </h1>
-              <Link href="/0/products">
+              <Link href="/1/products">
                 <Button className='mt-8 sm:px-8 sm:py-4 hover:sm:px-6'>
                   <div className="flex items-center gap-4 hover:gap-10">
                     <span className='inline-block'> {t('cta')} </span>
@@ -80,7 +80,9 @@ export default function Home() {
         <Browse />
       </NextIntlClientProvider> */}
       <Agents />
-      <Footer />
+      <NextIntlClientProvider locale={locale}>
+        <Footer />
+      </NextIntlClientProvider>
     </main>
   )
 }

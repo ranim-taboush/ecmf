@@ -4,7 +4,7 @@ import Footer from '@/components/Footer/Footer'
 import ShortNavbar from '@/components/ShortNavbar'
 import Title from '@/components/UI/typography/Title'
 import Agents from '@/components/sections/Agents'
-import { useLocale, useTranslations } from 'next-intl'
+import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl'
 
 interface pageProps {
 
@@ -39,7 +39,9 @@ const page: FC<pageProps> = ({ }) => {
       </div>
     </main>
     <Agents />
-    <Footer />
+    <NextIntlClientProvider locale={locale}>
+      <Footer />
+    </NextIntlClientProvider>
   </div>
 }
 

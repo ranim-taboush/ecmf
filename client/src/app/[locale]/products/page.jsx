@@ -18,7 +18,9 @@ const page = async ({ }) => {
       <Products />
     </NextIntlClientProvider>
     <Agents />
-    <Footer />
+    <NextIntlClientProvider locale={locale}>
+      <Footer />
+    </NextIntlClientProvider>
   </div>
 
 }

@@ -32,76 +32,6 @@ import shutter5 from '@/images/linesGallery/shutterDoor/img5.jpg'
 export const lines = [
 {
   "_id": {
-    "$oid": "64e5b6bc79d8b810bbea00d8"
-  },
-  "title": {
-    "ar": "خط التقطيع",
-    "en": "Cutting Line"
-  },
-  "machine": {
-    "ar": "آلات خط التقطيع",
-    "en": "Cutting Line Machines"
-  },
-  "description": {
-    "ar": "يتم تقطيع اللفة حسب طلب العميل حيث يتم ارسال امر توريد متفق عليه من وزن وطول وعرض الالواح \\n اقصى طول للوح يصل الي 12متر\\n اقصى سمك للتقطيع 4مم",
-    "en": "The roll is been cutting according to the customer's request, a supplying order is sent with the weight, length and width spices the maximum length of the metal sheet is up to 12 meters. \\n Maximum cutting thickness 4mm"
-  },
-  "productTitle": {
-    "ar": "منتجات التشريح",
-    "en": "Cutting Products"
-  },
-  "productsTitle": {
-    "ar": [
-      " تقطيع جميع انواع الصاج",
-      "صاج ساخن",
-      "صاج مجلفن",
-      "صاج بارد",
-      "صاج مخلل",
-      "صاج ملون",
-    ],
-    "en": [
-      "Cutting all kinds of sheets",
-      "Hot Rolled Sheet",
-      "Galvanized Sheet",
-      "Cold Rolled Sheet",
-      "Pickled Sheet",
-      "Colored Sheet"
-    ]
-  },
-  "usedInTitle": {
-    "en": "Used in",
-    "ar": "يستخدم في"
-  },
-  "usedIn": {
-    "ar": [
-      "مجاري الهواء و التكيفات",
-      "اكسسوارات الابواب",
-      "ابواب مصفحة",
-      "الأجهزة المنزلية",
-      "الاثاث المعدني",
-      "الهياكل المعدنية",
-      "هياكل السيارات",
-      "اللوحات الكهربائية",
-      "شاسيهات الدعاية والاعلان",
-      "انظمة الطاقة"
-    ],
-    "en": [
-      "Air ducts and air conditioners",
-      "Metal furniture",
-      "Electrical panels",
-      "Door accessories",
-      "Metal structures",
-      "Metalworking",
-      "Armored doors",
-      "Advertising and advertising chassis",
-      "Home appliances",
-      "Power systems",
-    ]
-  },
-  "catImgs": [cutting1, cutting2, cutting3, cutting4, cutting5, cutting6, cutting7, cutting8, cutting9]
-},
-{
-  "_id": {
     "$oid": "64e5b2e979d8b810bbea00d2"
   },
   "title": {
@@ -171,6 +101,76 @@ export const lines = [
     ]
   },
   "catImgs": [slicing1, slicing2, slicing3, slicing4, slicing5]
+},
+{
+  "_id": {
+    "$oid": "64e5b6bc79d8b810bbea00d8"
+  },
+  "title": {
+    "ar": "خط التقطيع",
+    "en": "Cutting Line"
+  },
+  "machine": {
+    "ar": "آلات خط التقطيع",
+    "en": "Cutting Line Machines"
+  },
+  "description": {
+    "ar": "يتم تقطيع اللفة حسب طلب العميل حيث يتم ارسال امر توريد متفق عليه من وزن وطول وعرض الالواح \\n اقصى طول للوح يصل الي 12متر\\n اقصى سمك للتقطيع 4مم",
+    "en": "The roll is been cutting according to the customer's request, a supplying order is sent with the weight, length and width spices the maximum length of the metal sheet is up to 12 meters. \\n Maximum cutting thickness 4mm"
+  },
+  "productTitle": {
+    "ar": "منتجات التشريح",
+    "en": "Cutting Products"
+  },
+  "productsTitle": {
+    "ar": [
+      " تقطيع جميع انواع الصاج",
+      "صاج ساخن",
+      "صاج مجلفن",
+      "صاج بارد",
+      "صاج مخلل",
+      "صاج ملون",
+    ],
+    "en": [
+      "Cutting all kinds of sheets",
+      "Hot Rolled Sheet",
+      "Galvanized Sheet",
+      "Cold Rolled Sheet",
+      "Pickled Sheet",
+      "Colored Sheet"
+    ]
+  },
+  "usedInTitle": {
+    "en": "Used in",
+    "ar": "يستخدم في"
+  },
+  "usedIn": {
+    "ar": [
+      "مجاري الهواء و التكيفات",
+      "اكسسوارات الابواب",
+      "ابواب مصفحة",
+      "الأجهزة المنزلية",
+      "الاثاث المعدني",
+      "الهياكل المعدنية",
+      "هياكل السيارات",
+      "اللوحات الكهربائية",
+      "شاسيهات الدعاية والاعلان",
+      "انظمة الطاقة"
+    ],
+    "en": [
+      "Air ducts and air conditioners",
+      "Metal furniture",
+      "Electrical panels",
+      "Door accessories",
+      "Metal structures",
+      "Metalworking",
+      "Armored doors",
+      "Advertising and advertising chassis",
+      "Home appliances",
+      "Power systems",
+    ]
+  },
+  "catImgs": [cutting1, cutting2, cutting3, cutting4, cutting5, cutting6, cutting7, cutting8, cutting9]
 },
 {
   "_id": {

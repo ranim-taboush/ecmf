@@ -28,7 +28,9 @@ const page: FC<pageProps> = ({ }) => {
       </NextIntlClientProvider>
     </main>
     <Agents />
-    <Footer />
+    <NextIntlClientProvider locale={locale}>
+      <Footer />
+    </NextIntlClientProvider>
   </div>
 }
 

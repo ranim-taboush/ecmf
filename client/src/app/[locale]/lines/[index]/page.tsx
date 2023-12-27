@@ -24,7 +24,9 @@ const page: FC<pageProps> = async({ }) => {
       <Services />
     </NextIntlClientProvider>
     <Agents />
-    <Footer />
+    <NextIntlClientProvider locale={locale}>
+      <Footer />
+    </NextIntlClientProvider>
   </div>
 
 }

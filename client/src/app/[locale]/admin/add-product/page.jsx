@@ -24,7 +24,9 @@ const Page = ({ }) => {
         </div>
       </NextIntlClientProvider>
     </main>
-    <Footer />
+    <NextIntlClientProvider locale={locale}>
+      <Footer />
+    </NextIntlClientProvider>
   </div>
 }
 
