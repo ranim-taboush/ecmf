@@ -32,7 +32,7 @@ export default function RootLayout({
     notFound();
   }
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className=' scroll-smooth'>
       <body className={cairo.className}>
         {/* <Navbar /> */}
         {children}

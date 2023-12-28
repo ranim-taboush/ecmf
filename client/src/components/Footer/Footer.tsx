@@ -9,11 +9,11 @@ import { Facebook, Instagram, Linkedin  } from 'lucide-react';
 const Footer = () => {
   const locale = useLocale()
   return (
-    <section className="py-10 bg-black sm:pt-16 lg:pt-24">
+    <section className="py-10 bg-black">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="w-1/3">
-          <Link href="/">
-            <Image className="w-auto h-9" src={logo} alt="emf" width={360} height={91} />
+        <div className="w-1/5">
+          <Link href="/" className='w-full'>
+            <Image className="w-full object-contain" src={logo} alt="emf" width={760} height={91} />
           </Link>
           {/* <p className="text-base leading-relaxed text-white mt-7">To know more about out products</p> */}
           <ul className="flex items-center space-x-3 mt-9">
@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="w-full grid grid-cols-4 max-lg:grid-cols-2 gap-y-16 gap-x-12">
 
           <div className=''>
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-4 space-y-4">
               <FooterLink title="Home" href="/">{locale ==="ar"? "الرئيسية":"Home"}</FooterLink>
               {/* <FooterLink title="Gallery" href="/gallery">Gallery</FooterLink> */}
               <FooterLink title="about us" href="/about">{locale ==="ar"? "من نحن": "About us"}</FooterLink>
@@ -33,21 +33,21 @@ const Footer = () => {
             </ul>
           </div>
           <div className=''>
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-4 space-y-4">
               <FooterLink title="Lines" href="/lines">{locale ==="ar"? "الخطوط": "Lines"}</FooterLink>
               <FooterLink title="Products" href="/1/products">{locale ==="ar"? "منتجاتنا": "Products"}</FooterLink>
             </ul>
           </div>
           <div className=''>
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-4 space-y-4">
               <FooterLink title="Contact us" href="/contact-us">{locale ==="ar"? "تواصل معنا": "Contact us"}</FooterLink>
-              <FooterLink title="about us" href="/about">{locale ==="ar"? "مراقبة الجودة": "Quality Control"}</FooterLink>
+              <FooterLink title="about us" href="/about#quality">{locale ==="ar"? "مراقبة الجودة": "Quality Control"}</FooterLink>
             </ul>
           </div>
           <div className=''>
-            <ul className="mt-6 space-y-4">
-              <FooterLink title="about us" href="/about">{locale ==="ar"? "رؤيتنا": "Vision"}</FooterLink>
-              <FooterLink title="about us" href="/about">{locale ==="ar"? "مهمتنا":"Mission"}</FooterLink>
+            <ul className="mt-4 space-y-4">
+              <FooterLink title="about us" href="/about#vision">{locale ==="ar"? "رؤيتنا": "Vision"}</FooterLink>
+              <FooterLink title="about us" href="/about#mission">{locale ==="ar"? "مهمتنا":"Mission"}</FooterLink>
             </ul>
           </div>
 
@@ -64,9 +64,9 @@ const Footer = () => {
           </div> */}
         </div>
 
-        <hr className="mt-16 mb-10 border-gray-200" />
+        {/* <hr className="mt-16 mb-10 border-gray-200" /> */}
 
-        <p className="text-sm text-center text-white">All rights reserved © ECMF</p>
+        <p className="text-sm lg:text-center text-white pt-10">All rights reserved © ECMF</p>
       </div>
     </section>
 
