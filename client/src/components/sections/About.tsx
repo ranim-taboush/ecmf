@@ -14,8 +14,9 @@ interface AboutProps extends React.HTMLAttributes<HTMLDivElement> {
   roundedImg?: boolean
 }
 
-const About: FC<AboutProps> = ({ title, titleVariant, body, direction, img, roundedImg, className }) => {
-  return <div className={cn(
+const About: FC<AboutProps> = ({ title, titleVariant, body, direction, img, roundedImg, className, id = '' }) => {
+  return <div id= {id}
+  className={cn(
     'flex items-center gap-8',
     direction === 'right' ? 'flex-col sm:flex-row-reverse' : 'flex-col sm:flex-row',
     className

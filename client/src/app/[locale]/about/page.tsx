@@ -39,6 +39,7 @@ const page: FC<pageProps> = ({ }) => {
           direction='left'
         />
         <About
+          id='vision'
           className='mt-8'
           title={t('ourVision')}
           titleVariant='doubleBorder'
@@ -55,6 +56,7 @@ const page: FC<pageProps> = ({ }) => {
       </div>
       <div className="container">
         <About
+          id='mission'
           className='mt-8'
           title={t('companyIdentification')}
           titleVariant='doubleBorder'
@@ -73,6 +75,7 @@ const page: FC<pageProps> = ({ }) => {
           direction='left'
         />
         <About
+          id='quality'
           className='mt-8'
           title={t('qualityControl')}
           titleVariant='doubleBorder'
