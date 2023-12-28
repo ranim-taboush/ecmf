@@ -22,7 +22,7 @@ const FooterLink = ({ title, href, children }: FooterLinkProps) => {
       if (contactSection) {
         contactSection.scrollIntoView({ behavior: "smooth" });
       }
-    }, 2000); // Delay for smoother scroll
+    }, 2000 ); // Delay for smoother scroll
     router.push(url);
 }
 
