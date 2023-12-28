@@ -66,7 +66,7 @@ const Footer = () => {
 
         {/* <hr className="mt-16 mb-10 border-gray-200" /> */}
 
-        <p className="text-sm lg:text-center text-white pt-10">All rights reserved © ECMF</p>
+        <p className="text-sm lg:text-center text-white pt-10">All Rights Reserved © ECMF</p>
       </div>
     </section>
 
