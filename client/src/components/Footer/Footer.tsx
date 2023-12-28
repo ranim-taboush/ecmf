@@ -35,7 +35,7 @@ const Footer = () => {
           <div className=''>
             <ul className="mt-4 space-y-4">
               <FooterLink title="Lines" href="/lines">{locale ==="ar"? "الخطوط": "Lines"}</FooterLink>
-              <FooterLink title="Products" href="/1/products">{locale ==="ar"? "منتجاتنا": "Products"}</FooterLink>
+              <FooterLink title="Products" href="/products">{locale ==="ar"? "منتجاتنا": "Products"}</FooterLink>
             </ul>
           </div>
           <div className=''>
