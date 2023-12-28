@@ -41,7 +41,7 @@ export default function Home() {
                 <span className='text-primary inline-block'> {t('introTwo')} </span>
                 {t('introThree')}
               </h1>
-              <Link href="/1/products">
+              <Link href="/products">
                 <Button className='mt-8 sm:px-8 sm:py-4 hover:sm:px-6'>
                   <div className="flex items-center gap-4 hover:gap-10">
                     <span className='inline-block'> {t('cta')} </span>
