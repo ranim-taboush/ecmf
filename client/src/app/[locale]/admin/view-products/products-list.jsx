@@ -8,8 +8,11 @@ import { DataGrid } from '@mui/x-data-grid';
 import AlertDialogSlide from './dialog'
 import { Error } from '@/components/toast';
 import { Api, ApiKey } from '@/config/api'
+import { useLocale } from 'next-intl'
 
 function ProductsList() {
+    const locale = useLocale()
+    const [isLoggedIn, setIsLoggedIn] = useState(false)
     axios.defaults.headers['api-key'] = ApiKey;
     axios.defaults.headers['content-type'] = "application/json";
     // axios.defaults.headers['Access-Control-Allow-Origin'] ="*";
@@ -84,12 +87,17 @@ function ProductsList() {
             })
             .catch(e=>{console.log(e); Error("Error while loading data")})
         }
-        getData()
+        
+        if(localStorage.getItem('token')) {
+          setIsLoggedIn(true)
+          getData()
+        }
     }, [])
 
   return (
-    <div className='h-full w-full'>
-        <Box sx={{ height: 400, width: '100%' }}>
+    <div className='h-full w-full'>{
+      isLoggedIn
+        ?<Box sx={{ height: 400, width: '100%' }}>
             <DataGrid
                 rows={productsData}
                 getRowId={(row) => row._id}
@@ -111,6 +119,9 @@ function ProductsList() {
                 }}
             />
         </Box>
+        :<div className="h-full w-full flex items-center justify-center text-red-400 font-bold text-2xl p-6 md:p-12"> 
+          <p className='z-10'>{locale === "ar"? "يرجى تسجيل الدخول للاستمرار":"Please Login First"}</p>
+        </div>}
         <AlertDialogSlide selectedIDs={selectedRows}/>
     </div>
   )

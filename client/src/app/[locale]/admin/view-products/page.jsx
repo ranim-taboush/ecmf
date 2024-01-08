@@ -18,7 +18,9 @@ function View() {
                 <Title variant='doubleBorder' className='text-center my-8 pl-0' borderDirection='right'>
                     {/* {t('title')} */}View Products
                 </Title>
-                <ProductsList />
+                <NextIntlClientProvider locale={locale}>
+                    <ProductsList />
+                </NextIntlClientProvider>
             </div>
         </main>
         <NextIntlClientProvider locale={locale}>
