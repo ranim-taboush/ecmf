@@ -9,6 +9,7 @@ import AlertDialogSlide from './dialog'
 import { Error } from '@/components/toast';
 import { Api, ApiKey } from '@/config/api'
 import { useLocale } from 'next-intl'
+import adminBg from '@/images/admin-page-bg.jpg'
 
 function ProductsList() {
     const locale = useLocale()
@@ -119,10 +120,16 @@ function ProductsList() {
                 }}
             />
         </Box>
-        :<div className="h-full w-full flex items-center justify-center text-red-400 font-bold text-2xl p-6 md:p-12"> 
-          <p className='z-10'>{locale === "ar"? "يرجى تسجيل الدخول للاستمرار":"Please Login First"}</p>
-        </div>}
-        <AlertDialogSlide selectedIDs={selectedRows}/>
+        :<div className="relative mt-4 md:mt-8 rounded-md overflow-hidden">
+          <div className="absolute inset-0 ">
+            <Image src={adminBg} alt='bg' width={adminBg.width} height={adminBg.height} className='w-full h-full rounded-xl blur-md' />
+          </div>
+          <div className="h-full w-full flex items-center justify-center text-red-400 font-bold text-2xl p-6 md:p-12"> 
+            <p className='z-10'>{locale === "ar"? "يرجى تسجيل الدخول للاستمرار":"Please Login First"}</p>
+          </div>
+        </div>
+        }
+        {isLoggedIn && <AlertDialogSlide selectedIDs={selectedRows}/>}
     </div>
   )
 }
