@@ -13,9 +13,9 @@ const productSchema = new mongoose.Schema({
         from: { type: String, trim: true, default: "0.3" }, to: { type: String, trim: true, default: "1.2" },
         arUnit: { type: String, trim: true, default: "مم"}, enUnit: { type: String, trim: true, default: "mm"}
     },
-    length: { type: "String", trim: true, default: "20" },
-    thicknessList: { type: [Number], default: [6, 7, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32]},
-    lengthList: { type: [Number], default: [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32]},
+    length: { type: String, trim: true, default: "20" },
+    thicknessList: { type: [String], default: [""]},
+    lengthList: { type: [String], default: [""]},
     srcImg: { type: String },
     productImg: { type: String }
 

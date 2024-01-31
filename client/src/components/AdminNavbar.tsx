@@ -2,7 +2,7 @@
 import { FC } from 'react'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-
+import { useRouter } from 'next/navigation'
 import logo from '@/images/logo.png';
 import { useLocale } from 'next-intl';
 import { navLinks } from '@/utils/admin-nav-links';
@@ -15,6 +15,7 @@ interface AdminNavbarProps {
 }
 
 const AdminNavbar: FC<AdminNavbarProps> = ({ }) => {
+  const router = useRouter();
   const locale = useLocale();
   const [token, setToken] = useState<string>('')
   const navbar = {
@@ -23,6 +24,7 @@ const AdminNavbar: FC<AdminNavbarProps> = ({ }) => {
     "AddNewProduct" : "Add New Product",
     "ViewProducts": "View Products",
     "AddNewCategory" : "Add New Line",
+    "NewSeoAdmin" : "Add SEO admin",
     "Logout": "Admin Logout",
     "titleAr" : "ECMF",
     "LoginAr" : "تسجيل الدخول",
@@ -30,6 +32,7 @@ const AdminNavbar: FC<AdminNavbarProps> = ({ }) => {
     "AddNewProductAr" : "اضافة منتج جديد",
     "ViewProductsAr": "عرض المنتجات",
     "AddNewCategoryAr" : "اضافة خط جديد",
+    "NewSeoAdminAr" : "اضافة ادمن للمدونة",
   }
 
   useEffect(()=>{
@@ -40,6 +43,7 @@ const AdminNavbar: FC<AdminNavbarProps> = ({ }) => {
     try{
       localStorage.removeItem('token')
       setToken('')
+      router.push('/admin');
       Success("Successful")
     }catch(e){
       Error("couldn't logout")

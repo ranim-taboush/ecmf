@@ -125,7 +125,8 @@ const Form = ({ }) => {
         thickness: {from: '', to: '', arUnit: '', enUnit: ''}, length: '', thicknessList: [], lengthList: [], srcImg: agents[0].src})
 
       } catch (err) {
-        Error('Product Add failed '+ err.message)
+        Error('Product Add failed ')
+        Error(err.response.data)
       }
       setLoading(false)
     };
@@ -178,7 +179,8 @@ const Form = ({ }) => {
         if(e?.target?.files && e?.target?.files[0]){ e.target.value = null}
 
       } catch (err) {
-        Error(locale ==='ar'? 'فشل رفع الصورة': 'Image Upload failed', err.message)
+        Error(locale ==='ar'? 'فشل رفع الصورة': 'Image Upload failed')
+        Error(err.response.data)
       }
     };
 

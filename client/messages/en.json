@@ -72,6 +72,18 @@
   "terms" : {
     "title" : "Terms Of Sale"
   },
+  "blogs" : {
+    "title" : "Latest Posts"
+  },
+  "viewProducts" : {
+    "title" : "View Products"
+  },
+  "viewBlogs" : {
+    "title" : "View Blogs"
+  },
+  "NewSeoAdmin" : {
+    "title": "Add New SEO"
+  },
   "addNewCategory" :{
     "title": "New Line"
   },

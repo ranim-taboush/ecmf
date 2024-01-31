@@ -72,6 +72,18 @@
   "terms" : {
     "title" : "شروط البيع"
   },
+  "blogs" : {
+    "title" : "آخر المدونات"
+  },
+  "viewProducts" : {
+    "title" : "عرض المنتجات"
+  },
+  "viewBlogs" : {
+    "title" : "View Blogs"
+  },
+  "NewSeoAdmin" : {
+    "title": "اضافة ادمن للمدونة"
+  },
   "addNewCategory" :{
     "title": "خط جديد"
   },
