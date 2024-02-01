@@ -22,7 +22,7 @@ function Blogs() {
                 arTitle: _?.title?.ar, arTopic: _?.topic?.ar,
                 title: _?.title?.en, topic: _?.topic?.en,
                 createdAt: _?.createdAt?.split("T")[0] || "",
-                coverImg: _?.coverImg
+                coverImg: _?.coverImg, slug: _?.slug
               }
             })
             setBlogsData(template)
