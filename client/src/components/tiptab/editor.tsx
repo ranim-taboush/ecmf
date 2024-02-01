@@ -28,7 +28,6 @@ export function Editor({ setDocu }: { setDocu: any }){
     
     onUpdate({ editor }) {
       setDocu(editor.getHTML());
-      console.log(editor.getHTML())
     },
 
     extensions: [

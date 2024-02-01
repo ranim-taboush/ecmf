@@ -23,7 +23,9 @@ function BlogsCard({}) {
       const getData = async() => {
           await axios.get(url)
           .then(data=>{
-            const thisBlog = data?.data?.find(_=>_?._id === pathname.split('/')[2])
+            const thisBlog = locale === "ar"
+            ?data?.data?.find(_=>_?.slug === pathname.split('/')[3])
+            :data?.data?.find(_=>_?.slug === pathname.split('/')[2])
             setBlogData(thisBlog)
             setBlogsData(data?.data)
             setSearchedBlogs(data?.data)
@@ -56,8 +58,8 @@ function BlogsCard({}) {
   }
   const startSearch = () => {}
 
-  return (<div className='w-full h-full px-[10%] max-md:px-[5%] py-10 flex max-md:flex-wrap'>
-    {blogData?.topic && <div className="flex flex-col gap-4">
+  return (<div className='w-full h-full px-[10%] max-md:px-[5%] py-10 flex max-md:flex-wrap justify-between gap-10 max-md:gap-2'>
+    {blogData?.topic && <div className="flex flex-col gap-4 w-full">
       <p className="bg-primary rounded-sm text-white text-xs w-fit px-2 py-0.5">
         {locale === "ar"? blogData?.topic?.ar : blogData?.topic?.en}
       </p>
@@ -67,7 +69,8 @@ function BlogsCard({}) {
       <p className="text-slate-800 text-xs">
         {blogData?.createdAt?.split("T")[0]}
       </p>
-      <Image src={blogData?.coverImg} alt={blogData?.topic} width={1000} height={1000} className="w-full rounded-lg max-h-96 object-contain mx-auto"/>
+      <Image src={blogData?.coverImg} alt={blogData?.coverImgAlt || blogData?.topic?.en} width={1000} height={1000} 
+      className="w-full rounded-lg max-h-96 object-cover"/>
       <div className="flex justify-start items-center gap-4">
         <p className="text-xs">
           {locale === "ar"? "المشاركة عبر": "Share Via"}
@@ -107,8 +110,8 @@ function BlogsCard({}) {
         <div className="flex items-stretch justify-center">
           <input type="text" name='search' id='search' placeholder={locale==="ar"?"اكتب هنا..":"Type here.."}
           value={searchFor} onChange={handleChangeSearch}
-          className='border border-slate-400 bg-transparent rounded-tl-lg rounded-bl-lg w-44' />
-          <button className='bg-primary text-white border-none flex justify-center items-center p-2 gap-2 rounded-tr-lg rounded-br-lg'
+          className='border border-slate-400 bg-transparent ltr:rounded-tl-lg ltr:rounded-bl-lg rtl:rounded-tr-lg rtl:rounded-br-lg w-44' />
+          <button className='bg-primary text-white border-none flex justify-center items-center p-2 gap-2 ltr:rounded-tr-lg ltr:rounded-br-lg rtl:rounded-tl-lg rtl:rounded-bl-lg'
           onClick={startSearch}>
             <p>{locale === "ar"? "بحث": "Search"}</p>
             <Search />
@@ -122,8 +125,8 @@ function BlogsCard({}) {
         </p>
         {searchedBlogs && searchedBlogs?.map((_, i)=>{
           if(i<10)
-          return <Link  href={`/blogs/${_._id}`} key={i} className="flex justify-between w-full px-1 items-center gap-2 cursor-pointer">
-            <Image src={_?.coverImg} alt={blogData?.topic} width={200} height={200} className='w-20 h-20 object-fill rounded-lg'/>
+          return <Link  href={`/blogs/${_.slug}`} key={i} className="flex justify-between w-full px-1 items-center gap-2 cursor-pointer">
+            <Image src={_?.coverImg} alt={blogData?.topic || ''} width={200} height={200} className='w-20 h-20 object-fill rounded-lg'/>
             <div className="flex flex-col gap-2 w-52">
               <p className="bg-blue-100 rounded-sm text-primary text-xs w-fit px-2 py-0.5">
                 {locale === "ar"? _?.topic?.ar : _?.topic?.en}

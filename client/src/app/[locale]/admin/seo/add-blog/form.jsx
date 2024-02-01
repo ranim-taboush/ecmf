@@ -31,6 +31,7 @@ function Form() {
     topic: "", arTopic: "",
     paragraph: "", arParagraph: "",
     tags: [""],
+    slug: "",
     coverImgAlt: "",
     coverImg: ""
  })
@@ -51,7 +52,9 @@ function Form() {
       topic: {ar: form.arTopic, en: form.topic},
       paragraph: {ar: arDocu, en: docu},
       tags: tags,
-      coverImg: form.coverImg
+      slug: form.slug,
+      coverImgAlt: form.coverImgAlt,
+      coverImg: form.coverImg,
     };
       await axios.post(`${Api}/blog`, 
       {...row}, 
@@ -63,7 +66,7 @@ function Form() {
         title: "", arTitle: "" ,
         topic: "", arTopic: "",
         paragraph: "", arParagraph: "",
-        tags: [""],
+        tags: [""], slug: "",
         coverImgAlt: "",
         coverImg: ""
       }))
@@ -114,6 +117,8 @@ function Form() {
       <Input id="title" name="title" type="text" placeholder="Global Warming" required={true} label="Title (English)" value={form.title} onChange={handleChange} />
       <Input id="arTitle" name="arTitle" type="text" placeholder="الاحتباس الحراري" required={true} label="Title (Arabic)" value={form.arTitle} onChange={handleChange} />
       <Input id="coverImg" name="coverImg" type="file" placeholder="Lorem Ipsom..."  accept="image/*" required={true} label="Cover Image" onChange={uploadImgs} />
+      <Input id="title" name="coverImgAlt" type="text" placeholder="Global Warming Image" required={true} label="Cover Image Alt" value={form.coverImgAlt} onChange={handleChange} />
+      <Input id="title" name="slug" type="text" placeholder="must be unique" required={true} label="Slug" value={form.slug} onChange={handleChange} />
       <Input id="topic" name="topic" type="text" placeholder="Tech" required={true} label="Topic (English)" value={form.topic} onChange={handleChange} />
       <Input id="arTopic" name="arTopic" type="text" placeholder="التكنولوجيا" required={true} label="Topic (Arabic)" value={form.arTopic} onChange={handleChange} />
       <div className="py-2">
