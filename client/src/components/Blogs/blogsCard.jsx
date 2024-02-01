@@ -16,6 +16,7 @@ function BlogsCard({}) {
   const [blogData, setBlogData] = useState({})
   const [blogsData, setBlogsData] = useState([])
   const [searchFor, setSearchFor] = useState('')
+  const [searchedBlogs, setSearchedBlogs] = useState()
 
   useEffect(()=>{
       const url = `${Api}/blogs`
@@ -25,12 +26,30 @@ function BlogsCard({}) {
             const thisBlog = data?.data?.find(_=>_?._id === pathname.split('/')[2])
             setBlogData(thisBlog)
             setBlogsData(data?.data)
+            setSearchedBlogs(data?.data)
           })
           .catch(e=>{console.log(e); Error("Error while loading data")})
       }
       
       getData()
   }, [])
+
+  useEffect(()=>{
+    if(blogsData[0]?.topic){
+      let data = []
+      blogsData.forEach((_)=>{
+        console.log(_.title.en)
+        if(_.tags.indexOf(searchFor) !== -1 
+        || _.tags.indexOf(searchFor.toLowerCase()) !== -1 
+        || _?.title?.en?.includes(searchFor)
+        || _?.title?.ar?.includes(searchFor)
+        )
+        data.push(_)
+      })
+      if (data == []) data = blogsData
+      setSearchedBlogs(data)
+    }
+  }, [searchFor])
 
   const handleChangeSearch = (e) => {
     setSearchFor(e.target.value)
@@ -101,21 +120,23 @@ function BlogsCard({}) {
         <p className="text-black text-sm">
           {locale === "ar"? "أحدث المدونات": "Recent Blogs"}
         </p>
-        {blogsData && blogsData?.map((_, i)=>{
+        {searchedBlogs && searchedBlogs?.map((_, i)=>{
+          if(i<10)
           return <Link  href={`/blogs/${_._id}`} key={i} className="flex justify-between w-full px-1 items-center gap-2 cursor-pointer">
-          <Image src={_?.coverImg} alt={blogData?.topic} width={200} height={200} className='w-20 h-20 object-fill rounded-lg'/>
-          <div className="flex flex-col gap-2 w-52">
-            <p className="bg-blue-100 rounded-sm text-primary text-xs w-fit px-2 py-0.5">
-              {locale === "ar"? _?.topic?.ar : _?.topic?.en}
-            </p>
-            <p className="text-black line-clamp-2 max-w-xs font-bold">
-              {locale === "ar"? _?.title?.ar : _?.title?.en}
-            </p>
-            <p className="text-slate-800 text-xs">
-              {_?.createdAt?.split("T")[0]}
-            </p>
-          </div>
-        </Link>
+            <Image src={_?.coverImg} alt={blogData?.topic} width={200} height={200} className='w-20 h-20 object-fill rounded-lg'/>
+            <div className="flex flex-col gap-2 w-52">
+              <p className="bg-blue-100 rounded-sm text-primary text-xs w-fit px-2 py-0.5">
+                {locale === "ar"? _?.topic?.ar : _?.topic?.en}
+              </p>
+              <p className="text-black line-clamp-2 max-w-xs font-bold">
+                {locale === "ar"? _?.title?.ar : _?.title?.en}
+              </p>
+              <p className="text-slate-800 text-xs">
+                {_?.createdAt?.split("T")[0]}
+              </p>
+            </div>
+          </Link>
+          else return ''
         })}
 
         <div className="flex items-center flex-wrap gap-2">
