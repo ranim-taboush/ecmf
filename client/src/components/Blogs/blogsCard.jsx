@@ -37,7 +37,7 @@ function BlogsCard({}) {
   }
   const startSearch = () => {}
 
-  return (<div className='w-full h-full px-[10%] max-md:px-[5%] py-10 flex'>
+  return (<div className='w-full h-full px-[10%] max-md:px-[5%] py-10 flex max-md:flex-wrap'>
     {blogData?.topic && <div className="flex flex-col gap-4">
       <p className="bg-primary rounded-sm text-white text-xs w-fit px-2 py-0.5">
         {locale === "ar"? blogData?.topic?.ar : blogData?.topic?.en}
@@ -79,7 +79,7 @@ function BlogsCard({}) {
       ></p>
     </div>}
 
-    {blogsData[0]?.topic && <div className="flex flex-col gap-4">
+    {blogsData[0]?.topic && <div className="flex flex-col gap-4 max-md:mt-10 max-md:mx-auto">
 
       <div className="border border-slate-400 p-4 w-72 rounded-lg">
         <label htmlFor="search" className='text-black'>
