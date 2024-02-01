@@ -14,9 +14,10 @@ const blogsSchema = new mongoose.Schema({
         en: { type: String, required: [true, "english paragraph is required"], trim: true }
     },
     tags: {
-        type: [String], required: [true, "Add at least one tag"], trim: true
+        type: [String], required: [true, "At least one tag required"], trim: true
     },
     coverImgAlt: { type: String },
+    slug: { type: String, unique: [true, "slug must be unique"], required: [true, "slug is required"], index: true },
     coverImg: { type: String, required: [true, "coverImg is required"] }
 }, {
     timestamps: true
