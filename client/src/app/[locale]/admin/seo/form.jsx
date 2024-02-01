@@ -45,7 +45,9 @@ function Form() {
         <Input id="username" name="username" type="username" placeholder="Your username" required={true} label="User Name" value={form.username} onChange={handleChange} />
         <Input id="password" name="password" type="password" required={true} label="Password" value={form.password} onChange={handleChange} />
         {/* <ToggleBox id="remember" isChecked={isChecked} label="Remember me" onChange={()=>setIsChecked(prev=>!prev)} /> */}
-        <Button type="submit" children="Login" className="mt-4 self-end" onClick={handleSubmit}/>
+        <Button type="submit" className="mt-4 self-end" onClick={handleSubmit}>
+          Login
+        </Button>
     </form>
   )
 }

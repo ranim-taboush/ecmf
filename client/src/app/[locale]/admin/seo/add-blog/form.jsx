@@ -117,7 +117,9 @@ function Form() {
         </div>
         <TagsInput value={tags} onChange={setTags} name="tags" placeHolder="tags" /> 
 
-        <Button type="submit" children="Create Blog" className="mt-4 self-end" onClick={handleSubmit} isLoading={isLoading}/>
+        <Button type="submit" className="mt-4 self-end" onClick={handleSubmit} isLoading={isLoading}>
+          Create Blog
+        </Button>
     </form>
   )
 }
