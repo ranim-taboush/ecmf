@@ -1,5 +1,6 @@
 "use client"
 import {useState, useEffect} from 'react'
+import { useRouter } from "next/navigation"
 import axios from 'axios'
 import Image from 'next/image'
 import LoadingImg from '@/images/gallery/1.png'
@@ -13,6 +14,7 @@ import adminBg from '@/images/admin-page-bg.jpg'
 
 function BlogsList() {
     const locale = useLocale()
+    const router = useRouter()
     const [isLoggedIn, setIsLoggedIn] = useState(false)
     axios.defaults.headers['api-key'] = ApiKey;
     axios.defaults.headers['content-type'] = "application/json";
@@ -101,9 +103,11 @@ function BlogsList() {
             .catch(e=>{console.log(e); Error("Error while loading data")})
         }
         
-        if(localStorage.getItem('token')) {
+        if(localStorage.getItem('seo-token')) {
           setIsLoggedIn(true)
           getData()
+        }else{
+          router.push('/admin/seo')
         }
     }, [])
 

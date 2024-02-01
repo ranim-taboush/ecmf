@@ -1,7 +1,7 @@
 
 import { NextIntlClientProvider, useLocale, useTranslations } from 'next-intl'
 import Footer from '@/components/Footer/Footer'
-import AdminNavbar from '@/components/AdminNavbar'
+import AdminNavbar from '@/components/SeoNavbar'
 import Title from '@/components/UI/typography/Title'
 import BlogsList from './blogs-list'
 

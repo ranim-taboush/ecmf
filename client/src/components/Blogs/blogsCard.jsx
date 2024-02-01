@@ -38,7 +38,7 @@ function BlogsCard({}) {
   const startSearch = () => {}
 
   return (<div className='w-full h-full px-[10%] max-md:px-[5%] py-10 flex'>
-    <div className="flex flex-col gap-4">
+    {blogData?.topic && <div className="flex flex-col gap-4">
       <p className="bg-primary rounded-sm text-white text-xs w-fit px-2 py-0.5">
         {locale === "ar"? blogData?.topic?.ar : blogData?.topic?.en}
       </p>
@@ -77,9 +77,9 @@ function BlogsCard({}) {
       <p className="text-black w-full" 
       dangerouslySetInnerHTML={{ __html: (locale === "ar"? blogData?.paragraph?.ar : blogData?.paragraph?.en) }}
       ></p>
-    </div>
+    </div>}
 
-    <div className="flex flex-col gap-4">
+    {blogsData[0]?.topic && <div className="flex flex-col gap-4">
 
       <div className="border border-slate-400 p-4 w-72 rounded-lg">
         <label htmlFor="search" className='text-black'>
@@ -128,7 +128,7 @@ function BlogsCard({}) {
         </div>
         
       </div>
-    </div>
+    </div>}
   </div>)
 }
 

@@ -5,3 +5,9 @@ export const navLinks = [
   { href: '/admin/view-products', label: 'ViewProducts' },
   // { href: '/admin/new-seo', label: 'NewSeoAdmin' },
 ]
+
+export const seoLinks = [
+  { href: '/admin/seo', label: 'Login' },
+  { href: '/admin/seo/add-blog', label: 'AddNewBlog' },
+  { href: '/admin/seo/view-blog', label: 'ViewBlogs' },
+]

@@ -36,6 +36,7 @@ const Footer = () => {
             <ul className="mt-4 space-y-4">
               <FooterLink title="Lines" href="/lines">{locale ==="ar"? "الخطوط": "Lines"}</FooterLink>
               <FooterLink title="Products" href="/products">{locale ==="ar"? "منتجاتنا": "Products"}</FooterLink>
+              <FooterLink title="Blogs" href="/blogs">{locale ==="ar"? "المدونة": "Blogs"}</FooterLink>
             </ul>
           </div>
           <div className=''>
