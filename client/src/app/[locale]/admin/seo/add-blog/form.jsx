@@ -12,11 +12,16 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
 import { TagsInput } from "react-tag-input-component"; 
 // import TipTabInput from '@/components/tiptab/tiptabInput'
 import { Editor } from "@/components/tiptab/editor";
+import { useLocale } from 'next-intl'
+import adminBg from '@/images/admin-page-bg.jpg'
+import Image from "next/image"
 
 function Form() {
+  const locale = useLocale()
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
   const router = useRouter()
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const [docu, setDocu] = useState()
   const [arDocu, setArDocu] = useState()
@@ -31,9 +36,12 @@ function Form() {
  })
 
  useEffect(()=>{
-  console.log('docu', docu)
-  console.log('arDocu', arDocu)
- }, [docu])
+  if(localStorage.getItem('seo-token')) {
+    setIsLoggedIn(true)
+  }else{
+    router.push('/admin/seo')
+  }
+ }, [])
 
  const sendForm = async () => {
   if(form.coverImg){
@@ -98,29 +106,40 @@ function Form() {
     })
   }
   
-  return (
-    <form className='max-w-xl px-10 h-full flex justify-center flex-col text-slate-200 max-md:px-0'>
-        <p className="text-primary text-7xl font-medium max-xl:text-5xl max-md:text-2xl max-md:text-center">Add new blog!</p>
-        <p className="h-10"></p>
-        <Input id="title" name="title" type="text" placeholder="Global Warming" required={true} label="Title (English)" value={form.title} onChange={handleChange} />
-        <Input id="arTitle" name="arTitle" type="text" placeholder="الاحتباس الحراري" required={true} label="Title (Arabic)" value={form.arTitle} onChange={handleChange} />
-        <Input id="coverImg" name="coverImg" type="file" placeholder="Lorem Ipsom..."  accept="image/*" required={true} label="Cover Image" onChange={uploadImgs} />
-        <Input id="topic" name="topic" type="text" placeholder="Tech" required={true} label="Topic (English)" value={form.topic} onChange={handleChange} />
-        <Input id="arTopic" name="arTopic" type="text" placeholder="التكنولوجيا" required={true} label="Topic (Arabic)" value={form.arTopic} onChange={handleChange} />
-        <div className="py-2" style={{direction: "ltr"}}>
-          <p className="text-white text-base sm:text-lg font-light px-1">Paragraph (English)</p>
-          <Editor setDocu={setDocu} />
-        </div>
-        <div className="py-2">
-          <p className="text-white text-base sm:text-lg font-light px-1" style={{direction: "rtl"}}>Paragraph (Arabic)</p>
-          <Editor setDocu={setArDocu} />
-        </div>
-        <TagsInput value={tags} onChange={setTags} name="tags" placeHolder="tags" /> 
+  return (<div className="w-full h-full">
+    {isLoggedIn
+    ?<form className='max-w-xl px-10 h-full flex justify-center flex-col text-slate-200 max-md:px-0'>
+      <p className="text-primary text-7xl font-medium max-xl:text-5xl max-md:text-2xl max-md:text-center">Add new blog!</p>
+      <p className="h-10"></p>
+      <Input id="title" name="title" type="text" placeholder="Global Warming" required={true} label="Title (English)" value={form.title} onChange={handleChange} />
+      <Input id="arTitle" name="arTitle" type="text" placeholder="الاحتباس الحراري" required={true} label="Title (Arabic)" value={form.arTitle} onChange={handleChange} />
+      <Input id="coverImg" name="coverImg" type="file" placeholder="Lorem Ipsom..."  accept="image/*" required={true} label="Cover Image" onChange={uploadImgs} />
+      <Input id="topic" name="topic" type="text" placeholder="Tech" required={true} label="Topic (English)" value={form.topic} onChange={handleChange} />
+      <Input id="arTopic" name="arTopic" type="text" placeholder="التكنولوجيا" required={true} label="Topic (Arabic)" value={form.arTopic} onChange={handleChange} />
+      <div className="py-2">
+        <p className="text-white text-base sm:text-lg font-light px-1">Paragraph (English)</p>
+        <Editor setDocu={setDocu} />
+      </div>
+      <div className="py-2">
+        <p className="text-white text-base sm:text-lg font-light px-1">Paragraph (Arabic)</p>
+        <Editor setDocu={setArDocu} />
+      </div>
+      <p className="text-white text-base sm:text-lg font-light px-1 mt-2">Tags List</p>
+      <TagsInput value={tags} onChange={setTags} name="tags" placeHolder="tags" /> 
 
-        <Button type="submit" className="mt-4 self-end" onClick={handleSubmit} isLoading={isLoading}>
-          Create Blog
-        </Button>
+      <Button type="submit" className="mt-4 self-end" onClick={handleSubmit} isLoading={isLoading}>
+        Create Blog
+      </Button>
     </form>
+    :<div className="relative mt-4 md:mt-8 rounded-md overflow-hidden">
+      <div className="absolute inset-0 ">
+        <Image src={adminBg} alt='bg' width={adminBg.width} height={adminBg.height} className='w-full h-full rounded-xl blur-md' />
+      </div>
+      <div className="h-full w-full flex items-center justify-center text-red-400 font-bold text-2xl p-6 md:p-12"> 
+        <p className='z-10'>{locale === "ar"? "يرجى تسجيل الدخول للاستمرار":"Please Login First"}</p>
+      </div>
+    </div>}
+  </div>
   )
 }
 
