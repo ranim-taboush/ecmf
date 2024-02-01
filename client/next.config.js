@@ -8,7 +8,7 @@ const withNextIntl = require('next-intl/plugin')(
 const nextConfig = withNextIntl({
   // Other Next.js configuration ...
   images: {
-    domains: ['localhost', 'ecmf-project.vercel.app', 'ecmf-eg.com', 'ecmf.onrender.com', 'ecmf.onrender.com/public'],
+    domains: ['localhost', 'ecmf-project.vercel.app', 'ecmf-eg.com', 'ecmf.onrender.com', 'ecmf.onrender.com/public', 'firebasestorage.googleapis.com'],
   },
   env: {
     Api: process.env.DATA_API_URL,

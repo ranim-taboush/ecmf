@@ -71,7 +71,9 @@ const Products = ({}) => {
           return prev
         })
       })
-      }).catch (err=>{Error(err.message)});
+      }).catch (err=>{
+        Error(err.response.data)
+      });
     }
     // getLines()
     getCategory();

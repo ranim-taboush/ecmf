@@ -98,7 +98,8 @@ const Form = ({ }) => {
         subDescription: {en: '', ar: ''}, productsTitle: [{en: '', ar: ''}], usedIn: [{en: '', ar: ''}]})
 
       } catch (err) {
-        Error('Category Adding failed', err.message)
+        Error('Category Adding failed')
+        Error(err.response.data)
       }
       setLoading(false)
     };
@@ -143,7 +144,8 @@ const Form = ({ }) => {
         if(e?.target?.files && e?.target?.files[0]){ e.target.value = null}
 
       } catch (err) {
-        Error(locale ==='ar'? 'فشل رفع الصورة': 'Image Upload failed', err.message)
+        Error(locale ==='ar'? 'فشل رفع الصورة': 'Image Upload failed')
+        Error(err.response.data)
       }
     };
 

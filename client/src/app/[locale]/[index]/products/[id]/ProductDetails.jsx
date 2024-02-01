@@ -58,7 +58,9 @@ const ProductDetails = ({ }) => {
         }
         setImg(finalImg)
       }).catch (err=>{
-       Error('Error While Loading Data '+err.message)});
+       Error('Error While Loading Data ')
+       Error(err.response.data)
+      });
     }
     getCategory();
   }, [])
@@ -122,7 +124,7 @@ const ProductDetails = ({ }) => {
             <p className='text-gray-900 text-lg sm:text-xl font-medium'>
               {locale === 'ar' ? 'السمك (مم)' : 'Thickness (mm)'}
             </p>
-            <div className="mt-2 sm:mt-4 flex gap-2 sm:gap-4 items-center">
+            <div className="mt-2 sm:mt-4 flex gap-2 sm:gap-4 items-center flex-wrap">
               {
                 ( product?.thicknessList||[0.20, 0.22, 0.25, 0.30])
                   .map((el, i) => <span
@@ -139,7 +141,7 @@ const ProductDetails = ({ }) => {
             <p className='text-gray-900 text-lg sm:text-xl font-medium'>
               {locale === 'ar' ? 'الطول (مم)' : 'Hight (mm)'}
             </p>
-            <div className="mt-2 sm:mt-4 flex gap-2 sm:gap-4 items-center">
+            <div className="mt-2 sm:mt-4 flex gap-2 sm:gap-4 items-center flex-wrap">
               {
                 (product?.lengthList||[1000, 1250, 1500, 2000])
                   .map((el, i) => <span

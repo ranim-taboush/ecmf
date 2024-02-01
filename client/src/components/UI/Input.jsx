@@ -10,7 +10,7 @@ import { cn } from '@/utils/utils';
 // }
 
 const Input = forwardRef (({
-  label, name, placeholder, onChange, value, type, style, min, max, className
+  label, name, placeholder, onChange, value, type, style, min, max, className, accept,
 }, ref) => {
   return (
     <div className="">
@@ -25,6 +25,7 @@ const Input = forwardRef (({
         value={value}
         min={min}
         max={max}
+        accept={accept}
         type={type || 'text'}
         className={cn('bg-transparent border border-white rounded-md px-4 py-2 w-full focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 text-white duration-300 ', className) }
         style={style} />

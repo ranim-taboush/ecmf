@@ -53,11 +53,12 @@ const Form = ({ }) => {
         );
         localStorage.setItem('token', res?.data?.tokens[ res?.data?.tokens?.length-1 || [0]])
         Success(locale === 'ar'?'تم تسجيل الدخول':'login success')
-        Success(locale === 'ar'? 'يرجى الانتظار ريثما يتم تحويلك لصفحة اضافة المنتجات':'Please Wait While Redirecting to Add Product Page...')
+        // Success(locale === 'ar'? 'يرجى الانتظار ريثما يتم تحويلك لصفحة اضافة المنتجات':'Please Wait While Redirecting to Add Product Page...')
         push('/admin/add-product');
       } catch (err) {
-        Error(locale === 'ar'? 'فشل تسجيل الدخول':'login failed'+ err.message)
-        Error(locale === 'ar'? "يرجى التحقق من اسم المستخدم وكلمة المرور": "Please Check Username & Password")
+        Error(locale === 'ar'? 'فشل تسجيل الدخول':'login failed')
+        Error(err.response.data)
+        // Error(locale === 'ar'? "يرجى التحقق من اسم المستخدم وكلمة المرور": "Please Check Username & Password")
       }
     };
     postCategory();

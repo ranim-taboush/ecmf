@@ -122,3 +122,54 @@ body {}
 .navbar:hover .dropdown, .dropdown:hover{
   display: block;
 }
+
+button.is-active {
+  background-color: #0d0d0d; color: white;
+}
+/* Give a remote user a caret */
+.collaboration-cursor__caret {
+  border-left: 1px solid #0d0d0d;
+  border-right: 1px solid #0d0d0d;
+  margin-left: -1px;
+  margin-right: -1px;
+  pointer-events: none;
+  position: relative;
+  word-break: normal;
+}
+
+/* Render the username above the caret */
+.collaboration-cursor__label {
+  font-style: normal;
+  font-weight: 600;
+  left: -1px;
+  line-height: normal;
+  position: absolute;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #fff;
+  top: -1.4em;
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  padding: 2px 6px;
+  pointer-events: none;
+}
+
+/* tiptab */
+.ProseMirror-focused{ outline: none; }
+.tiptab-document h1, .tiptap h1{ @apply text-5xl }
+.tiptab-document h2, .tiptap h2{ @apply text-4xl }
+.tiptab-document h3, .tiptap h3{ @apply text-3xl }
+.tiptab-document h4, .tiptap h4{ @apply text-2xl }
+.tiptab-document h5, .tiptap h5{ @apply text-xl }
+.tiptab-document h6, .tiptap h6{ @apply text-lg }
+.tiptab-document ol, .tiptap ol{ @apply list-decimal list-outside mx-4}
+.tiptab-document ul, .tiptap ul{ @apply list-disc list-outside mx-4}
+
+/* tags input */
+.rti--container, .rti--input{ 
+  background-color: transparent !important; border: 1px solid white !important; border-radius: 5px; 
+  @apply text-xs 
+}
+.rti--container{ display: flex; justify-content: center; align-items: center;}
+.rti--tag{ color: black !important;}

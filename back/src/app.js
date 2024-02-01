@@ -7,6 +7,8 @@ require("../config/dbConnection");
 const category = require('./../routes/categoryRouter')
 const product = require('./../routes/productRouter')
 const user = require('./../routes/userRouter')
+const seoUser = require('./../routes/seoUserRouter')
+const blogs = require('./../routes/blogsRouter')
 const upload = require('./../routes/uploadRouter')
 
 const port = process.env.PORT || 5000;
@@ -30,6 +32,8 @@ app.use(express.json());
 app.use('/', product);
 app.use('/', category)
 app.use('/', user)
+app.use('/', seoUser)
+app.use('/', blogs)
 app.use('/', upload)
 app.use('/public', express.static('public'))
 
