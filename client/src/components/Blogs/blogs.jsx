@@ -33,17 +33,17 @@ function Blogs() {
       getData()
   }, [])
 
-  return (<div className='w-full h-full px-[10%] max-md:px-[5%] my-10 '>
+  return (<div className='w-full h-full px-[15%] max-xl:px-[10%] max-md:px-[5%] my-10 '>
       <p className="text-primary text-xl max-md:text-base">
         {locale === "ar"? "أحدث المدونات": "Latest Posts"}
       </p>
 
-      <div className="w-full h-full flex justify-between items-stretch gap-2 flex-wrap">
+      <div className="w-full h-full flex justify-between items-stretch gap-1 max-md:gap-4 mt-10 flex-wrap">
         {
           blogsData && blogsData.map((_, i)=>{
             return <Link href={`/blogs/${_.slug}`} key={i}
-            className="flex-col gap-4 flex justify-stretch items-start border border-slate-400 rounded-lg p-2 w-[28%] cursor-pointer min-w-fit">
-              <Image src={_?.coverImg} alt={_?.topic} width={1500} height={1500} className="w-full mx-auto h-56 rounded-lg max-w-xs"/>
+            className="flex-col gap-4 flex justify-center items-start border border-slate-400 rounded-lg p-2 w-[30%] cursor-pointer min-w-fit max-md:mx-auto">
+              <Image src={_?.coverImg} alt={_?.topic} width={1500} height={1500} className="mx-auto h-56 rounded-lg w-64 object-cover"/>
               <p className="bg-blue-100 rounded-sm text-primary text-xs w-fit px-2 py-0.5">
                 {locale === "ar"? _?.arTopic : _?.topic}
               </p>
