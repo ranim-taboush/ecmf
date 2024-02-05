@@ -24,8 +24,11 @@ function BlogsCard({}) {
           await axios.get(url)
           .then(data=>{
             const thisBlog = locale === "ar"
-            ?data?.data?.find(_=>_?.slug === pathname.split('/')[3])
-            :data?.data?.find(_=>_?.slug === pathname.split('/')[2])
+            ?(data?.data?.find(_=>_?.slug === pathname.split('/')[3]) || data?.data?.find(_=>_?.slug === decodeURI(pathname.split('/')[3])))
+            :(data?.data?.find(_=>_?.slug === pathname.split('/')[2]) || data?.data?.find(_=>_?.slug === decodeURI(pathname.split('/')[2])))
+            
+            // console.log(thisBlog)
+            // console.log(decodeURI(pathname.split('/')[3]))
             setBlogData(thisBlog)
             setBlogsData(data?.data)
             setSearchedBlogs(data?.data)
