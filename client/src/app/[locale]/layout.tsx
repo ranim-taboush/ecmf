@@ -39,7 +39,7 @@ export default function RootLayout({
         {children}
       <ToastContainer />
       </body>
-      <GoogleAnalytics gaId="G-EX6V8YREQ8" />
+      <GoogleAnalytics gaId="G-R1B0PDFP06" />
     </html>
   )
 }
