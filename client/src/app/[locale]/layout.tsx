@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import './globals.css'
 import Navbar from '@/components/Navbar.jsx';
 import { cairo } from '@/utils/fonts'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 import "swiper/css";
@@ -38,6 +39,7 @@ export default function RootLayout({
         {children}
       <ToastContainer />
       </body>
+      <GoogleAnalytics gaId="G-EX6V8YREQ8" />
     </html>
   )
 }
