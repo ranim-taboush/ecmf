@@ -16,6 +16,13 @@ import ContactUs from '@/components/sections/ContactUs.jsx';
 import Agents from '@/components/sections/Agents';
 import Footer from '@/components/Footer/Footer';
 
+export const metadata = {
+  title: 'Home',
+  verification: { 
+    google: "FBnl8ZxriP7SI_VgznSKeZH9Rp_-KDA2-zGDKV7G9XU", 
+  }
+}
+
 export default function Home() {
   const locale = useLocale();
   const t = useTranslations('home');
