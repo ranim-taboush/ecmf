@@ -99,9 +99,9 @@ function BlogsCard({}) {
           <WhatsappIcon size={32} round />
         </WhatsappShareButton>
       </div>
-      <p className="text-black w-full" 
+      <div className="text-black w-full" 
       dangerouslySetInnerHTML={{ __html: (locale === "ar"? blogData?.paragraph?.ar : blogData?.paragraph?.en) }}
-      ></p>
+      ></div>
     </div>}
 
     {blogsData[0]?.topic && <div className="flex flex-col gap-4 max-md:mt-10 max-md:mx-auto">
