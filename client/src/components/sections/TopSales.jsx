@@ -126,7 +126,7 @@ const TopSales = () => {
         
           return <SwiperSlide key={i} >
             <ProductCard
-              id={el?._id?.$oid}
+              id={el?._id?.arName}
               title={el?.arName || ''}
               description="جودة عالية"
               image={arImgs[i] || productImage0}
@@ -137,7 +137,7 @@ const TopSales = () => {
         :proEn?.map((el, i)=>{
           return <SwiperSlide key={i}>
             <ProductCard
-              id={el?._id?.$oid}
+              id={el?._id?.arName}
               title={el?.enName || ''}
               description="Premium Quality"
               image={enImgs[i] || productImage0}

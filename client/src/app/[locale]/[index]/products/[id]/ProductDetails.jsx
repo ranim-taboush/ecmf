@@ -8,22 +8,23 @@ import productsBg from '@/images/products_bg.png'
 import productImg from '@/images/0.png'
 import axios from "axios"
 import { Error } from '@/components/toast';
-import { useParams } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import { Api, ApiKey } from '@/config/api'
+import { info } from '@/utils/productsInfo'
 
 const ProductDetails = ({ }) => {
+  const pathname = usePathname()
   axios.defaults.headers['api-key'] = ApiKey;
   axios.defaults.headers['content-type'] = "application/json";
   // axios.defaults.headers['Access-Control-Allow-Origin'] = "*";
   axios.defaults.withCredentials = true;
   const locale = useLocale()
-  const params = useParams()
   const baseUrl = Api
   const [product, setProduct] = useState({})
   const [thickness, setThickness] = useState('')
   const [madeBy, setMadeBy] = useState('')
   const [img, setImg] = useState(productImg)
-  
+
   const findByHow = (name)=>{
     let agent 
     if(name === 'agent1')
@@ -43,26 +44,37 @@ const ProductDetails = ({ }) => {
 
   useEffect(()=>{
     const getCategory = async () => {
-      await axios.get( `${Api}/product/${params.id}` )
+      await axios.get( `${Api}/products/en` )
       .then(res=>{
-        setProduct(res?.data)
+        const path = locale === "ar"? decodeURI(pathname.split('/')[4]): decodeURI(pathname.split('/')[3])
+        const pro = res?.data?.find(_=>_?.arName === path)
+        setProduct(pro)
         setThickness(thickness)
-        setMadeBy(findByHow(res?.data?.srcImg?.split('/')[2].split('.')[0]))
+        setMadeBy(findByHow(pro?.srcImg?.split('/')[2].split('.')[0]))
 
         let finalImg = productImg;
-        if(res?.data?.productImg && res?.data?.productImg !== '' && (res?.data?.productImg instanceof Blob || res?.data?.productImg instanceof File)){
-          finalImg = baseUrl + URL.createObjectURL(res?.data?.productImg)
-        }else if(res?.data?.productImg && res?.data?.productImg !== ''){
-          const sanitizedImg = res?.data?.productImg.replace(/\\/g, "/");
+        if(pro?.productImg && pro?.productImg !== '' && (pro?.productImg instanceof Blob || pro?.productImg instanceof File)){
+          finalImg = baseUrl + URL.createObjectURL(pro?.productImg)
+        }else if(pro?.productImg && pro?.productImg !== ''){
+          const sanitizedImg = pro?.productImg.replace(/\\/g, "/");
           finalImg = baseUrl + "/" + sanitizedImg
         }
         setImg(finalImg)
       }).catch (err=>{
        Error('Error While Loading Data ')
-       Error(err.response.data)
+       console.log('err.message', err.message)
+       Error(err?.response?.data || err?.message || 'error')
       });
     }
-    getCategory();
+
+    const timer = setTimeout(() => {
+      getCategory();
+    }, 500);
+
+    return () => {
+      clearTimeout(timer);
+    };
+    // 
   }, [])
 
   return <div>
@@ -101,9 +113,9 @@ const ProductDetails = ({ }) => {
           <p className='bg-gray-200 text-primary text-xs sm:text-sm rounded-md w-fit px-2'>
             {locale === 'ar' ? 'جديد' : 'New'}
           </p>
-          <p className='text-gray-900 text-2xl sm:text-3xl font-bold'>
+          <h1 className='text-gray-900 text-2xl sm:text-3xl font-bold'>
             {locale === 'ar' ? product?.arName || '' : product?.enName|| ''}
-          </p>
+          </h1>
           <div className="">
             <p className='text-black text-base sm:text-lg'>
               {locale === 'ar' ? 'مواصفات المنتج' : 'Product characteristics'}
@@ -161,6 +173,19 @@ const ProductDetails = ({ }) => {
           </p>
         </div>
       </div>
+
+      
+      {product?.enName && product?.enName === "Sigal Ornaments" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Sigal Ornaments']?.data }}
+      ></div>}
+      
+      {product?.enName && product?.enName === "Colored Sheet" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Colored Sheet']?.data }}
+      ></div>}
+      
+      {product?.enName && product?.enName === "Cold Rolled Sheets" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Cold Rolled Sheets']?.data }}
+      ></div>}
 
     </div>
   </div>
