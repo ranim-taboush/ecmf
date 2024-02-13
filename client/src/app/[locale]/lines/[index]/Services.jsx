@@ -63,17 +63,17 @@ const Services = ({ }) => {
   const locale = useLocale()
 
   
-  useEffect(()=>{
-    const getCategory = async () => {
-      await axios.get( `${Api}/category` )
-      .then(res=>{
-        setAllLines(res?.data)
-        setCurrentLine(res?.data[0])
-      }).catch (err=>{
-        Error('Error While Loading Data')});
-    }
-    // getCategory();
-  }, [])
+  // useEffect(()=>{
+  //   const getCategory = async () => {
+  //     await axios.get( `${Api}/category` )
+  //     .then(res=>{
+  //       setAllLines(res?.data)
+  //       setCurrentLine(res?.data[0])
+  //     }).catch (err=>{
+  //       Error('Error While Loading Data')});
+  //   }
+  //   getCategory();
+  // }, [])
 
   return <div>
     <div className="sm:min-h-[600px] min-h-[400px] pb-20 relative">
