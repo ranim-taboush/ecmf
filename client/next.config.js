@@ -13,7 +13,7 @@ const nextConfig = withNextIntl({
   env: {
     Api: process.env.DATA_API_URL,
     ApiKey: process.env.DATA_API_KEY
-  }
+  },
 });
 
 module.exports = nextConfig
