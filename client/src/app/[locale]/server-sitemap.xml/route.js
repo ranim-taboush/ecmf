@@ -3,7 +3,7 @@ import axios from 'axios';
 import { lines } from '@/data/lines'; // index ===> lines->lines.length - 1
 import { Api } from '@/config/api'
 // import load from '../../api/load';
-const URL = "https://www.ecmf-eg.com";
+const URL = "https://ecmf-project.vercel.app";
 
 async function getData() {
     // Fetch data from external API
@@ -39,21 +39,21 @@ export async function GET() {
           data?.products?.forEach(_=>
             products.push({
               loc: `${URL}/${locale}/0/products/${encodeURI(_)}`,
-              lastModified: new Date().toISOString(),
+              lastMod: new Date().toISOString(),
               priority: .6,
             })
           )
           data?.blogs?.forEach(_=>
             blogs.push({
               loc: `${URL}/${locale}/blogs/${encodeURI(_)}`,
-              lastModified: new Date().toISOString(),
+              lastMod: new Date().toISOString(),
               priority: .6,
             })
           )
           data?.lines?.forEach(_=>
             lines.push({
               loc: `${URL}/${locale}/lines/${encodeURI(_)}`,
-              lastModified: new Date().toISOString(),
+              lastMod: new Date().toISOString(),
               priority: .6,
             })
           )
@@ -65,13 +65,13 @@ export async function GET() {
         if(element === ""){
           routes.push({
             loc: `${URL}/${locale}`,
-            lastModified: new Date().toISOString(),
+            lastMod: new Date().toISOString(),
             priority: 1
           })
         }else{
           routes.push({
             loc: `${URL}/${locale}/${element}`,
-            lastModified: new Date().toISOString(),
+            lastMod: new Date().toISOString(),
             priority: .8
           })
         }
