@@ -78,7 +78,7 @@ module.exports = {
       // },
     ],
     additionalSitemaps: [
-      'https://www.ecmf-eg.com/en/server-sitemap.xml', // <==== Add here
+      'https://ecmf-project.vercel.app/en/server-sitemap.xml', // <==== Add here
     ],
   },
 }
