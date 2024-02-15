@@ -11,13 +11,13 @@ async function getData() {
     // const repo = await res.json()
     // Pass data to the page via props
     const data = []
-    console.log('here is the function start')
+    // console.log('here is the function start')
     await axios.get(`${Api}/products/en`)
     .then(async products=>{
       // console.log('products', products.data)
       await axios.get(`${Api}/blogs`)
       .then(blogs=>{
-      console.log('blogs', blogs)
+      // console.log('blogs', blogs)
         data.push({
           lines: lines.map((_, i)=>i), 
           products: products?.data?.map(_=>_?.arName), 
@@ -35,24 +35,24 @@ export async function GET() {
     for(let i=0; i<2; i++){
         let locale = i==0? 'en': 'ar'
         await getData().then(data=>{
-          console.log('data', data)
+          // console.log('data', data)
           data?.products?.forEach(_=>
             products.push({
-              url: `${URL}/${locale}/0/products/${encodeURI(_)}`,
+              loc: `${URL}/${locale}/0/products/${encodeURI(_)}`,
               lastModified: new Date().toISOString(),
               priority: .6,
             })
           )
           data?.blogs?.forEach(_=>
             blogs.push({
-              url: `${URL}/${locale}/blogs/${encodeURI(_)}`,
+              loc: `${URL}/${locale}/blogs/${encodeURI(_)}`,
               lastModified: new Date().toISOString(),
               priority: .6,
             })
           )
           data?.lines?.forEach(_=>
             lines.push({
-              url: `${URL}/${locale}/lines/${encodeURI(_)}`,
+              loc: `${URL}/${locale}/lines/${encodeURI(_)}`,
               lastModified: new Date().toISOString(),
               priority: .6,
             })
@@ -64,13 +64,13 @@ export async function GET() {
         siteStaticRoutes.forEach(element => {
         if(element === ""){
           routes.push({
-            url: `${URL}/${locale}`,
+            loc: `${URL}/${locale}`,
             lastModified: new Date().toISOString(),
             priority: 1
           })
         }else{
           routes.push({
-            url: `${URL}/${locale}/${element}`,
+            loc: `${URL}/${locale}/${element}`,
             lastModified: new Date().toISOString(),
             priority: .8
           })
@@ -80,7 +80,7 @@ export async function GET() {
     // console.log('blogs', blogs)
     // console.log('lines', lines)
     // console.log('products', products)
-    console.log('errors', errors)
+    // console.log('errors', errors)
 
   return getServerSideSitemap([...routes, ...products, ...lines, ...blogs])
 }
