@@ -39,21 +39,21 @@ export async function GET() {
           data?.products?.forEach(_=>
             products.push({
               loc: `${URL}/${locale}/0/products/${encodeURI(_)}`,
-              lastMod: new Date().toISOString(),
+              lastmod: new Date().toISOString(),
               priority: .6,
             })
           )
           data?.blogs?.forEach(_=>
             blogs.push({
               loc: `${URL}/${locale}/blogs/${encodeURI(_)}`,
-              lastMod: new Date().toISOString(),
+              lastmod: new Date().toISOString(),
               priority: .6,
             })
           )
           data?.lines?.forEach(_=>
             lines.push({
               loc: `${URL}/${locale}/lines/${encodeURI(_)}`,
-              lastMod: new Date().toISOString(),
+              lastmod: new Date().toISOString(),
               priority: .6,
             })
           )
@@ -65,13 +65,13 @@ export async function GET() {
         if(element === ""){
           routes.push({
             loc: `${URL}/${locale}`,
-            lastMod: new Date().toISOString(),
+            lastmod: new Date().toISOString(),
             priority: 1
           })
         }else{
           routes.push({
             loc: `${URL}/${locale}/${element}`,
-            lastMod: new Date().toISOString(),
+            lastmod: new Date().toISOString(),
             priority: .8
           })
         }
