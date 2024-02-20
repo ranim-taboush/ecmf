@@ -187,6 +187,12 @@ const ProductDetails = ({ }) => {
       dangerouslySetInnerHTML={{ __html: info?.['Cold Rolled Sheets']?.data }}
       ></div>}
 
+      {product?.enName && product?.enName === "Pipes" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Pipes']?.data }}
+      ></div>}
+      {product?.enName && product?.enName === "Icon" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Icon']?.data }}
+      ></div>}
     </div>
   </div>
 }

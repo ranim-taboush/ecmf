@@ -356,5 +356,320 @@ export const info = {
         <p><br></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">لذلك يمكن أن يتراوح سعر لوح صاج بارد بين مبلغ معين للمتر المربع حسب العوامل المذكورة أعلاه كما يمكنك إيجاد المزيد من المنتجات لدينا عبر موقعنا.&nbsp;</span></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تواصل معنا الآن للحصول على مزيد من التفاصيل حول الأسعار وسيتم المتابعة معك من قبل فريق المبيعات لدينا في أسرع وقت. &nbsp;</span></p>`
+    },
+
+    "Pipes": {
+        data: `<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">مواسير لحام طولى:</span></strong></h2>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مواسير لحام طولى هي عبارة عن أنابيب تُصنع بشكل طولي، ويتم توصيل الأطراف الطولية للمواسيرعن طريق عملية اللحام.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يوجد العديد من أنواع المواسير التي لا غني عنها في أعمال البناء والسباكة والعديد من الاستخدامات الأخرى.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">أنواع المواسير الحديد:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">1- &nbsp;مواسير لحام طولى:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مواسير لحام طولى تعتبر من ضمن أنواع الأنابيب التي &nbsp;تشبه النوع المجلفن، وتستخدم &nbsp;لنقل الماء أو الغاز أو السوائل من مكان إلى آخر. ولكن يوجد فرق بينها وبين مواسير الحديد اللحام والمجلفن وهو أن مواسير الحديد اللحام يتم تصنيعها عن طريق لحام صفائح الحديد.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مواصفات &nbsp;مواسير لحام طولى:</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">وزن مواسير لحام طولى قليل ويمكن بسهولة &nbsp;تقطيعه وتركيبه وثنيه. كما أن تصنع أنابيب مواسير لحام طولى بقطر يصل إلى 12 مم (0.5 بوصة) وقد يصل إلى &nbsp;15 سم (6 بوصات).</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">استخدامات مواسير لحام طولى:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 60pt">
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- نقل السوائل والغازات: تستخدم مواسير لحام طولى في أنظمة الأنابيب من أجل نقل السوائل مثل المياه والنفط والغازات الطبيعية.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الصناعة الكيميائية والبترولية: تُستخدم مواسير لحام طولى في صناعات البتروكيماويات والصناعات الكيميائية وذلك من أجل الحاجة إلى وجود أنابيب تتحمل الضغوط ودرجات الحرارة المرتفعة.&nbsp;</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- التدفئة والتبريد: تستخدم مواسير لحام طولى في جميع أنظمة التدفئة والتبريد المركزي في المباني السكنية والتجارية والصناعية.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الصناعات الغذائية: يتم استخدام مواسير لحام طولى في صناعة الأغذية لنقل المواد الغذائية بشكل آمن ونظيف.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مميزات مواسير لحام طولى:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 60pt">
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">قوة ومتانة: تتميز مواسير اللحام الطولي بقوتها ومتانتها العالية، مما يجعلها قادرة على تحمل الضغوطات الشاقة والتآكل والاهتزازات في البيئات الصناعية القاسية.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مقاومة للتسرب: مواسير اللحام الطولي تتمتع بمقاومة عالية للتسرب بسبب عملية اللحام المتينة، مما يجعلها مثالية لنقل السوائل والغازات.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">توفير التكاليف: يمكن أن تكون مواسير اللحام الطولي أكثر فعالية من حيث التكلفة مقارنةً بأنواع الأنابيب الأخرى، خاصةً على المدى الطويل نظرًا لمتانتها ومقاومتها للتآكل.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">سهولة التركيب: يمكن تركيب مواسير اللحام الطولي بسهولة وسرعة عن طريق عملية اللحام مما يوفر لك الوقت والجهد في عمليات البناء.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مقاومة للحرارة والضغط: تتحمل مواسير اللحام الطولي درجات الحرارة المرتفعة والضغط الشديد، مما يجعلها مناسبة للعديد &nbsp;من التطبيقات الصناعية.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">2- مواسير حديد الزهر:</span></strong></h4>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">أحد أنواع المواسير الحديد المصنعة من الحديد الزهر وتتميز بمقاومتها العالية للتآكل. أثناء توزيع المياه لذلك تتميز بعمرها الطويل. مواسير حديد الزهر هي نوع من أنواع أنابيب سبائك الحديد والكربون ويكون الكربون تواجده بنسبة أعلى تصل إلى 2٪. مواسير الحديد الزهر تختلف عن بعضها على حسب نوع التطبيق وكمية السبائك وشكل الأنبوب. &nbsp;كما أن يتكون هيكل الأنابيب بشكل أساسي من حديد الجرافيت أو الحديد الرمادي. يمكن استخدام مواسير الحديد الزهر التي بها حواف في محطات الضخ. ومحطات الترشيح ، وبعض الأماكن الأخرى. تتميز مواسير الحديد الزهر بسعرها الاقتصادي كما يمكن ربط وتقطيع &nbsp;الأنابيب بسهولة.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: justify;"><span style="font-size:12pt;">مواصفات مواسير حديد الزهر:</span></p>
+        <p dir="rtl" style="text-align: justify;"><span style="font-size:12pt;">تتوفر أنواع مختلفة من أنابيب الحديد الزهر في الأسواق، ولكل منها خصائص محددة ويتم استخدامها بشكل مختلف بناء على هذه الخصائص.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: justify;"><span style="font-size:12pt;">تم صنع الأنابيب بقطر يتراوح من 5 سم إلى 120 سم. يبلغ طول مواسير الحديد الزهر 12 قدم وقد يصل طولها إلي 20 قدم أيضاً. بالإضافة إلى أن يتم تصنيع مواسير الحديد بأشكال مختلفة تبعًا لسمك الجدار.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: justify;"><strong><span style="font-size:12pt;">3- مواسير الاستيل:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: justify;"><span style="font-size:12pt;">يتم صناعة المواسير من الاستيل وتستخدم لنقل الماء أو الغاز أو السوائل من مكان إلى آخر. وتستخدم مواسير الاستيل تحت الضغط الشديد، كما أنها &nbsp;مصنوعة من صفائح فولاذية من الاستيل.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: justify;"><span style="font-size:12pt;">كما أن يوجد حجمين من المواسير، مواسير صغيرة يتم توصيلها بوصلات ملحومة بشكل طولي و مواسير كبيرة يتم توصيلها بوصلات مثبتة أو ملحومة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: justify;"><span style="font-size:12pt;">من ضمن مميزات مواسير الاستيل أنها خفيفة الوزن وأنه يمكن ربطها بواسطة وصلات ملحومة. بالإضافة إلى أن من الممكن ثني مواسير الاستيل بسهولة. ولكن من عيوب هذه المواسير أنها تتأثر بوجود المياه الحمضية أو المياه القلوية مما يعرضها للصدأ.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: justify;"><span style="font-size:12pt;">استخدامات مواسير الاستيل:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 60pt">
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صناعة البترول والغاز الطبيعي: يُمكن استخدام مواسير الاستيل بشكل كبير في صناعة البترول والغاز الطبيعي من أجل نقل النفط والغاز من حقول الإنتاج إلى المصافي ومحطات الضغط.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">الصناعة الكيميائية: تستخدم مواسير الاستيل في الصناعات الكيميائية لنقل المواد الكيميائية والمواد السائلة والغازية بشكل آمن.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">الصناعة الغذائية: يتم استخدام &nbsp;الفولاذ المقاوم للصدأ في صناعة الأنابيب المستخدمة في التطبيقات الغذائية والمشروبات بسبب أنها مقاومة &nbsp;للتآكل ومن السهل تنظيفها.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">الصناعة البحرية: يتم استخدام مواسير الاستيل في صناعة السفن والمراكب بسبب مقاومتها للتآكل في بيئة البحر.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">4- مواسير الحديد المجلفن:</span></strong></h4>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مواسير الحديد المجلفن تُصنع من صفائح فولاذية تتميز بوزنها الخفيف. تستخدم هذه المواسير في الغالب &nbsp;لتزويد المياه أو الغاز للمنازل والمؤسسات. &nbsp;كما أن يسهل ثني وربط وتركيب المواسير. بالإضافة إلى أن هذه المواسير خفيفة الوزن وسعرها اقتصادي &nbsp;إلا أن المياه الحمضية والقلوية تؤثر فيها بشكل كبير</span><strong><span style="font-size:12pt;">.</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مواصفات مواسير الحديد المجلفن:</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تتميز مواسير الحديد المجلفن بقطر يتراوح ما بين 12 مم (0.5 بوصة) إلى 15 سم (6 بوصات)، كما أنه يتوفر بطول يصل إلى 6 أمتار أو 20 قدم.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يجب الأخذ في الاعتبار أنه قد يختلف سمك الجدار باختلاف قطر المواسير. وتتم عملية الجلفنة للمواسير من خلال غمس الحديد المجلفن في محلول الزنك لحفظ المواسير من الصدأ والتآكل.كما يبلغ العمر الأفتراضي للمواسير إلى ما يقارب الـ 10 سنوات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">5- مواسير النحاس:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مواسير النحاس هي عبارة عن أنابيب مصنوعة من معدن النحاس ويكون قطرها صغير. وتتميز هذه المواسير بأنها متينة جدا ولديها مقاومة كبيرة للصدأ فهي لا تصدأ نهائيًا، ولكن تكلفتها عالية مقارنة بأنواع المواسير الأخرى في الأسواق.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">استخدامات مواسير النحاس:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 60pt">
+            <li>
+                    <ul>
+                        <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                            <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">أنظمة المياه الصحية: تتميز مواسير النحاس بمقاومتها العالية للتآكل والصدأ، مما يجعلها خيار مثالي في أنظمة المياه .</span></p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                            <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">لذلك يتم استخدام مواسير النحاس على نطاق كبير في أنظمة توزيع المياه الصحية داخل المنازل والمباني التجارية والصناعية.&nbsp;</span></p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                            <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">أنظمة التدفئة والتبريد: يتم استخدام مواسير النحاس بشكل كبير في أنظمة التدفئة المركزية وأنظمة التبريد بسبب قدرته العالية على تحمل درجات الحرارة المرتفعة والمنخفضة.</span></p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                            <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صناعة الأثاث والديكور: تُستخدم مواسير النحاس في صناعة الأثاث والديكور من أجل إضافة مظهر راقى حيث يُمكن تشكيلها بسهولة لإنشاء تصاميم مبتكرة.</span></p>
+                        </li>
+                    </ul>
+                </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">أنواع مواسير أخرى تبعًا للقياسات العالمية:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">&nbsp;مواسيرERW:</span></strong><span style="font-size:12pt;">&nbsp;هي اختصار لـ &quot;Electric Resistance Welded&quot;، وهي عبارة عن نوع من أنواع الأنابيب المعدنية المستخدمة في الأنظمة الصناعية والبنائية. يتم إنتاج مواسير ERW من خلال تسخين أطراف الشريط المعدني باستخدام تيار كهربائي عالي التردد، مما يولد حرارة تكفي لدمج الأطراف معًا لتشكيل الأنبوب.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">استخدامات مواسير ERW:</span></p>
+        <ul style="padding-right: 60pt">
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - أنظمة الأنابيب الصناعية: تستخدم مواسير ERW في أنظمة الأنابيب الصناعية لنقل كافة السوائل والغازات في الصناعات مثل البترول والغاز.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - البناء والتشييد: تستخدم المواسير في البناء لتركيب أنابيب المياه والصرف الصحي وتكييف الهواء.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - صناعة السيارات: يمكن استخدام مواسير ERW في تصنيع جميع هياكل السيارات والسكك الحديدية بسبب قوتها ومتانتها.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">مواسيرLSAW:</span></strong><span style="font-size:12pt;">&nbsp;هي اختصار لـ &quot;Longitudinally Submerged Arc Welded&quot;، والتي تعني اللحام بالقوس الكهربائي على الطول تحت سطح السائل. تعتبر هذه المواسير هي نوع من أنواع الأنابيب الفولاذية التي يتم تصنيعها باستخدام تقنية اللحام بالقوس الكهربائي الغمر.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تتميز مواسير LSAW بعدة مميزات، من بينها:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+
+        <ul style="padding-right: 60pt">
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- قوة هيكلية عالية: تتمتع مواسير LSAW بقوة هيكلية عالية مما يجعل هذه المواسير مقاومة للتأثيرات الخارجية والضغوط الشديدة.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- جودة اللحام: يتم لحام مواسير LSAW باستخدام أحدث التقنيات مما يضمن جودة عالية للمنطقة الملحومة.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- متانة ومقاومة للتآكل: بفضل استخدام مادة فولاذية عالية الجودة، تتمتع مواسير LSAW بمتانة ومقاومة عالية للتآكل.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">مواسيرEFW:&nbsp;</span></strong><span style="font-size:12pt;">هي اختصار لـ &quot;Electric Fusion Welded Pipes&quot;، وهي عبارة عن أنابيب مصنوعة بتقنية لحام الانصهار الكهربائي. يتم استخدام هذه التقنية للانضمام بين الأجزاء المختلفة من المواسير عن طريق تسخينها ودمجها ببعضها البعض باستخدام الحرارة الناتجة عن تيار كهربائي عالي القوة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">مواسيرDSAW:</span></strong><span style="font-size:12pt;">&nbsp;هي نوع آخر من أنابيب الفولاذ التي تم تصنيعها باستخدام تقنية اللحام بالقوس الكهربائي. وهي اختصار لكلمة &quot;Double Submerged Arc Welded&quot;، والتي تشير إلى اللحام بالقوس الكهربائي عن طريق الغمر مرتين، واحدة عن طريق الغمر من الداخل وأخرى في الخارج لإنشاء الأنبوب.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تتميز مواسير DSAW بعدة مميزات، من بينها:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 60pt">
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قوة هيكلية عالية: بفضل طريقة التصنيع الخاصة بهذه المواسير فهي تتمتع بقوة هيكلية عالية تجعلها مقاومة للتأثيرات الخارجية والضغوط العالية.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - جودة اللحام: تتم عملية اللحام في مواسيرDSAW بشكل دقيق ومتناسق، مما يضمن لك أفضل جودة للمنطقة الملحومة مما يحسن من استقرار الأنبوب.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - متانة ومقاومة للتآكل: تتميز مواسيرDSAW بمتانة عالية ومقاومة قوية للتآكل، مما يجعلها مناسبة لجميع أنظمة التطبيقات في الظروف البيئية القاسية وتحت الأرض.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قطر كبير وسمك كبير: تتميز هذه المواسير بقدرتها على تصنيع أنابيب بقطرات كبيرة وسمك كبير.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - استخدام متعدد: يمكن استخدام هذه المواسير في مجموعات عديدة من التطبيقات مثل نقل النفط والغاز، والتشييد والبناء، والتطبيقات البحرية التي تتطلب أنابيب فولاذية متينة ومقاومة.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">&nbsp;مواسير &nbsp;UOE:</span></strong><span style="font-size:12pt;">&nbsp;هي نوع من أنواع الأنابيب الفولاذية التي يتم صنعها باستخدام تقنية UOE. تعتبر هذه التقنية من أفضل وأكثر التقنيات تطورًا لتصنيع الأنابيب الفولاذية التي تتميز بقطر كبير وسميك.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;تتميز مواسير UOE بعدة مميزات ومن بينها:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 60pt">
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قوة هيكلية عالية: تتميز مواسير UOE بقوة هيكلية كبيرة مما يجعلها مقاومة للتأثيرات الخارجية والضغوطات العالية، مما يضمن استقرار وموثوقية للأنابيب في التطبيقات الصناعية.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - جودة اللحام: يتم لحام مواسير UOE باستخدام تقنية متطورة مما يضمن لك الحصول على أفضل جودة &nbsp;للمنطقة الملحومة، مما يوفر استقرار وموثوقية أفضل للأنبوب.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - متانة ومقاومة للتآكل: تتمتع مواسير UOE بمتانة ومقاومة عالية للتآكل بفضل استخدام مادة الفولاذ عالية الجودة والعمليات الصارمة للتصنيع.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قطر كبير وسمك كبير: تُصنع المواسير بقطر كبير وسمك كبير، مما يجعل هذه المواسير مناسبة لتطبيقات الأنابيب الكبيرة والصناعية مثل أنابيب النقل والأنابيب البحرية.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قدرة عالية على تحمل الضغط: تتمتع مواسير UOE بقدرة عالية على تحمل الضغط والتوترات الناتجة عن أنظمة النقل والضغط العالي.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">احصل الآن على مواسير لحام طولى:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تواصل معنا الآن مع خبراء شركتنا للحصول على مواسير لحام طولى.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p><br></p>
+        <p><br></p>
+        `
+    },
+
+    "Icon": {
+        data: `<p><br></p>
+        <h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">سعر لوح صاج ايكون 2024:</span></strong></h2>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">لوح صاج ايكون هو نوع من انواع صاج الحديد المجلفن قد يكون مطلي بطبقة دهان الكتروستاتيك، وهو من أكثر الأنواع الشبيهة لـ الساندوتش بانل. يدخل لوح صاج ايكون في العديد من الاستخدامات الإنشائية والبنائية، وهي عبارة عن ألواح بها تعرج منظم من طبقة صاج ملون او مجلفن.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">قد يختلف سعر لوح صاج ايكون ولكن تظل الطبقة من الصاج المجلفن الأسود محتفظة بقوتها كما انها تساعد على تأمين منشأتك أو مؤسستك أو أي كان المكان المستخدم فيه لوح صاج ايكون فهي قادر على تحمل كافة العوامل الخارجية التي قد يتعرض لها المبنى.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتم الاعتماد على لوح صاج الايكون في الأعمال الهندسية وفي بناء الأسطح المنزلية والأسوار. فهو يعتبر من أفضل أنواع الصاج لحماية منزلك من المطر والعوامل الجوية الخارجية. بالإضافة إلى انه يتوفر من لوح صاج الايكون نوع صاج مجلفن وقد يكون الصاج المجلفن مطلي &nbsp;بمادة دهان ملونة مقاومة للصدأ. يتم تصنيع &nbsp;صاج الايكون بسمك يصل إلى 0.2مم &nbsp;وبعرض 110 سم. كما يتوفر منه أطوال مختلفة وقد يصل طوله حتى 12 متر.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">استخدامات لوح صاج الايكون:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يعتمد المهندسين على لوح صاج ايكون في الكثير من الأعمال لأن سعر لوح صاج ايكون اقتصادي ومتين لإنشاء مبنى قوي يتحمل العوامل الخارجية. لكن لا يتوفر به خاصية العزل القوية التي تمنع الأصوات المزعجة الخارجية والتي بدورها أيضًا أن ترفع من كفاءة الصاج وعمره الافتراضي .&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">لوح صاج الايكون يستخدم في مجموعة واسعة من التطبيقات في مختلف الصناعات والقطاعات، نظرًا لمزاياه العديدة من قوة ومتانة وسهولة التشكيل. إليك بعض استخدامات لوح صاج الايكون:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 30pt">
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - البناء والهندسة المعمارية: يتم استخدام لوح صاج ايكون في بناء المباني الكبيرة والهياكل الصناعية والتجارية، بما في ذلك يدخل في صناعة الأسقف، والجدران، والأعمدة. بالإضافة إلى أن &nbsp;يمكن استخدامه في تصميم الواجهات الخارجية للمباني من أجل الحصول على مظهر جمالي مميز.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الصناعات البحرية والسفن: بسبب قوة ومتانة &nbsp;لوح صاج ايكون فقد دخل في &nbsp;صناعة أجزاء هياكل السفن والقوارب. كما يمكن استخدامه في بناء الأسطح الداخلية للسفن.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - صناعة السيارات: يُستخدم لوح صاج ايكون في تصنيع أجزاء هياكل السيارات مثل الأبواب والأغطية بسبب قوته وسهولة تشكيله لتلبية متطلبات التصميم والأداء.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الطاقة البديلة: يمكن أن يوفر لوح صاج الايكون الحماية والدعم المطلوبين لكثير من التطبيقات فهو يدخل في بناء واجهات لوحات الطاقة الشمسية والرياح.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الصناعات الثقيلة: يستخدم صاج الايكون في الصناعات الثقيلة مثل التعدين والبتروكيماويات، كما أنه يوفر حماية فعالة ضد التآكل.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - تطبيقات الديكور والتصميم الداخلي: يتم استخدام لوح الصاج الايكون في تصميم الأثاث والديكورات الداخلية للمنازل والفيلات، مثل الأبواب، والحواجز، والأثاث المعدني.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">مميزات سعر لوح صاج ايكون:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تعددت مميزات صاج الايكون فلا يتوقف الأمر على سعر لوح صاج ايكون ومتانته والذي من الممكن أن يختلف السعر حسب طلب العميل لنسبة الجلفنة وسمك الصاج كل هذه المميزات ساعدت على استخدامها بشكل مثالي ومن ضمن هذه المميزات التالي:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 30pt">
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قوة هيكلية عالية: يتميز لوح الصاج الايكون بقوة هيكلية عالية لذلك فهو قادر على تحمل الضغوطات الجوية والتوترات التي يمكن أن تحدث في المجالات الصناعية والبنائية.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قابلية التخصيص: يتميز سعر لوح صاج ايكون أنه الأفضل مقارنة عن غيره من الألواح المتوفرة في الأسواق، كما أنه متوفر منه العديد من الأبعاد وسمك مختلف مما يجعلك أختيار الأبعاد والسمك المناسب وفقًا لمتطلبات المشروع المحدد.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - مقاومة للتآكل: يتم تصنيع لوح صاج الايكون من مادة الفولاذ المجلفن أو الفولاذ المدرفل على البارد، مما يجعله له قدرة عالية لمقاومة التآكل مما يجعله مثالى للاستخدام في البيئات الرطبة والملوثة.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - سهولة التشكيل: يمكن تشكيل لوح الصاج الايكون بسهولة لتلبية احتياجات التصميم المختلفة. يمكن تشكيله وقصه بدقة لتناسب التطبيقات الفريدة والمعقدة.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - تكلفة منخفضة: يعتبر سعر لوح صاج ايكون خيار اقتصادي مقارنة ببعض الخيارات الأخرى، مما يسهل على الشركات والمؤسسات اتخاذ قرار الشراء لتحقيق التوازن بين الأداء والتكلفة.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - متانة عالية: يتميز لوح الصاج الإيكون بمتانة عالية وعمر افتراضي طويل بفضل مواد التصنيع عالية الجودة، ، مما يوفر لك تكاليف الصيانة والإصلاح على المدى الطويل.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - تطبيقات متعددة: يُستخدم لوح صاج ايكون في مجموعة متنوعة من الصناعات البنائية والهندسية والصناعات الثقيلة والسيارات وغيرها.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">طريقة تصنيع صاج الايكون:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صاج الايكون هو صاج مجلفن أسود مغطى بطبقة من الزنك وتتميز هذه الطبقة أنها قوية وتحمي الصاج من الصدأ. يتم تحديد درجة الجلفنة حسب الاستخدام والمكان وبناءً طلب العميل لذلك كلما زادت درجة الجلفنة كلما زاد العمر الافتراضي لصاج الايكون وكلما زاد سعر لوح صاج ايكون أيضًا.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;أما عن خطوات صناعة الصاج فتكون كالتالي:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">1- &nbsp;يتم استخدام الفولاذ المجلفن أو الفولاذ المدرفل على البارد كمادة خام لتصنيع لوح صاج الايكون. يتم تقطيع المواد الخام إلى أحجام معينة على حسب المواصفات المطلوبة للوح النهائي.&nbsp;</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">2- تتم عملية تشكيل مادة الفولاذ في آلة تشكيل لصناعة لوحات صاج الايكون.&nbsp;</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">3- يتم تشكيل اللوحات بشكل نهائي عن طريق عملية اللحام وتنعيم الحواف للحصول على الشكل والأبعاد النهائية المطلوبة.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">4- يتم فحص الألواح &nbsp;التي تم صنعها بعد عملية التصنيع للتأكد من جودة تماسك اللحام بها وانتهاء اللوحات بالمواصفات المرجوة.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">5- تعبأ الألواح بعد فحصها في حزم أو أكوام معبأة بشكل صحيح ودقيق للنقل والتخزين بأمان دون أي تلف.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">بعد الانتهاء من صناعة صاج الايكون الأساسي والجلفنة والطلاء يتم تجميعه في بكرات قد يتراوح وزنها من 2 الى 5 طن. ويكون الصاج لم يصل بعد لمرحلة التشكيل النهائية وبعد ذلك يتم تركيب بكرة صاج الايكون سواء كان من النوع المجلفن أو النوع المجلفن الملون على ماكينة تعريج الصاج.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">احصل الآن على سعر لوح صاج ايكون 2024:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تواصل معنا الآن مع خبراء شركتنا للحصول على أفضل سعر لوح صاج ايكون الآن.</span></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>`
     }
+
+
 }
