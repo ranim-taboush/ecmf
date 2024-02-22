@@ -15,7 +15,7 @@ const page = async ({ }) => {
   }
   return <div className="">
     <NextIntlClientProvider locale={locale} messages={messages}  >
-      <Products />
+    <Products />
     </NextIntlClientProvider>
     <Agents />
     <NextIntlClientProvider locale={locale}>
