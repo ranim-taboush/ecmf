@@ -3,7 +3,7 @@ import axios from 'axios';
 import { lines } from '@/data/lines'; // index ===> lines->lines.length - 1
 import { Api } from '@/config/api'
 // import load from '../../api/load';
-const URL = "https://ecmf-project.vercel.app";
+const URL = "https://ecmf-eg.com";
 
 async function getData() {
     // Fetch data from external API

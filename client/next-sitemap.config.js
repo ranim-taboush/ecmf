@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: 'https://ecmf-project.vercel.app',
+  siteUrl: 'https://ecmf-eg.com',
   changefreq: 'daily',
   priority: 0.8,
   // sitemapSize: 5000,
@@ -9,11 +9,11 @@ module.exports = {
   exclude: ['/admin'],
   alternateRefs: [
     {
-      href: 'https://ecmf-project.vercel.app/en',
+      href: 'https://ecmf-eg.com/en',
       hreflang: 'en',
     },
     {
-      href: 'https://ecmf-project.vercel.app/ar',
+      href: 'https://ecmf-eg.com/ar',
       hreflang: 'ar',
     },
   ],
@@ -78,7 +78,7 @@ module.exports = {
       // },
     ],
     additionalSitemaps: [
-      'https://ecmf-project.vercel.app/en/server-sitemap.xml', // <==== Add here
+      'https://ecmf-eg.com/en/server-sitemap.xml', // <==== Add here
     ],
   },
 }
