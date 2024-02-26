@@ -374,7 +374,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><br></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">استخدامات مواسير لحام طولى:</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
-        <ul style="padding-right: 60pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="list-style-type:none;font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- نقل السوائل والغازات: تستخدم مواسير لحام طولى في أنظمة الأنابيب من أجل نقل السوائل مثل المياه والنفط والغازات الطبيعية.</span></p>
             </li>
@@ -391,7 +391,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><br></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مميزات مواسير لحام طولى:</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
-        <ul style="padding-right: 60pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="list-style-type:none;font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">قوة ومتانة: تتميز مواسير اللحام الطولي بقوتها ومتانتها العالية، مما يجعلها قادرة على تحمل الضغوطات الشاقة والتآكل والاهتزازات في البيئات الصناعية القاسية.</span></p>
             </li>
@@ -428,7 +428,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><br></p>
         <p dir="rtl" style="text-align: justify;"><span style="font-size:12pt;">استخدامات مواسير الاستيل:</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
-        <ul style="padding-right: 60pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="list-style-type:none;font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صناعة البترول والغاز الطبيعي: يُمكن استخدام مواسير الاستيل بشكل كبير في صناعة البترول والغاز الطبيعي من أجل نقل النفط والغاز من حقول الإنتاج إلى المصافي ومحطات الضغط.</span></p>
             </li>
@@ -457,7 +457,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><br></p>
         <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">استخدامات مواسير النحاس:</span></strong></h3>
         <p dir="rtl" style="text-align: right;"><br></p>
-        <ul style="padding-right: 60pt">
+        <ul style="padding-right: 20px">
             <li>
                     <ul>
                         <li dir="rtl" style="list-style-type:none;font-size:12pt;">
@@ -488,7 +488,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">&nbsp;مواسيرERW:</span></strong><span style="font-size:12pt;">&nbsp;هي اختصار لـ &quot;Electric Resistance Welded&quot;، وهي عبارة عن نوع من أنواع الأنابيب المعدنية المستخدمة في الأنظمة الصناعية والبنائية. يتم إنتاج مواسير ERW من خلال تسخين أطراف الشريط المعدني باستخدام تيار كهربائي عالي التردد، مما يولد حرارة تكفي لدمج الأطراف معًا لتشكيل الأنبوب.</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">استخدامات مواسير ERW:</span></p>
-        <ul style="padding-right: 60pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - أنظمة الأنابيب الصناعية: تستخدم مواسير ERW في أنظمة الأنابيب الصناعية لنقل كافة السوائل والغازات في الصناعات مثل البترول والغاز.</span></p>
             </li>
@@ -505,7 +505,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تتميز مواسير LSAW بعدة مميزات، من بينها:</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
 
-        <ul style="padding-right: 60pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="list-style-type:none;font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- قوة هيكلية عالية: تتمتع مواسير LSAW بقوة هيكلية عالية مما يجعل هذه المواسير مقاومة للتأثيرات الخارجية والضغوط الشديدة.</span></p>
             </li>
@@ -524,7 +524,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><br></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تتميز مواسير DSAW بعدة مميزات، من بينها:</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
-        <ul style="padding-right: 60pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قوة هيكلية عالية: بفضل طريقة التصنيع الخاصة بهذه المواسير فهي تتمتع بقوة هيكلية عالية تجعلها مقاومة للتأثيرات الخارجية والضغوط العالية.</span></p>
             </li>
@@ -546,7 +546,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><br></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;تتميز مواسير UOE بعدة مميزات ومن بينها:</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
-        <ul style="padding-right: 60pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قوة هيكلية عالية: تتميز مواسير UOE بقوة هيكلية كبيرة مما يجعلها مقاومة للتأثيرات الخارجية والضغوطات العالية، مما يضمن استقرار وموثوقية للأنابيب في التطبيقات الصناعية.</span></p>
             </li>
@@ -590,7 +590,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><br></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">لوح صاج الايكون يستخدم في مجموعة واسعة من التطبيقات في مختلف الصناعات والقطاعات، نظرًا لمزاياه العديدة من قوة ومتانة وسهولة التشكيل. إليك بعض استخدامات لوح صاج الايكون:</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
-        <ul style="padding-right: 30pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - البناء والهندسة المعمارية: يتم استخدام لوح صاج ايكون في بناء المباني الكبيرة والهياكل الصناعية والتجارية، بما في ذلك يدخل في صناعة الأسقف، والجدران، والأعمدة. بالإضافة إلى أن &nbsp;يمكن استخدامه في تصميم الواجهات الخارجية للمباني من أجل الحصول على مظهر جمالي مميز.</span></p>
             </li>
@@ -615,7 +615,7 @@ export const info = {
         <p dir="rtl" style="text-align: right;"><br></p>
         <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تعددت مميزات صاج الايكون فلا يتوقف الأمر على سعر لوح صاج ايكون ومتانته والذي من الممكن أن يختلف السعر حسب طلب العميل لنسبة الجلفنة وسمك الصاج كل هذه المميزات ساعدت على استخدامها بشكل مثالي ومن ضمن هذه المميزات التالي:</span></p>
         <p dir="rtl" style="text-align: right;"><br></p>
-        <ul style="padding-right: 30pt">
+        <ul style="padding-right: 20px">
             <li dir="rtl" style="font-size:12pt;">
                 <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - قوة هيكلية عالية: يتميز لوح الصاج الايكون بقوة هيكلية عالية لذلك فهو قادر على تحمل الضغوطات الجوية والتوترات التي يمكن أن تحدث في المجالات الصناعية والبنائية.</span></p>
             </li>
@@ -669,7 +669,369 @@ export const info = {
         <p><br></p>
         <p><br></p>
         <p><br></p>`
+    },
+
+    "Hot Sheets": {
+        data: `<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">الواح صاج ساخن:</span></strong></h2>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يوجد في كل منتج نستخدمه يوميًا الواح صاج ساخن، التي لا يمكن الاستغناء عنها لمتانتها وأشكالها المتنوعة.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تعتبر الواح الصاج الساخن من منتجات الحديد التي تدخل في كثير من الصناعات مثل الثلاجات والبوتاجازات والسخانات والسيارات والغسالات وغيرها من المنتجات. قد تختلف أنواع الواح صاج ساخن حسب استخداماتها &nbsp;والحاجة إليها.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أنواع الواح صاج الحديد:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">1- الواح صاج الحديد المسحوب على الساخن:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;هي عبارة عن الواح صاج ساخن مستقيمة أو عبارة عن رول مستديرة تم تصنيعها وإنتاجها في درجات حرارة مرتفعة ولها مميزات خاصة بها واستخدامات قد تختلف عن غيرها من الواح الصاج. كما يحتوي الواح صاج ساخن على مادة الكربون بنسبة أعلى بقليل من الصاج الذي تم سحبه على البارد. كما أنه يتميز بالمرونة عن غيره من أنواع الصلب.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">2- الواح صاج الحديد المسحوب على البارد:</span></strong><span style="font-size:12pt;">&nbsp;</span></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">أما صاج الحديد المسحوب على البارد فهو عبارة عن الواح صاج مستقيمة أو رول مستديرة تم تصنيعها في درجات حرارة الغرفة العادية أو في درجات حرارة قريبه منها كما أنه يكون أقل مرونة ولونه يميل إلى الأسود ويتميز بجودة عالية ومظهر أفضل. بالإضافة إلى أن سعر الصاج المسحوب على الساخن يكون أقل من سعر الصاج المسحوب على البارد.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يستخدم لوح الصاج البارد في مجموعة واسعة من التطبيقات وهي:</span></p>
+        <p><br></p>
+        <ul style="padding-right: 20px">
+            <li dir="rtl" style=font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - صناعة السيارات: يُستخدم لوح الصاج بارد في صناعة الكثير من هياكل السيارات وأجزاء الهياكل الخارجية.</span></p>
+            </li>
+            <li dir="rtl" style=font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الأجهزة المنزلية: يدخل لوح صاج بارد في صناعة الأجهزة المنزلية مثل الثلاجات والغسالات والمجففات.</span></p>
+            </li>
+            <li dir="rtl" style=font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الصناعات الإلكترونية: يتم استخدام لوح صاج البارد في صناعة أجهزة الكمبيوتر والأجهزة الإلكترونية الأخرى بسبب قوته وقدرته على التشكيل بدقة عالية.</span></p>
+            </li>
+            <li dir="rtl" style=font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - البناءات المعدنية: يمكنك استخدام لوح الصاج البارد في تصنيع الأبواب والنوافذ والألواح الجدارية فهو مقاوم للتآكل والصدأ.</span></p>
+            </li>
+        </ul>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">مميزات الواح الصاج الساخن:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يوجد العديد من المميزات التي يجب معرفتها قبل شراء الواح صاج ساخن وهي كالتالي:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">المتانته:&nbsp;</span></strong><span style="font-size:12pt;">تتميز الواح الصاج الساخن بمتانتها القوية فهي تتحمل الصدمات والضغوطات العالية دون تشوه، مما يجعل الواح الصاج مثالية للاستخدام في معظم التطبيقات التي تحتاج القوة العالية.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">التوصيل الحراري الجيد:</span></strong><span style="font-size:12pt;">&nbsp;تتوفر خاصية التوصيل الحراري في الواح صاج ساخن مما يجعلها مناسبة في الكثير من التطبيقات التي تتطلب نقل الحرارة بكفاءة، مثل أفران الحرارة والأوعية المعدنية المستخدمة في الطهي.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">قابله للتشكيل:</span></strong><span style="font-size:12pt;">&nbsp;تتيمز الواح صاج ساخن أنها قابله للتشكيل بسهولة في تطبيقات الهندسة المعمارية والصناعات التحويلية. مما يتيح للمهندسين والمصممين إمكانية تحقيق تصاميم مميزة وأفكار حديثة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">مقاومة للتآكل والصدأ:</span></strong><span style="font-size:12pt;">&nbsp;تعتبر الواح صاج ساخن خيار مثالي &nbsp;للأماكن التي تتعرض للعوامل الجوية الصعبة، فإن الواح الصاج تبقى صامدة وتحافظ على مظهرها الجميل لفترة طويلة دون التأثر بالعوامل البيئية لذلك فهي أفضل اختيار يمكنك الاعتماد عليه.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">قابليه اللحام:</span></strong><span style="font-size:12pt;">&nbsp;بسبب مميزات الواح صاج ساخن العديدة فهو يُمكن الحدادين والفنيين من توصيل قطع الحديد بعضها البعض بطرق مختلفة وبسهولة، مما يساهم في تشكيل هياكل قوية ومستقرة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">المظهر الجذاب:</span></strong><span style="font-size:12pt;">&nbsp;يضيف الصاج الأسود الساخن لمسة فنية ومظهر جمالي على أي منتج أو هيكل يستخدم فيه بفضل سطحه الأسود المميز بالتالي يمكن استخدامه في تصميم الأثاث والديكورات لإضفاء مظهر جذاب وطابع فني فريد.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">استخدامات الواح صاج ساخن:&nbsp;</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تتميز الواح صاج ساخن بمجموعة واسعة من الاستخدامات بفضل خصائصها المميزة حيث يتم استخدام الصاج الحديد في العديد من الصناعات ومنها:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- صناعة الآلات والمعدات:</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتم استخدام الواح الصاج في صناعة الآلات والمعدات الثقيلة والماكينات المتعددة. كما أنه يستخدم في تصنيع الإطارات والهياكل والصفائح المعدنية التي تتحمل الضغوطات الشاقة والاهتزازات المستمرة. مما توفر الواح الصاج القوة والاستقرار اللازمين للمعدات، ويساهم في تحسين أداء الآلات في مختلف الصناعات والتطبيقات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- صناعة الأثاث والديكور:</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">ازداد استخدام الواح الصاج الحديد في صناعة الأثاث والديكور، حيث إنه يمنح قطع الأثاث والديكور لمسة عصرية وهيكلية قوية. كما يمكن استخدامه في تصنيع الكراسي والطاولات والقطع الأخرى من الأثاث المعدني وبالطبع يمنح الصاج الحديد تصاميم عصرية وقوة تحمل عالية للقطع المصنوعة منه، مما يجعلها مثالية للاستخدام في المنازل والمكاتب والمتاجر.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- صناعة السيارات:</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتم استخدام الصاج الحديد في صناعة السيارات حيث يدخل في تصنيع هياكل السيارات لزيادة صلابتها ومتانتها. كما أن يوفر الصاج الحديد حماية للركاب ويضمن استدامة السيارة. بالإضافة إلى أن يتم استخدام الصاج الحديد أيضًا في تصنيع الأجزاء الخارجية على سبيل المثال الأبواب والواجهات الأمامية، مما يبرز المظهر الجمالي للسيارة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- صناعة البناء:</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يُستخدم الصاج الساخن في صناعة البناء بشكل أساسي، حيث يتم استخدام الواح الصاج في إنشاء إطارات المباني والألواح الجدارية. بالإضافة إلى أن يوفر الصاج الحديد القوة المطلوبة للمباني ويقوم بتحقيق القوة والاستدامة للبنية التحتية كما أنه يضيف الاستقرار والصلابة الهيكلية في صناعة السقالات والأعمدة الداعمة والأسوار والبوابات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- صناعة الصناديق والعبوات:</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تدخل الواح الصاج في صناعة الصناديق والعبوات التجارية والصناعية مثل صناديق الشحن وعبوات الطعام وحاويات التخزين وغيرها. بالطبع يتميز الصاج الساخن بمقاومة عالية للتآكل مما يضمن لك الحماية اللازمة من المنتجات والمواد التي يتم تعبئتها وتخزينها في هذه الصناديق والعبوات الخاصة بالطعام.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- البناء المعماري:</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يستخدم صاج حديد ساخن في البناء المعماري؛لإضافة مظهر جذاب اللازم للمباني. كما يُستخدم في تصميم الأسقف والجدران الداخلية والخارجية للمنازل والمكاتب والمتاجر وأيضًا يساهم في صناعة السلالم والأعمدة والأبواب والنوافذ المعدنية. مما يضيف الصاج الحديد قوة واستقرار للمباني، ويمنحها مظهر عصري وجذاب.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أشكال الصاج الحديد:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 40px">
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صاج الحديد الأملس: هو عبارة عن ألواح صاج حديد لها سطح أملس وناعم.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صاج الحديد البقلاوة: هو ألواح صاج حديد تحتوي على بروز من أجل منع الانزلاق.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صاج الحديد الصنوبر: هو يعتبر ألواح صاج حديد تحتوي على بروز على شكل حبوب الصنوبر.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">ملحوظة:&nbsp;</span></strong><span style="font-size:12pt;">قد يُطلق على أشكال صاج الحديد التي تحتوي على بروزات الصنوبر والبقلاوة اسم صاج الحديد المبرز نظرًا لوجود البروزات على سطح الصاج لمنعه من الانزلاق. ويوجد أيضًا صاج الحديد الذي يُطلق عليه المخرّم، وهو عبارة عن قطع من الصاج الحديد الملساء يتم تمريرها عبر معدات تقوم بثقبها بأشكال عديدة وفقًا لطلب العميل واحتياجاته.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">سعر الواح صاج ساخن 2024:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يمكن أن يتراوح سعر الواح صاج ساخن بين مبلغ معين للمتر المربع حسب العديد من العوامل مثل سمك اللوح، حجم اللوح والكمية المشتراة، كما يمكنك إيجاد المزيد من المنتجات لدينا عبر موقعنا.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">نود أن نؤكد أن شركة ECMF &nbsp;توفر جميع أنواع الواح صاج الحديد وأشكاله، بمختلف السماكات والأطوال المتنوعة. وبالإضافة إلى ذلك، لدينا جميع أنواع القطاعات الأخرى من الحديد مثل كمر مجرى سيجال بجميع أشكاله، ومواسير لحام طولى وساندوتش بانل وغيرها من المنتجات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تواصل معنا الآن للحصول على مزيد من التفاصيل حول الأسعار وسيتم المتابعة معك من قبل فريق المبيعات لدينا في أسرع وقت. &nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p><br></p>`
+    },
+
+    "Steel Deck": {
+        data: `<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">استيل دك:</span></strong></h2>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">داخل كل مبنى صناعي قوي ومتين، ألواح معدنية تساهم في ذلك وهي الاستيل دك.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يعد استيل دك من إحدى المواد الإنشائية المستخدمة في البناء والهندسة المدنية والهيكلية الرئيسية في الإنشاءات الفولاذية الموجودة في البناء التجاري. يتمثل استيل دك في الغالب على شكل ألواح من الفولاذ المجلفن أو الفولاذ المعالج بالحرارة، وتكون لدي الألواح نقوش أو تصاميم محددة على سطحها تساعد في زيادة الاحتكاك والثبات.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتم تصنيع الألواح المعدنية عن طريق لف لفائف الصلب المموجة إلى شكل هندسي محدد. وبالتالي، يتم تصنيع استيل دك عن طريق تشكيل لفائف فولاذية من الدرجة الهيكلية على البارد في أشكال مختلفة. يتم تحديد أشكال استيل دك المعدني المختلفة من قبل المهندسين والمتخصصين لمتطلبات التصميم المحددة.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يحدد المهندسون مدى زيادة قوة الأسطح الفولاذية إلى نسبة الوزن إلى أقصى حد لتطبيقات التصميم الفعالة. أو بعبارة أخرى، فإن قوة وصلابة ألواح السطح الفولاذية هي مزيج من شكل الأضلاع وخصائص مادة الفولاذ.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أنواع استيل الدك:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">هناك العديد من أنواع الاستيل دك قد تتنوع بناءً على المتطلبات والتطبيقات المحددة. من بين الأنواع الشائعة:</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">1. الاستيل دك المجلفن: تتم استخدام طبقة من الزنك على سطح الفولاذ لحمايته من التآكل والصدأ. كما أنه يتحمل الظروف الجوية الصعبة لذلك فهو يُستخدم عادةً في البيئات التي تتعرض فيها الأرضيات والهياكل المعدنية للعوامل البيئية القاسية مثل الرطوبة والتآكل.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">2. الاستيل دك المعالج بالحرارة: تتم معالجة الفولاذ (الاستيل دك) بالحرارة من أجل تحسين قوته ومتانته. يتميز الاستيل دك المعالج بالحرارة أنه يستخدم في التطبيقات التي تتطلب قوة فائقة لأنه يقاوم التأثيرات الخارجية القوية.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">3. الاستيل دك المعالج بالزنك: يتم تغطية الفولاذ بطبقة من الزنك لأن مادة الزنك تقوم بحمايته من التآكل. يتم استخدام الاستيل دك المعالج بالزنك في العديد من التطبيقات التي تتطلب مقاومة جيدة للتآكل مع قوة معتدلة.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">4. الاستيل دك المطلي: يتم طلاء سطح الفولاذ بمادة طلاء لحمايته من الصدأ وللحصول على مظهر جذاب. يمكن استخدام هذا النوع في التطبيقات التي تتطلب مقاومة جيدة للتآكل مع تصميم جمالي.</span></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">ما هي استخدامات استيل الدك؟</span></strong></h3>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- أرضيات مرتفعة (الدكات):&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">من ضمن استخدامات استيل الدك في بناء الأرضيات المرتفعة في المباني الصناعية والتجارية. يتم استخدام الألواح الأرضية من الاستيل لصب أرضية الخرسانية ودعم الخرسانة أثناء عملية المعالجة. لا تتمتع ألواح السقف بالقدرة على توفير نفس الدعم الذي توفره ألواح الاستيل.&nbsp;</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- أسطح التخزين:</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;يُستخدم استيل الدك كسطح للتخزين في المستودعات والمرافق الصناعية. فهو يكون بمثابة القاعدة الهيكلية لأغشية التسقيف في بناء الأسطح التجارية. عادة، يتم تركيب سطح السقف الفولاذي مباشرة فوق دعامات الفولاذ الهيكلي لتوفير منصة عمل والسماح بتركيب العزل، ومقاومة الطقس، ومواد التسقيف الأخرى. بالإضافة إلى ذلك، يحمي سطح السقف المعدني المبنى من الرياح، ويوفر مقاومة الحريق اللازمة لتجميع سقف أثناء أحمال الثلوج وأحمال الزلازل والرياح.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- منشآت الجسور والممرات الرصيفية:</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;يُستخدم استيل الدك في بناء هياكل الجسور والممرات الرصيفية بسبب متانته الفائقة لتوفير قاعدة صلبة ومتينة للجسور وبالتالي حماية الأفراد.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- تعزيزات الخرسانة المسلحة:</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;يُستخدم استيل الدك لتعزيز للخرسانة المسلحة لزيادة قوتها ومتانتها. كما أنه يوفر شكل قوي وآمن للبقاء في مكانه لتصميمات وتطبيقات الألواح الخرسانية المصبوبة. بالإضافة إلى أن التثبيت سريع وسهل واقتصادي. هناك أشكال مصممة لتكون بمثابة وعاء فولاذي دائم لتثبيت الخرسانة مع التسليح.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">السقالات المؤقتة:</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;يمكن استخدام استيل الدك في بناء السقالات المؤقتة للوصول إلى الأماكن العالية خلال عمليات البناء.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">حيث ينقل سطح السقف المعدني أحمال الرياح إلى العناصر الرأسية لأنظمة مقاومة القوى الجانبية من خلال عمل الحجاب الحاجز وهو ما يجعل خصائص مواصفات سطح السقف قوية وفريدة من نوعها.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">6 فوائد لاستيل الدك:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">توجد العديد من الفوائد لاستخدام استيل الدك في التطبيقات الهندسية والإنشائية. من بين هذه الفوائد التالي:</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">1. قوة وصلابة عالية: يتميز استيل الدك بقوة عالية وصلابة مما يجعل المهندسين اختياره للاستخدام في بناء الأرضيات المرتفعة والهياكل الإنشائية الثقيلة للمباني.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">2. قابلية التوافق والتوصيل: من ضمن فوائد ومميزات استيل الدك أنه يتوافق مع مجموعة متنوعة من الهياكل الإنشائية وبالتالي يمكن توصيله بسهولة مع الهياكل الأخرى مثل الأعمدة والسقوف.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">3. سهولة التركيب: يلجأ المتخصصين والفنيين لاستخدام استيل الدك وذلك لأنه يمكن بسهولة تركيبه بشكل سريع مما يقلل من وقت البناء ويوفر تكاليف العمالة.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">4. توفير الاستدامة: يمكن إعادة تدوير استيل الدك بسهولة بمجرد انتهاء عمره الافتراضي، مما يساهم في الحفاظ على البيئة وتقليل النفايات.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">5. مقاوم للتآكل: بفضل التشطيبات المتعددة مثل المجلفن والطلاءات الخاصة، يتميز استيل الدك بمقاومة جيدة للتآكل والصدأ، مما يعزز من عمره الافتراضي ويقلل من تكاليف الصيانة.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">6. تقليل الوزن الزائد: يعتبر استيل الدك من المعادن التي تتميز بخفه وزنها بالمقارنة مع بعض البدائل الأخرى مثل الخرسانة المسلحة، مما يقلل من الأحمال الزائدة على الهياكل الداعمة الرئيسية.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">سعر استيل الدك في مصر 2024:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يمكن أن يختلف سعر ألواح استيل الدك حسب العديد من العوامل مثل سمك اللوح، حجم اللوح والكمية المشتراة، كما يمكنك إيجاد المزيد من المنتجات لدينا عبر موقعنا.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">نود أن نؤكد أن شركة ECMF &nbsp;توفر جميع أنواع الواح صاج الحديد وأشكاله، بمختلف السماكات والأطوال المتنوعة. وبالإضافة إلى ذلك، لدينا جميع أنواع القطاعات الأخرى من الحديد مثل الواح صاج ساخن، حديد مجر وكمر مجرى سيجال بجميع أشكاله، ومواسير لحام طولى وساندوتش بانل وغيرها من المنتجات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تواصل معنا الآن للحصول على مزيد من التفاصيل حول الأسعار وسيتم المتابعة معك من قبل فريق المبيعات لدينا في أسرع وقت. &nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>`
+    },
+
+    "Streem Pulins": {
+        data: `<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">حديد مجر:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">حديد المجر يُطلق عليه أيضًا حديد التسليح وهو عبارة عن نوع من الحديد الفولاذي الذي يستخدم في البناء لتعزيز الخرسانة المسلحة وللمساعدة في زيادة قوة الشد للخرسانة.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يساهم حديد مجر في مساعدة الهياكل الخرسانية على تحمل الشد والانحناء والالتواء وإجهاد القص، فإن حديد التسليح يعمل على تقوية الهياكل الخرسانية التي قد تنهار تحت أي ظروف قوية. في الغالب لا يكون حديد التسليح مرئي في الهياكل الخرسانية لأنه يكون مدفون داخل الهيكل الخرساني لذلك من الصعب رؤيته. يتم صناعة حديد مجر من مادة الفولاذ لأن الفولاذ له خصائص التمدد الحراري مثل الخرسانة مما يقلل من أي مشكلة قد تنتج من تغير درجة الحرارة، كما أن ملمس حديد مجر غير أملس، فهو مصنوع من حواف قوية من أجل منع الانزلاق داخل الهيكل الخرساني.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">خصائص حديد مجر:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتميز حديد مجر بخصائص معينة تجعله مناسب للاستخدام في التطبيقات الإنشائية. من بين هذه الخصائص التالي:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- مرونة عالية: يتميز حديد المجر أنه قابل للانحناء والثني بسهولة دون أن يتمكن من كسره، مما يجعله مثالي لتشكيله في الأشكال والأحجام المختلفة المطلوبة في الانشاءات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- مقاوم للتوترات العالية: يتحمل حديد المجر التوترات العالية التي قد تنتج من العوامل الجوية الصعبة دون أن يتشوه أو يتمزق، لذلك فهو مناسب للاستخدام في الهياكل التي تتعرض لأحمال ثقيلة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- قوة ميكانيكية عالية: يتميز حديد مجر بقوة ميكانيكية عالية مما يجعله قادر على تحمل الضغوط الناتجة عن الأحمال الثقيلة في البناء.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- مقاوم للتآكل: عادةً ما يكون حديد المجر مغطى بطبقة من الزنك أو طلاء مضاد للتآكل وذلك من أجل حمايته من التآكل والصدأ الناتج عن العوامل البيئية.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- سهولة الشحن والتوصيل: بفضل حجمه الصغير ووزنه المناسب، يمكن نقل حديد مجر بسهولة وتوصيله إلى موقع البناء دون حدوث مشاكل كبيرة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">اختبارات الحديد المجر:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">الخرسانة:</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">الخرسانة هي عبارة عن مادة إنشائية تنتج من خلط العديد من المواد الطبيعية مثل الرمل والبحص والماء ومواد صناعية مثل الأسمنت، كما أن الخرسانة تشبه الصخور من حيث تحملها للضغوطات الخارجية والظروف الجوية القاسية ولكنها لا تتحمل الشد لذلك يوضع بداخلها حديد مجر لكي تكتسب المتانة والقوة بالتالي يمكن استخدامها في جميع أجزاء المنشآت التجارية والصناعية سواء المعرضة للضغط أو الشد.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">مكونات الخرسانة:</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">وتعد الخرسانة مادة صناعية ومركبة تتكون من 3 عناصر رئيسية هي:</span></p>
+        <ul style="padding-right: 20px">
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الإسمنت.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الرُكام (الخشن والناعم).</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الماء.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">لماذا نستخدم الخرسانة في المباني الإنشائية؟&nbsp;</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">استخدام الخرسانة في المباني الإنشائية يعود إلى عدة فوائد رئيسية تجعلها خيار شائع ومفضل في البناء. إليك بعض الأسباب التي تجعل الخرسانة مادة أساسية في الإنشاءات:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- قوة وصلابة: تتميز الخرسانة بقوة عالية وصلابة ممتازة، مما يجعلها قادرة على تحمل الأحمال الثقيلة والضغوطات &nbsp;الناتجة عن البناءات العالية والهياكل الكبيرة الثقيلة. كما أنها مقاومة للتآكل والعوامل الجوية القاسية، لذلك فهي تتحمل تأثيرات الزمن بشكل جيد وتساهم في طول عمر المباني التي تستخدم فيها.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- قابلية التشكيل: يمكن تشكيل خرسانة الحديد بسهولة لتناسب الأشكال والتصاميم المطلوبة في البناء من قبل المهندسين والمتخصصين، مما يسمح بتحقيق الإبداع المعماري.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- اقتصادية: تعتبر الخرسانة مادة بناء سعرها اقتصادي مقارنة ببعض البدائل الأخرى، مما يساهم في تقليل تكاليف البناء.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- عزل الصوت والحرارة: توفر الخرسانة عزل جيد للصوت والحرارة، وذلك يعمل على تعزيز جو الراحة للأفراد داخل المباني ويقلل من استهلاك الطاقة للتدفئة والتبريد.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- سهولة الصيانة: تتطلب الخرسانة صيانة بسيطة &nbsp;وغير مكلفة مقارنة بالمواد الأخرى، ويمكن إصلاحها بسهولة إذا تعرضت للتلف.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أسعار الخرسانة 2024:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">وبشكل عام فإن تكلفة كل متر مكعب من الخرسانة تتحدد حسب العوامل التالية:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul style="padding-right: 20px ">
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - أسعار المواد الخام الأولية ونوع الخرسانة المختارة.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - عيار الخرسانة كلما زادت كمية الإسمنت، كلما زاد سعر تكلفة الخرسانه.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - نسبة الطلب والعرض على الخرسانة في الأسواق.</span></p>
+            </li>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - مكان مصنع الخرسانة عن موقع المشروع. كلما بعدت مسافة المصنع كلما ازداد سعر الخرسانة بسبب تكلفة الشحن والنقل والعمالة.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">لماذا نستخدم حديد مجر في الخرسانة؟</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يوجد نوعان من الخرسانة وهما الخرسانة العادية و الخرسانة المسلحة، وتعتبر الخرسانة العادية هي التي تستخدم بدون وضع حديد المجر بداخلها. كما أن الخرسانة العادية مقاومة للضغوطات ولكنها في نفس الوقت ضعيفة جدا في مقاومتها للشد، ولذلك لا يُفضل استخدام الخرسانة العادية &nbsp;في الأماكن التي تحدث فيها إجهادات الشد.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">أما الخرسانة المسلحة هي الخرسانة التي تستخدم مع وضع حديد مجر بداخلها، وتتميز الخرسانة المسلحة بتحملها الكبير للضغوطات والشد مقارنة بالخرسانة العادية التي لا تتحمل سوى الضغط فقط. بالإضافة إلى أن يتم استخدام الخرسانة المسلحة فى عمل الهيكل الخرساني لجميع أنواع المنشآت مثل الكباري والجسور والأنفاق، و في المنشآت البحرية، وأيضًا في خزانات المياه.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">سعر حديد المجر في مصر 2024:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">قد يتغير سعر حديد المجر حسب العديد من العوامل لذلك نود أن نؤكد أن شركة ECMF &nbsp;توفر جميع أنواع الواح صاج الحديد وأشكاله، بمختلف السماكات والأطوال المتنوعة. وبالإضافة إلى ذلك، لدينا جميع أنواع القطاعات الأخرى من الحديد مثل الواح صاج ساخن، لوح صاج ملون وكمر مجرى سيجال بجميع أشكاله، ومواسير لحام طولى وساندوتش بانل وغيرها من المنتجات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تواصل معنا الآن للحصول على مزيد من التفاصيل حول الأسعار وسيتم المتابعة معك من قبل فريق المبيعات لدينا في أسرع وقت. &nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>`
+    },
+
+    "Galvanized Sheets": {
+        data: `<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">سعر لوح صاج مجلفن 2024:</span></strong></h2>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتم تصنيع لوح صاج مجلفن من مادة فولاذية وطلائه بطبقة من الزنك لحماية الصاج من التآكل والصدأ، كما أنه يُستخدم في أسقف المباني السكنية والتجارية والصناعية.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">من الممكن أن يختلف سعر لوح صاج مجلفن ولكن تظل طبقة الزنك الموجودة لحمايته من التآكل محتفظة بقوتها كما أنها تساعد على تأمين منشأتك أو مؤسستك، فهو قادر على تحمل كافة العوامل الخارجية التي قد يتعرض لها المبنى دون أن يصدأ.&nbsp;</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أنواع لوح صاج مجلفن:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">هناك العديد من أنواع وسعر لوح صاج مجلفن المتوفرة، وقد تختلف حسب الاستخدامات. إليك بعض الأنواع الشائعة:</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- لوح صاج مجلفن عادي: يتم صناعته عن طريق تغطية لوح الصاج بطبقة من الزنك لحمايته من التآكل. كما أنه يستخدم عادة في صناعة الأنابيب والصناعات البنائية.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- لوح صاج مجلفن مموج: يتم تشكيل الصاج إلى تصميم موجي ويستخدم &nbsp;في أغطية السقوف والجدران لمقاومة التآكل وتوفير الدعم الهيكلي.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- لوح صاج مجلفن ساخن: يتم تجهيز صاج مجلفن ساخن بطلائه بطبقة من الزنك بعد تسخينه بدرجات حرارة عالية.&nbsp;</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- لوح صاج مجلفن متقطع: يتم تقطيع لوح مجلفن إلى قطع بأحجام معينة ويستخدم في تصنيع الهياكل المعدنية والأثاث المعدني.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- لوح صاج مجلفن مثقب: يتم إنشاء فتحات في لوح صاج مجلفن لأغراض التهوية أو الديكور أو التصفية كما أنه &nbsp;يستخدم في العديد من التطبيقات مثل الشاشات والأسوار والمصافي.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">استخدامات لوح صاج مجلفن:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">لوح الصاج المجلفن له العديد من الاستخدامات في مختلف الصناعات والتطبيقات، نظرًا لمميزاته ومقاومته للتآكل. إليك بعض الاستخدامات الشائعة:</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- صناعة البناء والهياكل المعدنية:</span></strong><span style="font-size:12pt;">&nbsp;يستخدم لوح صاج مجلفن في صناعة الأسطح والجدران والهياكل المعدنية للمباني، حيث يوفر حماية قوية ضد التآكل والعوامل الجوية الصعبة.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- صناعة السيارات:</span></strong><span style="font-size:12pt;">&nbsp;يستخدم في صناعة هياكل السيارات والمركبات لمقاومته للتآكل وقوته الفائقة.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- الأجهزة المنزلية</span></strong><span style="font-size:12pt;">: يدخل في صناعة الأجهزة المنزلية مثل الثلاجات والغسالات والأفران بسبب مقاومته للصدأ والتآكل.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- صناعة الأدوات:</span></strong><span style="font-size:12pt;">&nbsp;يستخدم في تصنيع مجموعة مختلفة من الأدوات والمعدات، مثل الصواني والأواني.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">- الصناعات الزراعية:&nbsp;</span></strong><span style="font-size:12pt;">يستخدم في بناء الهياكل الزراعية على سبيل المثال الخزانات والمباني.&nbsp;</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">-&nbsp;</span><strong><span style="font-size:12pt;">الصناعات الطبية:</span></strong><span style="font-size:12pt;">&nbsp;يستخدم في صناعة الأجهزة الطبية والأثاث الطبي.</span></p>
+        <p><br></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">فوائد استخدام لوح صاج مجلفن:</span></strong></h3>
+        <p><br></p>
+        <ul style="padding-right: 40px">
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">المتانة: يوفر لوح صاج مجلفن الذي يتم تغطيسه على الساخن الحماية اللازمة ضد التآكل دون حاجة للصيانة لسنوات طويلة.</span></p>
+            </li>
+            <p><br></p>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تكلفه منخفضة: سعر لوح صاج مجلفن اقتصادي مقارنة بالأنواع الأخرى المتوفرة في الأسواق كما أن لوح صاج مجلفن لا يتطلب صيانة دورية. فإن سعر لوح صاج مجلفن يتضمن التكلفة الأولية.&nbsp;</span></p>
+            </li>
+            <p><br></p>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مستدام وقابل لإعادة التدوير: يمتد عمر لوح صاج المجلفن لأعوام عديدة لذلك فإن سعر لوح صاج مجلفن مثالي لمتانته وعمره الافتراضي كما يمكن إعادة تدوير الزنك والصلب دون فقد خصائصهما الكيميائية والفيزيائية.</span></p>
+            </li>
+            <p><br></p>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">سهل وعملي: تستغرق عملية جلفنة لوح الصاج الكاملة بضع ساعات فقط لذلك يمكنك الحصول على الصاج ومعرفة سعر لوح صاج مجلفن في وقت قصير.</span></p>
+            </li>
+            <p><br></p>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">آمن: تقوم عملية الجلفنة بالتغطيس بالوصول إلى الأجزاء التي يصعب الوصول إليها مثل داخل أعمدة الإنارة والتيوبات والدرابزينات والمجسمات الحديدية المصنعة. كما أن الجلفنة تقلل من المخاطر المتعلقة بضعف الحديد والصلب التي قد تنتج عن تآكل الحديد بفعل الصدأ الذي ينتج من الظروف الطبيعية على مدى طويل.</span></p>
+            </li>
+        </ul>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">مميزات سعر لوح صاج مجلفن:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">قد يتأثر سعر لوح صاج مجلفن بعدة عوامل، بما في ذلك:</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- سماكة الصاج: كلما زاد سمك لوح الصاج، كلما زاد سعره، حيث يتطلب إنتاج صاج لديه سمك كبير بكميات أكبر من المواد الخام وعملية تصنيع أكثر تكلفة بالتالي سيكون سعر لوح صاج مجلفن أعلى.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الحجم والكمية: عند شرائك كميات كبيرة من لوح صاج مجلفن يمكن أن يؤدي إلى تخفيضات في السعر لأنه بالتالي يقلل من تكاليف الإنتاج والشحن.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الجودة والمواصفات: هناك العديد من المعايير المختلفة لجودة لوح صاج مجلفن، والتي يمكن أن تؤثر على سعر لوح صاج مجلفن. على سبيل المثال، الصاج الذي يتميز بمقاومة عالية للتآكل ومعالج بشكل جيد يكون في الغالب أكثر تكلفة من الأنواع ذات الجودة المنخفضة.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- السوق والعرض والطلب: يتغير سعر لوح صاج مجلفن بالعرض والطلب في السوق المحلية والعالمية. بالتالي يؤثر الزيادة في الطلب أو نقص الإمداد إلى تغييرات في الأسعار.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- تكاليف الإنتاج والتصنيع: تؤثر تكاليف الطاقة والعمالة والمعدات اللازمة لإنتاج الصاج &nbsp;على سعر لوح الصاج المجلفن.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- التكنولوجيا والابتكار: بعض التطورات التكنولوجية الحديثة قد تجعل عمليات الإنتاج أكثر كفاءة أو تقلل من التكاليف؛مما يؤثر على سعر لوح الصاج المجلفن.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">خصائص المادة المستخدمة في عملية الجلفنة؟</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">المادة المستخدمة في عملية جلفنة لوح الصاج هي الزنك، ويعتبر الزنك عنصر كيميائي معدني يتم استخراجه من طبقات الأرض والصخور، كما أنه المعدن الرابع من حيث الاستخدام والترتيب حيث يأتي بعد الحديد والألومنيوم والنحاس. في الغالب لا يوجد منفرد بل يكون مختلط بأنواع أخرى من المعادن حيث يتم إمراره على مراحل متعددة من أجل تنقيته ولتوصيله لأفضل صوره يمكن استخدامها.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">ما هي عملية الجلفنة؟</span></strong></h3>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">الجلفنة هي عبارة عن عملية تزويد الفولاذ أو الحديد بطبقة حماية من الزنك لمنع الصدأ والتآكل وقد تتوفر عدة أنواع من الجلفنة، ولكن الجلفنة بالغمس الساخن هي الأكثر استخدامًا.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">ويعتبر الفولاذ &nbsp;أو الحديد من الفلزات التي تجلفن بالزنك وتعتبر إحدى أسهل الطرق وأكثرها استخدامًا في عملية الطلاء باستخدام الزنك هي جلفنة الغمس الساخن وهي شكل من أشكال عملية الجلفنة التي تتم من خلال غمس الفلز في حوض مصهور من الزنك عند درجات حرارة عالية. تجرى هذه العملية من أجل تشكيل طبقة من سبائك الزنك والحديد مقاومة للتآكل كما أنه يحدث تفاعل معدني بين الحديد الموجود في الفولاذ والزنك المنصهر.&nbsp;</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أنواع الجلفنة:</span></strong></h3>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">1 &ndash; جلفنة على الساخن : تتم عملية الجلفنة على الساخن كما ذكرنا من قبل من خلال غمر لوح صاج مجلفن في محلول الزنك المنصهر عند درجة حرارة تصل إلى 450 درجة مئوية.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">2 &ndash; جلفنة على البارد : تتم من خلال وضع لوح صاج مجلفن في حمام زنك متصل بمعدات إلكترونية ومن خلالها يتم تمرير تيار كهربائي من أجل إنتاج طبقة الزنك اللازمة.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">كيف تتم عملية الجلفنة؟</span></strong></>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">1 &ndash; يتم تنظيف السطح عن طريق القذف الرملي أو عن طريق أي معدات إلكترونية مخصصة لذلك.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">2 &ndash; غمر لوح الصاج المجلفن في مزيل الشحوم للتخلص من أي شحوم أو دهون أو زيوت متعلقة بالسطح.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">3 &ndash; غمس لوح صاج مجلفن في محلول حامضي من أجل التخلص من أي صدأ أو شوائب متعلقة بالسطح.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">4 &ndash; غمر الصاج في محلول الزنك الذي يقوم بمعالجته سواء على البارد أو على الساخن لينتج في النهاية الصاج المجلفن على البارد أوالصاج المجلفن على الساخن.</span></p>
+        <p><br></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أحصل الآن على سعر لوح صاج مجلفن 2024:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تواصل معنا الآن مع خبراء شركتنا للحصول على أفضل سعر لوح صاج مجلفن في مصر.</span></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>`
     }
-
-
 }
