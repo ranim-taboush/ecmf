@@ -12,6 +12,9 @@ import axios from "axios"
 import { Error } from '@/components/toast';
 import { useParams } from 'next/navigation'
 import { Api, ApiKey } from '@/config/api'
+import Button from '@/components/UI/Button'
+import FilterIcon from '@/images/filter.svg'
+
 
 const Products = ({}) => {
   axios.defaults.headers['api-key'] = ApiKey;
@@ -25,6 +28,7 @@ const Products = ({}) => {
   const [categories, setCategories] = useState(lines)
   const [checked, setChecked] = useState([true, true, true, true, true, true, true, true])
   const [imgs, setImgs] = useState([])
+  const [displayCheckMenu, setDisplayCheckMenu] = useState(false)
   let summition = -1
 
   useEffect(()=>{
@@ -103,49 +107,69 @@ const Products = ({}) => {
         </div>
       </div>
     </div>
-    <div className="grid grid-cols-4  max-md:grid-cols-1 relative -mt-8 container bg-[#F9F9F9] rounded-md z-10">
-      
-      <div className="md:col-span-1  bg-white rounded-md px-4 sm:px-12 py-6 sm:py-12">
-        <p className='font-semibold mb-4'>{locale === 'ar' ?"خطوط انتاجنا" : "Our Lines"}</p>
-        {categories?.map((_, i)=>{
-          return <div key={i} className='w-full flex justify-start gap-3 items-center'>
-            <input key={i} type="checkbox" name="all" value={!checked[i]} checked={checked[i]}
-            onChange={(e)=>setChecked(prev=>{ prev[i] = !prev[i]; return [...prev] })} />
-            <p className=' text-sm font-normal mb-2'>{locale === 'ar'? _?.title?.ar ||'' : _?.title?.en || ''}</p>
+    <div className='relative -mt-8 container bg-[#F9F9F9] rounded-md z-10 flex flex-col'>
+      <div className='md:hidden flex flex-row justify-between p-4'>
+        <p>{locale==='ar' ? "فرز حسب":"Filter By"}</p>
+        <Button onClick={()=>{setDisplayCheckMenu(!displayCheckMenu)}} className='sm:px-8 sm:py-4'>
+          <div className="flex flex-row items-center gap-2">
+            <Image src={FilterIcon} width={10} height={10} />
+            <span className='inline-block'> {locale==='ar' ? "فرز حسب":"Filter By"} </span>
           </div>
-        })}
+        </Button>
       </div>
-      {/* <div className="col-span-4 md:hidden bg-white rounded-md px-4 sm:px-12 py-6 sm:py-12">
-        <p className='font-semibold mb-4'>{locale === 'ar' ? "خطوط انتاجنا" : "Our Lines"}</p>
-        {categories?.forEach((_, j)=>{
-          _?.products?.map((el, i)=>{
+      <div className={`${displayCheckMenu ? '' : 'hidden'} bg-[#EBEBEB] rounded-md px-4 sm:px-12 py-6 sm:py-12`}>
+          <p className='font-semibold mb-4'>{locale === 'ar' ?"خطوط انتاجنا" : "Our Lines"}</p>
+          {categories?.map((_, i)=>{
             return <div key={i} className='w-full flex justify-start gap-3 items-center'>
-            <input key={i} type="checkbox" name="all" value={!checked[i]} checked={checked[i]}
-            onChange={(e)=>setChecked(prev=>{ prev[i] = !prev[i]; return [...prev] })} />
-            <p className=' text-sm font-normal mb-2'>{locale === 'ar'? el?.arName ||'' : el?.enName || ''}</p>
-          </div>
-          })
-        })}
-      </div> */}
-      
-      <div className="md:col-span-3 col-span-4 px-4 sm:px-12 py-6 sm:py-12">
-        <div className="flex flex-col gap-2 sm:gap-4">
-          {categories.map((_, j)=>{
-            return _?.products?.map((el, i)=>{
-              summition++
-              return <Product
-              key={i}
-              image={imgs[summition]||baseUrl+el.productImg?.replace("\\", "/") || productImg}
-              isNew={true}
-              isChecked={!checked[j]}
-              name={locale === 'ar' ? el?.arName || 'الواح صاج ساخن' : el?.enName || 'Hot Metal Sheets'}
-              madeBy={locale === 'ar' ? el?.srcImg?.split('/')[2].split('.')[0] || 'عز الدخيلة' : el?.srcImg?.split('/')[2].split('.')[0] || 'Ezz El-Dkhela'}
-              locale={locale}
-              index
-              element={el}
-            />
+              <input key={i} type="checkbox" name="all" value={!checked[i]} checked={checked[i]}
+              onChange={(e)=>setChecked(prev=>{ prev[i] = !prev[i]; return [...prev] })} />
+              <p className=' text-sm font-normal mb-2'>{locale === 'ar'? _?.title?.ar ||'' : _?.title?.en || ''}</p>
+            </div>
+          })}
+        </div>
+      <div className="grid grid-cols-4 max-md:grid-cols-1">
+        <div className={`hidden md:block md:col-span-1 bg-white rounded-md px-4 sm:px-12 py-6 sm:py-12`}>
+          <p className='font-semibold mb-4'>{locale === 'ar' ?"خطوط انتاجنا" : "Our Lines"}</p>
+          {categories?.map((_, i)=>{
+            return <div key={i} className='w-full flex justify-start gap-3 items-center'>
+              <input key={i} type="checkbox" name="all" value={!checked[i]} checked={checked[i]}
+              onChange={(e)=>setChecked(prev=>{ prev[i] = !prev[i]; return [...prev] })} />
+              <p className=' text-sm font-normal mb-2'>{locale === 'ar'? _?.title?.ar ||'' : _?.title?.en || ''}</p>
+            </div>
+          })}
+        </div>
+        {/* <div className="col-span-4 md:hidden bg-white rounded-md px-4 sm:px-12 py-6 sm:py-12">
+          <p className='font-semibold mb-4'>{locale === 'ar' ? "خطوط انتاجنا" : "Our Lines"}</p>
+          {categories?.forEach((_, j)=>{
+            _?.products?.map((el, i)=>{
+              return <div key={i} className='w-full flex justify-start gap-3 items-center'>
+              <input key={i} type="checkbox" name="all" value={!checked[i]} checked={checked[i]}
+              onChange={(e)=>setChecked(prev=>{ prev[i] = !prev[i]; return [...prev] })} />
+              <p className=' text-sm font-normal mb-2'>{locale === 'ar'? el?.arName ||'' : el?.enName || ''}</p>
+            </div>
             })
           })}
+        </div> */}
+        
+        <div className="md:col-span-3 col-span-4 px-4 sm:px-12 py-6 sm:py-12">
+          <div className="flex flex-col gap-2 sm:gap-4">
+            {categories.map((_, j)=>{
+              return _?.products?.map((el, i)=>{
+                summition++
+                return <Product
+                key={i}
+                image={imgs[summition]||baseUrl+el.productImg?.replace("\\", "/") || productImg}
+                isNew={true}
+                isChecked={!checked[j]}
+                name={locale === 'ar' ? el?.arName || 'الواح صاج ساخن' : el?.enName || 'Hot Metal Sheets'}
+                madeBy={locale === 'ar' ? el?.srcImg?.split('/')[2].split('.')[0] || 'عز الدخيلة' : el?.srcImg?.split('/')[2].split('.')[0] || 'Ezz El-Dkhela'}
+                locale={locale}
+                index
+                element={el}
+              />
+              })
+            })}
+          </div>
         </div>
       </div>
     </div>
