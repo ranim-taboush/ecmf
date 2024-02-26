@@ -19,7 +19,7 @@ import Footer from '@/components/Footer/Footer';
 export const metadata = {
   title: 'Home',
   verification: { 
-    google: "FBnl8ZxriP7SI_VgznSKeZH9Rp_-KDA2-zGDKV7G9XU", 
+    google: "7wkSiizY8sRbrcYRwL86IEf4RpWTev9FHt0y_0QR7Kg", 
   }
 }
 
