@@ -34,6 +34,9 @@ export default function RootLayout({
   }
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className=' scroll-smooth'>
+      <head>
+        <link rel="canonical" href="https://ecmf-eg.com/" />
+      </head>
       <body className={cairo.className}>
         {/* <Navbar /> */}
         {children}

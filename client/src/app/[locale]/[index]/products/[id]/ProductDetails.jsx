@@ -193,6 +193,18 @@ const ProductDetails = ({ }) => {
       {product?.enName && product?.enName === "Icon" &&<div className="text-black w-full mt-4" 
       dangerouslySetInnerHTML={{ __html: info?.['Icon']?.data }}
       ></div>}
+      {product?.enName && product?.enName === "Hot Sheets" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Hot Sheets']?.data }}
+      ></div>}
+      {product?.enName && product?.enName === "Steel Deck" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Steel Deck']?.data }}
+      ></div>}
+      {product?.enName && product?.enName === "Streem Pulins" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Streem Pulins']?.data }}
+      ></div>}
+      {product?.enName && product?.enName === "Galvanized Sheets" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Galvanized Sheets']?.data }}
+      ></div>}
     </div>
   </div>
 }
