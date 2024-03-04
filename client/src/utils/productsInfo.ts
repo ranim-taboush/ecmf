@@ -1033,5 +1033,153 @@ export const info = {
         <p><br></p>
         <p><br></p>
         <p><br></p>`
+    },
+
+    "Corner Pulins": {
+        data: `<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">حديد الزوي:</span></strong></h2>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">حديد الزوي هو عبارة عن قطعة معدنية تتميز بشكلها الزاوي ويُطلق عليه أيضًا اسم حديد الزهر المرن، كما أن لديه العديد من الأطوال وله أكثر من سُمك.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتم تصنيع حديد الزوي من الفولاذ وتشكيله عن طريق ثني طرف من أطراف الحديد ثم ترك الطرف الآخر منبسط. يُستخدم حديد الزوي في مجموعة متنوعة من التطبيقات بما في ذلك الهياكل الفولاذية، كما أنه يدخل في صناعة الأثاث والبناء، وأيضًا الأعمال الصناعية الأخرى.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">بسبب قوة حديد الزوي وصلابته فهو يُستخدم أيضًا في تقاطعات الهياكل الفولاذية لتوفير الدعم والقوة اللازمة، كما أنه يمكن استخدامه في الأثاث المعدني مثل إطارات للطاولات والكراسي، بالإضافة إلى استخداماته في البناء مثل تركيب الأسوار والأبواب والنوافذ والسقوف. لذلك فإن المتخصصين يختارون دائمًا حديد الزوي ويعتمدون عليه بشكل كبير في مختلف الصناعات والتطبيقات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أشكال الحديد الزوي:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يوجد العديد من أشكال حديد الزوي المتوفرة في الأسواق ومنها التالي:&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><span style="font-size:14pt;">1</span><strong><span style="font-size:12pt;">. زاوية متساوية (يمينه):&nbsp;</span></strong><span style="font-size:12pt;">هي من ضمن أشكال الزوي وتتميز بأن أضلاعها متساوية وحادة بزاوية 90 درجة، حيث إن مقاس الطول متساوي مع مقاس العرض.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><span style="font-size:14pt;">2.&nbsp;</span><strong><span style="font-size:12pt;">زاوية (L):&nbsp;</span></strong><span style="font-size:12pt;">تكون هذه الزاوية 90 درجة أيضًا ولكنها ليست متساوية الضلعين كما في الزاوية المتساوية، حيث إن الزاوية L لديها ضلع أطول من الضلع الأخر لذلك فهي تشبه حرف (L ).</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">3. زاوية (T):&nbsp;</span></strong><span style="font-size:12pt;">تتميز هذه الزاوية بشكل مستقيم من الحديد يتعامد عليه قطعة أصغر من الحديد لتظهر على شكل حرف (T).</span></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">استخدامات الحديد الزهر المرن:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">&nbsp;- البناء والإنشاءات:</span></strong><span style="font-size:12pt;">&nbsp;يُستخدم زوي الحديد في صناعة معظم الهياكل المعدنية مثل المباني والجسور والأبراج والأسوار والأسقف. كما أنه يمكن استخدامه في صناعة الأنابيب والصفائح المعدنية.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- الصناعات الكيميائية:</span></strong><span style="font-size:12pt;">&nbsp;يتم استخدامه في بعض العمليات الصناعية التي تحتاج مقاومة جيدة للتآكل، مثل صناعة الأسطح والأوعية التي تحتوي على مواد كيميائية مسببة للتآكل.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- السياجات والتزيينات الخارجية:</span></strong><span style="font-size:12pt;">&nbsp;بسبب قوة ومتانة زوي الحديد ومقاومته الفائقة للتآكل فهو يُستخدم في صناعة السياجات والبوابات والزخارف الخارجية للمباني والمنازل مما يمنحها المتانة والحماية اللازمة.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- الصناعات البحرية:</span></strong><span style="font-size:12pt;">&nbsp;يدخل حديد الزهر المرن في صناعة أجزاء من السفن والقوارب بسبب مقاومته العالية للتآكل البحري.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- صناعة السيارات:</span></strong><span style="font-size:12pt;">&nbsp;قد يستخدم زوي الحديد في بعض الأجزاء غير الهيكلية للسيارات التي تتطلب مقاومة فائقة للتآكل من أجل الحفاظ على الأجزاء من التآكل.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- الصناعات الكهربائية والإلكترونية:</span></strong><span style="font-size:12pt;">&nbsp;يمكن استخدام زوي الحديد في بعض التطبيقات الكهربائية والإلكترونية بسبب خواصه المغناطيسية المميزة.</span></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">أهمية حديد الزوي:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;يعتمد المهندسون والمختصين بشكل كلي على حديد الزوايا مما يجعله خيار مثالي واقتصادي في العديد من التطبيقات ومنها التالي:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- القوة والصلابة:</span></strong><span style="font-size:12pt;">&nbsp;زوايا الحديد توفر قوة هيكلية وصلابة فائقة عند استخدامها في البناء والهياكل الفولاذية. تتحمل زوايا الحديد الضغوطات العالية بشكل فعال لذلك فهي خيار المتخصصين والفنيين الأول.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- الاستخدام المتعدد:</span></strong><span style="font-size:12pt;">&nbsp;يمكن استخدام حديد الزوي في العديد من التطبيقات بما في ذلك البناء، وتصنيع الآلات، والأثاث، والصناعات الإلكترونية، وغيرها من التطبيقات الأخرى.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- سهولة التركيب:</span></strong><span style="font-size:12pt;">&nbsp;يتميز حديد الزوايا أنه يمكن بسهولة تشكيلة وتركيبه وتثبيته في مواقع مختلفة، سواء كان ذلك عن طريق اللحام أو البراغي.</span></h4>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- المقاومة للتآكل:</span></strong><span style="font-size:12pt;">&nbsp;تتم معالجة زوايا الحديد من أجل أن تكون مقاومة للتآكل والصدأ، مما يزيد من عمرها الافتراضي ويقلل من تكاليف الصيانة.</span></>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- التصميم الهيكلي:&nbsp;</span></strong><span style="font-size:12pt;">يستخدم المهندسين حديد الزوي في التصميم الهيكلي من أجل توفير الدعم والتقاطعات في الهياكل الفولاذية مثل الأعمدة والأسقف والجدران.</span></>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">- يوفر التكلفة:&nbsp;</span></strong><span style="font-size:12pt;">يُعتبر حديد الزوي اختيار اقتصادي في العديد من التطبيقات نظرًا لقوته ومتانته وتوافره وسعره المناسب مقارنة بأنواع أخرى.</span></>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">&nbsp;الفرق بين الحديد الزهر الرمادي والحديد الزهر الأبيض:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يوجد العديد من أنواع الحديد الزهر ولكن الأكثر شيوعًا هما حديد الزهر الرمادي وحديد الزهر الأبيض، لذلك سنوضح ما الفرق بينهما وما هي استخدامات كلآ منهم.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">حديد الزهر الرمادي:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">حديد الزهر الرمادي يعتبر من أقدم أنواع الحديد الزهر وأكثر أنواع الحديد استخدامًا، ويتميز هذا النوع ببنيته الدقيقة لذلك فهو يظهر عليه كسور باللون الرمادي. يتكون حديد الزهر الرمادي من الجرافيت كما أن يتكون الحديد المصبوب الرمادي عن طريق التبريد البطيء أثناء عملية الصهر.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">الحديد الزهر الرمادي من السبائك الشائع استخدامها في التطبيقات الهندسية، بسبب تكلفته المنخفضة، كما أن له مقاومة جيدة للتآكل لوجود الجرافيت الذي يقلل من الاحتكاك المعدني ويجعل المعدن يتقصف في صورة رقائق.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">ومع ذلك أنه أقل سبائك الحديد الزهر قابلية للانكماش، بسبب وجود الجرافيت في بنيته. بالإضافة إلي أن السيليكون &nbsp;يقوي من مقاومة السبيكة ويزيد من سيولته عند استخدامه. يعتبر الحديد الزهر الرمادي سبيكة يسهل لحامها لذلك فهو مناسب ومثالي لمعظم الصناعات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">&nbsp;حديد الزهر الأبيض:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;حديد الزهر الأبيض يعرف بأنه صلب وهش، كما أن سطح هذا الحديد له مظهر أبيض، وبالتالي يطلق عليه الحديد الزهر الأبيض. بالإضافة إلى أنه يمتلك هذا النوع من الحديد صلابة جيدة ومقاوم للتآكل كما أن تكلفته منخفضة نسبيًا. &nbsp;يعتبر حديد الزهر الأبيض صلب وهش ولا يتم تشكيله بسهولة ويتم استخدامه بشكل نموذجي في بعض الأجزاء الصلبة والمقاومة للتآكل مثل الأسطوانات في مصانع الدرفلة، وعجلة السكك الحديدية، الدفاعات، ومضخات الطين، وقضبان الرافعة في طاحونة كرات.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يعتبر حديد الزهر الأبيض هو نوع من الحديد الزهر ولا يدخل في تكوينه الجرافيت مثلما يوجد في الحديد الزهر الرمادي. يتضمن هذا النوع من الحديد الأبيض إلى وجود السمنتيت أو Fe3C في تكوينه، والذي يمنح حديد الزهر الأبيض القوة العالية والصلابة. يتكون هيكل الحديد الزهر الأبيض من السمنتيت والأوستينيت.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أحصل على أفضل سعر حديد الزوي في مصر:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يمكن أن يختلف سعر حديد الزوي حسب العديد من العوامل مثل سمك الحديد وحجمه والكمية المشتراة، كما يمكنك إيجاد المزيد من المنتجات لدينا عبر موقعنا.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">نود أن نؤكد أن&nbsp;</span><a href="https://www.ecmf-eg.com/ar"><u><span style="color:#1155cc;font-size:12pt;">شركة ECMF</span></u></a><span style="font-size:12pt;">&nbsp;توفر جميع أنواع زوي الحديد وأشكاله، بمختلف السماكات والأطوال المتنوعة. بالإضافة إلى ذلك، لدينا جميع أنواع القطاعات الأخرى من الحديد مثل&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%88%D8%A7%D8%AD%20%D8%B5%D8%A7%D8%AC%20%D8%B3%D8%A7%D8%AE%D9%86"><u><span style="color:#1155cc;font-size:12pt;">الواح صاج ساخن</span></u></a><span style="font-size:12pt;">،&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%84%20%D8%AF%D9%8A%D9%83"><u><span style="color:#1155cc;font-size:12pt;">استيل دك</span></u></a><span style="font-size:12pt;">،&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D8%A7%D9%8A%D9%83%D9%88%D9%86"><u><span style="color:#1155cc;font-size:12pt;">لوح صاج ايكون</span></u></a><span style="font-size:12pt;">&nbsp;و</span><a href="https://www.ecmf-eg.com/ar/0/products/%D9%83%D9%85%D8%B1%20%D8%B3%D9%8A%D8%AC%D8%A7%D9%84"><u><span style="color:#1155cc;font-size:12pt;">كمر حديد سيجال</span></u></a><span style="font-size:12pt;">&nbsp;بجميع أشكاله، و</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B3%D9%8A%D8%B1"><u><span style="color:#1155cc;font-size:12pt;">مواسير لحام طولى</span></u></a><span style="font-size:12pt;">&nbsp;وأيضًا متوفر لدينا ساندوتش بانل وغيرها من المنتجات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><a href="https://www.ecmf-eg.com/ar/contact-us"><u><span style="color:#1155cc;font-size:12pt;">تواصل معنا</span></u></a><span style="font-size:12pt;">&nbsp;الآن للحصول على مزيد من التفاصيل حول الأسعار وسيتم المتابعة معك من قبل فريق المبيعات لدينا في أسرع وقت. &nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p><br></p>`
+    },
+    
+    "U Parallel Ornaments": {
+        data: `<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">كمر متوازي U:</span></strong></h2>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كمر متوازي U هو عبارة عن عنصر هيكلي يتميز بشكل يشبه حرف &quot;U&quot;. يتكون كمر متوازي U من قسمين، قسم علوي والآخر قسم سفلي ويتميز القسمان أنهم متوازيين ويتصلان بالقسم الرأسي العمودي. هذا الشكل يعطي الكمر المتوازي قوة هيكلية ممتازة لتحمل الأحمال العرضية والعمودية بشكل فعال.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أهمية كمر متوازي U:</span></strong></h3>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- توزيع الأحمال: يمكن أن يتم توزيع الأحمال بشكل فعال من خلال استخدام كمر متوازي U، مما يجعله مناسبًا لمختلف التطبيقات في البناء والهندسة المعمارية.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الصلابة والقوة: يوفر كمر متوازي U قوة هيكلية عالية وصلابة، مما يجعله قادرًا على تحمل الأحمال الثقيلة ومثالي للاستخدام في الهياكل التي تتطلب دعم قوي.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- التطبيقات المتنوعة: تكمُن أهمية كمر متوازي U أنه يتم استخدامه في العديد من التطبيقات، بما في ذلك بناء الهياكل الصناعية والتجارية، والسفن، والجسور، وغيرها من المشاريع الهندسية.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- سهولة التركيب: يتميز الكمر المتوازي U بسهولة تركيبة وتشكيلة، مما يجعله خيار مثالي للعديد من التطبيقات الهندسية.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">استخدامات كمر متوازي U:</span></strong></>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- بناء الجسور: يُستخدم الكمر المتوازي U في بناء هياكل الجسور بسبب قوة تحمله للأحمال الثقيلة وتوزيعها بشكل فعال.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- المباني الصناعية: يتم استخدام كمر متوازي U في بناء المباني الصناعية مثل المستودعات والمصانع، لأنه يوفر الدعم اللازم للمعدات الثقيلة والمواد.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- المباني التجارية والسكنية: يمكن استخدامه في بناء المباني التجارية والسكنية لأنه يوفر الدعم الهيكلي للأرضيات والأسقف والجدران بشكل فعال.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الصناعات البحرية: يتم استخدام كمر متوازي U في بناء الهياكل البحرية مثل المرافئ والأرصفة والسفن، كما أنه يوفر القوة اللازمة للهياكل والمعدات البحرية.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الهياكل الصناعية الكبيرة: يتم استخدامه أيضًا في بناء الهياكل الصناعية الكبيرة مثل المحطات الكهربائية ومصانع التكرير، كما أنه يوفر القوة والصلابة اللازمة لتحمل الأحمال الثقيلة بكفاءة.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أنواع كمر الحديد:</span></strong></h3>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">1- الكمر المجرى UPN . UPE:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">هذا النوع من الكمر يعرف بالكمر المتوازي U ويكون هنا الكمر المجري مع واجهتين بشكل أضيق، كما أنه يُستخدم في العديد من الصناعات الهندسية مثل في بناء الهياكل المختلفة، وصناعة السيارات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">2- كمر متوازي IPE . IPN:&nbsp;</span></strong></>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتميز الكمر المتوازي أنه يستخدم في أعمال البناء والتشييد مثل المستودعات والمصانع، حيث يوفر القوة والصلابة اللازمة لتحمل الأحمال الثقيلة. كما أنه يدخل في بناء الهياكل الصناعية مثل المنشآت الصناعية ومحطات الطاقة، حيث يمكن استخدامه كعنصر قوي داعم للأنابيب والمعدات الثقيلة.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كما أنه أيضًا يُستخدم في بناء الجسور والممرات العلوية، حيث يمكن استخدامه لتحمل الأحمال العرضية والعمودية كما أنه يستخدم في مجموعة واسعة من الهياكل العامة مثل الأبراج والأعمدة والصوامع والخزانات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">3- الكمر الإنجليزى HEB . HEA:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">من أكثر الأنواع شيوعًا ويدخل في في مختلف أنواع أعمال البناء والصناعة حيث&nbsp;</span><span style="color:#0d0d0d;font-size:12pt;">إنه يوفر قوة هيكلية فائقة لذلك فهو قادر على تحمل الضغوطات الناتجة عن الأحمال الثقيلة. يساهم الكمر المتوازي H في توزيع الأحمال بالتساوي من أجل تحسين توزيع الأحمال على الهيكل. ويعتبر كمر الحديد خيار مناسب للاستدامة، لأنه يمكن تصنيعه بتكاليف مناسبة، بالتالي يقلل من تكاليف الصيانة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">4- كمر حديد سيجال:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كمر الحديد السيجال هو عبارة عن قطاعات عديدة من الحديد من صاج أسود أو صاج مجلفن تتميز بخفة وزنها ومقاومتها العالية للأحمال والإجهادات. كما أن&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D9%83%D9%85%D8%B1%20%D8%B3%D9%8A%D8%AC%D8%A7%D9%84"><u><span style="color:#1155cc;font-size:12pt;">كمر حديد سيجال</span></u></a><span style="font-size:12pt;">&nbsp;يكون على أشكال مختلفة وهي (C- U- Z ) وهي متوفرة بكافة الدرجات والصلابة المطلوبة، كما أنه تم تصنيعه بواسطة أحدث تقنيات الصناعة وهي خطوط الدرفلة على البارد.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">مميزات كمر حديد سيجال:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتميز كمر الحديد سيجال بأنه مصنوع من مواد عالية الجودة مما يجعله قادر على تحمل الضغوط والأحمال الثقيلة في البناءات والهياكل. كما أنه تتم معالجة كمر الحديد بطبقة من المواد القوية المقاومة للصدأ، من أجل أن يكتسب الصفات اللازمة لمقاومة التآكل بشكل آمن.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">من ضمن المميزات الأخرى لكمر حديد السيجال أنه سهل التشكيل والتصنيع بأشكال عديدة وذلك من أجل أن يناسب جميع احتياجات مشاريع البناء المختلفة. بالإضافة إلى أنه يمكن استخدام كمر سيجال بسهولة مع مواد البناء الأخرى، مما يجعله مناسب مع &nbsp;العديد من تصميمات المباني والهياكل. على الرغم من جودة كمر سيجال ومميزاته العديدة ومتانته، إلا أن كمر الحديد سيجال تكلفته منخفضة مقارنة ببعض الخيارات الأخرى.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">استخدامات كمر &nbsp;حديد سيجال:&nbsp;</span></strong></h3>
+        <p><br></p>
+        <ul>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - المنشآت السكنية والتجارية: يُستخدم كمر السيجال في بناء المنازل والمباني التجارية لتوفير الدعم اللازم للأسقف والجدران.</span></p>
+            </li>
+            <p dir="rtl" style="text-align: right;"><br></p>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - &nbsp;البناءات الصناعية: يتحمل كمر الحديد الأوزان الثقيلة، فهو مناسب لاستخدامه في بناء المصانع والمنشآت الصناعية الكبيرة.</span></p>
+            </li>
+            <p dir="rtl" style="text-align: right;"><br></p>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - بناء الجسور: يُستخدم أيضًا في بناء الجسور من أجل تقديم الدعم الكامل للأجزاء الهيكلية المختلفة.</span></p>
+            </li>
+            <p dir="rtl" style="text-align: right;"><br></p>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - تقوية الهياكل الإنشائية:</span><strong><span style="font-size:12pt;">&nbsp;</span></strong><span style="font-size:12pt;">يتم استخدام كمر الحديد سيجال من أجل تقوية الهياكل الإنشائية المتمثلة في الأعمدة والأسقف والجدران وذلك من أجل زيادة قوتها ومتانتها.</span></p>
+            </li>
+            <p dir="rtl" style="text-align: right;"><br></p>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - الأعمال الصناعية الثقيلة: يُستخدم كمر سيجال على البارد في صناعات النفط والغاز وأيضًا يساهم في صناعة التعدين والطاقة من أجل تقديم القوة اللازمة للمعدات الثقيلة.</span></p>
+            </li>
+            <p dir="rtl" style="text-align: right;"><br></p>
+            <li dir="rtl" style="font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;"> - بناء السور والأسوار: يتم استخدام كمر الحديد سيجال في بناء السور والأسوار، من أجل تقديم الدعم والتحصين اللازم للحماية والأمان بشكل فعال.</span></p>
+            </li>
+        </ul>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">سعر كمر متوازي U:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يمكن أن يتغير سعر كمر متوازي U حسب الكثير من العوامل التي قد تؤثر مثل سمك الكمر وحجمه والكمية المشتراة، كما يمكنك إيجاد المزيد من المنتجات لدينا عبر موقعنا.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">نود أن نؤكد أن&nbsp;</span><a href="https://www.ecmf-eg.com/ar"><u><span style="color:#1155cc;font-size:12pt;">شركة ECMF</span></u></a><span style="font-size:12pt;">&nbsp;توفر جميع أنواع كمر الحديد المتوازي والسيجال وأشكاله، بمختلف السماكات والأطوال المتنوعة. بالإضافة إلى ذلك، لدينا جميع أنواع القطاعات الأخرى من الحديد مثل&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%88%D8%A7%D8%AD%20%D8%B5%D8%A7%D8%AC%20%D8%B3%D8%A7%D8%AE%D9%86"><u><span style="color:#1155cc;font-size:12pt;">الواح صاج ساخن</span></u></a><span style="font-size:12pt;">،&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%84%20%D8%AF%D9%8A%D9%83"><u><span style="color:#1155cc;font-size:12pt;">استيل دك</span></u></a><span style="font-size:12pt;">،&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D8%A7%D9%8A%D9%83%D9%88%D9%86"><u><span style="color:#1155cc;font-size:12pt;">لوح صاج ايكون</span></u></a><span style="font-size:12pt;">&nbsp;بجميع أشكاله، و</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B3%D9%8A%D8%B1"><u><span style="color:#1155cc;font-size:12pt;">مواسير لحام طولى</span></u></a><span style="font-size:12pt;">&nbsp;وأيضًا متوفر لدينا ساندوتش بانل وغيرها من المنتجات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><a href="https://www.ecmf-eg.com/ar/contact-us"><u><span style="color:#1155cc;font-size:12pt;">تواصل معنا</span></u></a><span style="font-size:12pt;">&nbsp;الآن للحصول على مزيد من التفاصيل حول الأسعار وسيتم المتابعة معك من قبل فريق المبيعات لدينا في أسرع وقت. &nbsp;</span></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>`
     }
+
+    
+
 }
