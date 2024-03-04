@@ -205,6 +205,12 @@ const ProductDetails = ({ }) => {
       {product?.enName && product?.enName === "Galvanized Sheets" &&<div className="text-black w-full mt-4" 
       dangerouslySetInnerHTML={{ __html: info?.['Galvanized Sheets']?.data }}
       ></div>}
+      {product?.enName && product?.enName === "Corner Pulins" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['Corner Pulins']?.data }}
+      ></div>}
+      {product?.enName && product?.enName === "U Parallel Ornaments" &&<div className="text-black w-full mt-4" 
+      dangerouslySetInnerHTML={{ __html: info?.['U Parallel Ornaments']?.data }}
+      ></div>}
     </div>
   </div>
 }
