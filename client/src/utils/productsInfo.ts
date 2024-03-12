@@ -1178,8 +1178,182 @@ export const info = {
         <p><br></p>
         <p><br></p>
         <p><br></p>`
+    },
+
+    "H Parallel Ornaments": {
+        data: `<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">كمر متوازي H:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كمر الحديد المتوازي H هو نوع من أنواع الكمر الهيكلي المصنوع من الحديد أو الفولاذ. يتميز كمر متوازي H بشكله الذي يشبه الحرف &quot;H&quot; خصوصًا عند النظر إليه من الجانب.&nbsp;</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتكون كمر متوازي H من قسمين متوازيين متصلين بمربع من الأعلى والأسفل لتشكيل شكل حرف H. يتم استخدام كمر متوازي H على نطاق واسع في الهندسة المعمارية والإنشائية وذلك من أجل دعم هيكلي قوي في الهياكل المعدنية مثل الأعمدة والأسقف والجسور.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كمر الحديد المتوازي H يعتبر خيار المهندسين الشائع في التطبيقات التي تحتاج إلى قوة هيكلية عالية ومتانة. يمكن أن يكون كمر متوازي H له استخدامات كثيرة في المباني الصناعية، والمباني التجارية، والجسور، وغيرها من الهياكل التي تتطلب دعمًا قويًا.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">ما هو كمر الحديد وفيما يُستخدم؟</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كمر الحديد هو عبارة عن عنصر هيكلي يتم استخدامه خصيصًا في الهندسة المعمارية والإنشائية من أجل توفير الدعم اللازم والصلابة للهياكل. يتمثل دور كمر الحديد في توزيع الأحمال والضغوطات عبر الهيكل، كما أنه يعمل على تقليل تأثير العوامل الخارجية مثل الضغوطات والاهتزازات.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يتم صناعة كمر الحديد عادةً من الفولاذ، حيث يتم اختيار الحجم والأبعاد المحددة بناءً على الاحتياجات الهندسية والتصميمية للمشروع المحدد. يتميز كمر الحديد بقوته العالية وقابليته لتحمل الضغوطات والعوامل الجوية القاسية وذلك بسبب قوة هيكلته ومتانته.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="color:#0d0d0d;font-size:16pt;">أهمية استخدام كمر متوازي H:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="color:#0d0d0d;font-size:14pt;">قوة هيكلية عالية:&nbsp;</span></strong><span style="color:#0d0d0d;font-size:12pt;">كمر الحديد المتوازي H مصمم خصصيًا لتحمل الأحمال الثقيلة وتوزيعها بشكل فعال. بالإضافة إلى أنه يوفر قوة هيكلية فائقة مما يجعله قادر على تحمل الضغوطات الناتجة عن الأحمال الواقعة عليه.</span></>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="color:#0d0d0d;font-size:14pt;">توزيع الأحمال بشكل متساوي:&nbsp;</span></strong><span style="color:#0d0d0d;font-size:12pt;">يساهم كمر متوازي H في توزيع الأحمال بشكل متساوي عبر الهيكل، مما يحسن من توزيع الأحمال على الهيكل بشكل فعال.</span></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="color:#0d0d0d;font-size:14pt;">توفير الاستدامة:</span></strong><span style="color:#0d0d0d;font-size:12pt;">&nbsp;يعتبر كمر الحديد المتوازي خيار مثالي للاستدامة، حيث يمكن تصنيعه بتكاليف معقولة ومناسبة ويتميز بقوته العالية ومتانته الطويلة الأمد، مما يقلل من تكاليف الصيانة ويطيل العمر الافتراضي للهيكل.</span></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">استخدامات كمر متوازي H:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كمر متوازي H هو عنصر هيكلي متين وقوي يستخدم في مجموعة واسعة من التطبيقات في الهندسة المعمارية والإنشائية. إليك بعض الاستخدامات الشائعة لكمر الحديد متوازي H:</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- المباني التجارية والسكنية: يُمكن استخدام كمر متوازي H في بناء المباني التجارية والسكنية من أجل تقديم الدعم الهيكلي المطلوب وتحمل الأحمال الناتجة عن الأرضيات والجدران.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الهياكل الصناعية الكبيرة: يدخل في بناء الهياكل الصناعية الكبيرة مثل المنشآت البتروكيماوية ومحطات الطاقة من أجل تحمل الأحمال الثقيلة وتقديم الدعم القوي للمعدات الضخمة.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- المباني الصناعية: يتم استخدام كمر متوازي H في بناء المباني الصناعية على سبيل المثال المصانع والمستودعات، حيث إنه يوفر القوة المطلوبة للهياكل الثقيلة والمعدات.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الهياكل البحرية: يُستخدم الكمر المتوازي في بناء الهياكل البحرية مثل الأرصفة والمنشآت البحرية من أجل تحمل الأحمال البحرية والظروف البيئية القاسية.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الجسور: يُستخدم كمر متوازي H في بناء هياكل الجسور وذلك بسبب قوة تحمله الفائقة للأحمال الثقيلة وأنه يمنح الطرق والسكك الحديدية القوة المطلوبة من أجل الأمان العام.</span></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الأعمدة والدعامات: يمكن أيضًا استخدام كمر متوازي H في الأعمدة أو الدعامات لتقديم الدعم العمودي والأفقي في مجموعة متعددة من التطبيقات والصناعات.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أنواع الكمرات حسب الدعم والحمل:</span></strong></h3>
+        <p><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">كمرات المرتكزة:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يعتبر هذا النوع من الكمرات شائع الاستخدام ويُدعم من طرفيه حيث يتم تثبيت إحدى طرفيه. ويتم استخدام رولر لتثبيت الكمرات المرتكزة عن طريق الانحناء والقص.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كمرات المرتكزة تعتبر من أنواع الكمرات التي تتميز بأنها مثبتة في نقطة واحدة فقط. تعتمد قوة هذه الكمرات المرتكزة على الدعم الذي توفره النقطة المثبتة فيها، ويمكن أن تستخدم أيضًا من أجل توزيع الأحمال أو لتحمل أحمال ثقيلة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تستخدم كمرات المرتكزة في عدة تطبيقات، منها:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الهندسة المعمارية: يتم استخدام الكمرات المرتكزة في بناء الجسور والمباني حيث إنها تقدم الدعم، لذلك يمكن استخدام كمرات المرتكزة لتمديد الهياكل المعمارية خارج الواجهات دون وجود دعم أفقي إضافي.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الصناعة: تدخل في صناعة تطبيقات الأنظمة الصناعية حيث يكون من الضروري توفير الدعم الفعال للمعدات أو الأنابيب أو الأجزاء الأخرى دون الحاجة إلى هياكل داعمة كبيرة.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- التصميم الداخلي: تستخدم في الأثاث والتصميم الداخلي للمباني، حيث يمكن استخدام كمرات المرتكزة لتصميم رفوف أو أجزاء من الأثاث تحمل أوزانًا ثقيلة دون الحاجة إلى دعم متعدد النقاط.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">كمرات مع كابولي من أحادي الطرف:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تعتبر كمرات مع كابولي من أحادي الطرف نوع يشبه إلى حد كبير النوع الأول من الكمرات المرتكزة. كما أنه يوجد طرف مستمر من بعد الدعامة إلى مسافة ما. بالإضافة إلى أنها تستخدم في العديد من الصناعات وتكون غالبًا جزءًا من هياكل، وهندسة معمارية، وأعمال بناء.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">إليك بعض الاستخدامات الشائعة لهذه الكمرات:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- أعمدة الإنارة وأعمدة اللافتات: يمكن استخدام كمرات مع كابولي من أحادي الطرف في بناء أعمدة الإنارة وأعمدة اللافتات، وذلك من أجل توسيع الجزء العلوي من الكمرة لتثبيت أجهزة الإضاءة أو اللافتات.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- أبراج الإرسال والاتصالات: يعمل الكابولي كمنصة لتثبيت أجهزة الإرسال والاستقبال، لذلك يُمكن استخدام كمرات مع كابولي من أحادي الطرف في بناء أبراج الإرسال والاتصالات.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- أعمدة الجسور والممرات العلوية: تُستخدم كمرات مع كابولي من أحادي الطرف في بناء أعمدة الجسور والممرات العلوية، في هذه الحالة يتم استخدام الكابولي كجزء أساسي من الهيكل لتوفير الدعم اللازم للعارضات العلوية.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">الكمرات الجمالونية:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">كمرات الجمالونية تعتبر من ضمن أنواع الكمرات التي تتم تقويتها بمادة الجمالون، لذلك يُطلق عليه اسم كمر الجمالون. يتم استخدام الكمرات الجمالونية في صناعة أسقف الورش الصناعية، وأسقف المستودعات، وفي جميع التطبيقات التي تتطلب مساحة مفتوحة كبيرة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">سعر كمر متوازي H:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يمكن أن يتغير سعر كمر متوازي H حسب العديد من العوامل مثل سمك الكمر وحجمه والكمية المشتراة، كما يمكنك إيجاد المزيد من المنتجات لدينا عبر موقعنا.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">نود أن نؤكد أن&nbsp;</span><a href="https://www.ecmf-eg.com/ar"><u><span style="color:#1155cc;font-size:12pt;">شركة ECMF</span></u></a><span style="font-size:12pt;">&nbsp;توفر جميع أنواع كمر الحديد المتوازي وأشكاله، بمختلف السماكات والأطوال المتنوعة. بالإضافة إلى ذلك، لدينا جميع أنواع القطاعات الأخرى من الحديد مثل&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%88%D8%A7%D8%AD%20%D8%B5%D8%A7%D8%AC%20%D8%B3%D8%A7%D8%AE%D9%86"><u><span style="color:#1155cc;font-size:12pt;">الواح صاج ساخن</span></u></a><span style="font-size:12pt;">،&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%84%20%D8%AF%D9%8A%D9%83"><u><span style="color:#1155cc;font-size:12pt;">استيل دك</span></u></a><span style="font-size:12pt;">،&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D8%A7%D9%8A%D9%83%D9%88%D9%86"><u><span style="color:#1155cc;font-size:12pt;">لوح صاج ايكون</span></u></a><span style="font-size:12pt;">&nbsp;و</span><a href="https://www.ecmf-eg.com/ar/0/products/%D9%83%D9%85%D8%B1%20%D8%B3%D9%8A%D8%AC%D8%A7%D9%84"><u><span style="color:#1155cc;font-size:12pt;">كمر حديد سيجال</span></u></a><span style="font-size:12pt;">&nbsp;بجميع أشكاله، و</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B3%D9%8A%D8%B1"><u><span style="color:#1155cc;font-size:12pt;">مواسير لحام طولى</span></u></a><span style="font-size:12pt;">&nbsp;وأيضًا متوفر لدينا ساندوتش بانل وغيرها من المنتجات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p><a href="https://www.ecmf-eg.com/ar/contact-us"><u><span style="color:#1155cc;font-size:12pt;">تواصل معنا</span></u></a><span style="font-size:12pt;">&nbsp;الآن للحصول على مزيد من التفاصيل حول الأسعار وسيتم المتابعة معك من قبل فريق المبيعات لدينا في أسرع وقت.&nbsp;</span></p>
+        <p><br></p>`
+    },
+
+    "Cans":{
+        data:`<h2 dir="rtl" style="text-align: right;"><strong><span style="font-size:18pt;">علب حديد:</span></strong></h2>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">علب حديد هي عبارة عن عبوات مصنوعة من مادة الحديد أو الفولاذ المقاوم للصدأ أو الحديد العادي، وتأتي بأحجام وأشكال متنوعة وفقًا لاحتياجات الاستخدام.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">ويتم استخدامها عادة في تعبئة وتغليف العديد من المنتجات، بما في ذلك الأطعمة والمشروبات والمستحضرات الصناعية والكيميائية. تتميز علب حديد أنها مغلقة بإحكام من أجل الحفاظ على جودة المنتجات ومدة صلاحيتها، كما أنها تتوفر بأحجام مختلفة تتناسب مع احتياجات الاستخدام المختلفة. كما أنها قابلة لإعادة التدوير، مما يجعلها خيار صديقا للبيئة في بعض الحالات.</span></p>
+        <p><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">ماسورة حديد:</span></strong></h3>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">ماسورة الحديد هى عبارة عن قطعة من الحديد يمكن ان تكون مستديرة أو على شكل مربع أو مستطيل ويتم تصنيع الماسورة من خامات عديدة مثل النحاس أو الحديد وكذلك الفخار والبلاستيك وعدة خامات أخرى عديدة من أجل الحفاظ على كل ما يمر بالأنبوب، بالإضافة إلى أن الماسورة تكون مفتوحة من الأسفل والقاع.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><strong><span style="font-size:12pt;">ملحوظة</span></strong><strong><span style="font-size:12pt;">:</span></strong><span style="font-size:12pt;">&nbsp;الاسم الارجح لـ علب حديد هو ماسوره مربعة أو مستطيلة وذلك على حسب حجمها وشكلها، أما بالنسبة لأسم علب حديد فهو يعتبر اسم متداول في الأسواق وبين التجار يستخدم أحيانا لوصف المنتج.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">استخدامات علب حديد:</span></strong></>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تخزين وتعبئة المواد: يمكن استخدام علب حديد من أجل تخزين وتعبئة العديد من المواد، مثل المواد الغذائية، الدهانات، المواد الكيميائية، الأدوات، والعديد من السلع الأخرى.</span></p>
+        <p><br></p>
+        <ul>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تخزين الأشياء الثمينة: تتميز علب حديد بقوتها وصلابتها، لذلك فهي اختيار مثالي يمكن استخدامها لتخزين الأشياء الثقيلة أو الثمينة.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">ترويج المنتجات: يمكن استخدام علب حديد في التغليف والترويج للمنتجات، مما يوفر لك عبوة متينة جذابة ومقاومة للعوامل البيئية.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">حفظ الطعام: بعض علب حديد تأتي مع غطاء محكم الغلق، مما يجعلها مناسبة لحفظ الطعام والمشروبات بطريقة أمنة وفعالة.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صناعة الحاويات الصناعية: في بعض الحالات، يمكن استخدام علب حديد في صناعة أجزاء من الحاويات الصناعية لنقل البضائع أو التخزين.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h3 dir="rtl" style="text-align: right;"><strong><span style="font-size:16pt;">أنواع مواسير الحديد:</span></em></strong></h3>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">1- &nbsp;مواسير لحام طولى:</span></em></strong></h4>
+        <p dir="rtl" style="text-align: right;"><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B3%D9%8A%D8%B1"><u><span style="color:#1155cc;font-size:12pt;">مواسير لحام طولى</span></u></a><span style="font-size:12pt;">&nbsp;من ضمن أنواع الأنابيب التي &nbsp;تشبه النوع المجلفن. يتم استخدام مواسير اللحام الطولية من أجل نقل الماء أو الغاز أو السوائل من مكان إلى آخر بطريقة فعالة. ولكن يوجد فرق بين مواسير اللحام الطولي وبين مواسير الحديد اللحام والمجلفن ويتضح أن الفرق هو أن مواسير الحديد اللحام يتم تصنيعها من لحام صفائح الحديد.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">استخدامات مواسير اللحام الطولية:</span></em></strong></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- الصناعة الكيميائية والبترولية: يتم استخدام المواسير الطولية في صناعات مهمة مثل صناعة البتروكيماويات والصناعات الكيميائية من أجل الحاجة إلى وجود أنابيب قوية تتحمل الضغوطات ودرجات الحرارة المرتفعة.&nbsp;</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- نقل السوائل والغازات: تستخدم مواسير اللحام الطولية في أنظمة الأنابيب من أجل نقل السوائل على سبيل المثال المياه والنفط والغازات الطبيعية.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">- التدفئة والتبريد: تستخدم المواسير الطولية المصنوعة من اللحام في معظم أنظمة التدفئة والتبريد المركزي التي تكون موجودة في المباني السكنية والتجارية والصناعية.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;color:#0d0d0d;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><br></p>
+            </li>
+        </ul>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">2- &nbsp;مواسير الحديد المجلفن:</span></strong></h4>
+        <ul>
+            <li dir="rtl" style="list-style-type:none;color:#0d0d0d;font-size:12pt;"><br></li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">مواسير الحديد المجلفن يتم صناعتها من صفائح فولاذية وهي تتميز بخفه وزنها. بالإضافة إلى أن تستخدم مواسير حديد مجلفن &nbsp;من أجل تزويد المياه أو الغاز للمنازل والمؤسسات.</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">يُفضل استخدام مواسير الحديد المجلفن في نقل المياه والصرف لأنه مقاوم جيد للصدأ والتآكل، ولا يتم استخدام هذا النوع من المواسير في نقل الغاز أو البترول وذلك من أجل احتمالية حدوث تفاعل الغازات مع الزنك مما يؤدي لتقشير طبقة الزنك الموجودة وبالتالي سيتم انسداد الانبوب.&nbsp;</span></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">&nbsp;تتميز مواسير الحديد المجلفن أنه يسهل ثنيها وربطها وتركيبها في العديد من الصناعات لذلك فهي اختيار المتخصصين الأنسب. بالإضافة إلى أن مواسير الحديد المجلفنة خفيفة الوزن وسعرها مناسب للجميع فهي اقتصادية مقارنة ببعض أنواع المواسير الأخرى المتوفرة في الأسواق. يجب الأخذ في الاعتبار أن المياه الحمضية والقلوية تؤثر في مواسير الحديد المجلفنة بشكل كبير</span><strong><span style="font-size:12pt;">.</span></strong></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">3- مواسير حديد ستانلس ستيل:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">تتميز مواسير الحديد والاستانلس ستيل أنها مصنعة بنسبة حديد 50% والباقى معادن أخرى أهمها معدن الكروم، كما أن تتراوح نسبته من 5% إلى 30%. تعد مواسير استانلس ستيل من المواسير المقاومة للصدأ بسبب وجود طبقة الكروم الملتصقة بسطح المعدن وهي طبقة كافية من أجل منع الحديد من التآكل. يتم تصنيع مواسير ستانلس ستيل عن طريق قطع الواح الاستانلس ستيل إلى شرائط بالاحجام المطلوبة ثم يتم ثنيها عن طريق معدات مخصصة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="color:#0d0d0d;font-size:12pt;">يتم استخدام مواسير حديد استانلس ستيل فيما يلي:</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul>
+            <li dir="rtl" style="color:#0d0d0d;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="color:#0d0d0d;font-size:12pt;"> - أنظمة الأنابيب الصناعية: تستخدم مواسير الحديد والاستانلس في الصناعات المختلفة مثل البتروكيماويات، ومعالجة المياه، والتصنيع، وذلك من أجل أنها مقاومة للتآكل والصدأ وأيضًا مقاومة التآكل الكيميائي.</span></p>
+            </li>
+            <li dir="rtl" style="color:#0d0d0d;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="color:#0d0d0d;font-size:12pt;"> - أنظمة السباكة والتدفئة: يمكن استخدام مواسير حديد الستانلس في تركيبات السباكة من أجل توصيل المياه الباردة والساخنة،&nbsp;</span><span style="color:#0d0d0d;background-color:#ffffff;font-size:12pt;">وأنظمة التدفئة المركزية.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:none;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><br></p>
+            </li>
+        </ul>
+        <h4 dir="rtl" style="text-align: right;"><strong><u><span style="font-size:14pt;">4- مواسير الحديد السيملس (الاستيم):</span></u></strong></h4>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">هي مواسير يتم صناعتها دون وجود أي تجاويف أو لحامات في هيكلها. تتميز مواسير الحديد السيملس أنه تم تصنيعها عن طريق تسخين قضيب من الحديد الساخن بحيث يتم تشكيله بشكل مستمر دون انقطاع، مما يؤدي إلى الحصول على أنبوب من الحديد يتميز بنقاء وقوة فائقة.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <h4 dir="rtl" style="text-align: right;"><strong><span style="font-size:14pt;">استخدامات مواسير الحديد السيملس تشمل:</span></strong></h4>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <ul>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صناعة البترول والغاز: تُستخدم مواسير الحديد السيملس في أنظمة الأنابيب من أجل نقل النفط الخام والغاز الطبيعي من حقول النفط والغاز إلى المصافي ومحطات الضخ.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صناعة الطاقة: يتم استخدام مواسير حديد السيملس في أنظمة الأنابيب وذلك من أجل نقل الماء المبرد والبخار في محطات الطاقة الحرارية والنووية.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">البناء والهندسة المدنية: تدخل مواسير الحديد السيملس في أنظمة السباكة لتوزيع المياه والصرف الصحي في المباني والمنشآت.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">صناعة السيارات: يتم استخدام مواسير الحديد السيملس في أنظمة العادم والتبريد وأنظمة التوجيه في صناعة السيارات.</span></p>
+            </li>
+            <li dir="rtl" style="list-style-type:disc;font-size:12pt;">
+                <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">الصناعات الهندسية: تستخدم هذه المواسير في تصنيع الأجزاء الميكانيكية الدقيقة مثل الأنابيب الهيدروليكية وأنظمة التحكم.</span></p>
+            </li>
+        </ul>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p><br></p>
+        <p dir="rtl" style="text-align: right;"><span style="font-size:12pt;">نود أن نؤكد أن&nbsp;</span><a href="https://www.ecmf-eg.com/ar"><strong><u><span style="color:#1155cc;font-size:12pt;">شركة ECMF</span></u></strong></a><strong><span style="font-size:12pt;">&nbsp;</span></strong><span style="font-size:12pt;">توفر جميع أنواع علب حديد و</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%88%D8%A7%D8%AD%20%D8%B5%D8%A7%D8%AC%20%D8%B3%D8%A7%D8%AE%D9%86"><strong><u><span style="color:#1155cc;font-size:12pt;">الواح صاج ساخن</span></u></strong></a><span style="font-size:12pt;">&nbsp;وأشكاله، بمختلف السماكات والأطوال المتنوعة. بالإضافة إلى ذلك، لدينا جميع أنواع القطاعات الأخرى من الحديد مثل&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%84%20%D8%AF%D9%8A%D9%83"><strong><u><span style="color:#1155cc;font-size:12pt;">استيل دك</span></u></strong></a><span style="font-size:12pt;">،&nbsp;</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D8%A7%D9%8A%D9%83%D9%88%D9%86"><strong><u><span style="color:#1155cc;font-size:12pt;">لوح صاج ايكون</span></u></strong></a><span style="font-size:12pt;">&nbsp;بجميع أشكاله، و</span><a href="https://www.ecmf-eg.com/ar/0/products/%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B3%D9%8A%D8%B1"><strong><u><span style="color:#1155cc;font-size:12pt;">مواسير لحام طولى</span></u></strong></a><span style="font-size:12pt;">&nbsp;وأيضًا متوفر لدينا ساندوتش بانل وغيرها من المنتجات.</span></p>
+        <p dir="rtl" style="text-align: right;"><br></p>
+        <p dir="rtl" style="text-align: right;"><a href="https://www.ecmf-eg.com/ar/contact-us"><strong><u><span style="color:#1155cc;font-size:12pt;">تواصل معنا</span></u></strong></a><span style="font-size:12pt;">&nbsp;الآن للحصول على مزيد من التفاصيل حول الأسعار وسيتم المتابعة معك من قبل فريق المبيعات لدينا في أسرع وقت. &nbsp;</span></p>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>`
     }
-
-    
-
 }
