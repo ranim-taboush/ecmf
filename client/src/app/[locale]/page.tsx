@@ -15,12 +15,14 @@ import AboutUs from '@/components/sections/AboutUs';
 import ContactUs from '@/components/sections/ContactUs.jsx';
 import Agents from '@/components/sections/Agents';
 import Footer from '@/components/Footer/Footer';
+import Favicon from '@/../public/favicon.ico'
 
 export const metadata = {
   title: 'Home',
   verification: { 
     google: "7wkSiizY8sRbrcYRwL86IEf4RpWTev9FHt0y_0QR7Kg", 
-  }
+  },
+  icons: {icon: Favicon.src},
 }
 
 export default function Home() {

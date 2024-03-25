@@ -13,10 +13,12 @@ import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Favicon from '@/../public/favicon.ico'
 
 export const metadata = {
   title: 'ECMF',
   description: 'ECMF',
+  icons: {icon: Favicon.src},
 }
 
 export default function RootLayout({
